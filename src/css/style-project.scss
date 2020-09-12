@@ -1,0 +1,146 @@
+/* VARIABLES */
+
+$mainBackgroundColor: #F4F7F6;
+$elementsBackgroundColor: #1D1D1D;
+
+/* SECTIONS ELEMENTS */
+
+section, header, footer {
+  text-align: center;
+}
+
+header {
+  background-color: $elementsBackgroundColor;
+  color: white;
+  padding-bottom: 15px;
+}
+
+article {
+  margin: auto;
+}
+
+footer {
+  background: $elementsBackgroundColor;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ELEMENTS */
+
+* {
+  /* use the box as reference for padding */
+  box-sizing: border-box;
+}
+
+body {
+  background: $mainBackgroundColor;
+  font-family: Roboto, sans-serif;
+}
+
+h1:before {
+  content: "« ";
+  color: grey;
+}
+
+h1 {
+  margin-top: 0;
+  padding-top: 25px;
+}
+
+h1:after {
+  content: " »";
+  color: grey;
+}
+
+h2:before {
+  content: "« ";
+  color: grey;
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size-adjust: 1.5em;
+  margin: auto;
+}
+
+h2:after {
+  content: " »";
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
+  font-size-adjust: 1.1em;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+nav ul {
+  padding: 0;
+  display: inline;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+
+nav li:hover {
+  font-weight: bold;
+}
+
+// ID
+
+#links-section {
+  border: 1px black solid;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+#top-link {
+  text-align: right;
+  margin-right: 20px;
+  padding-bottom: 25px;
+}
+
+/* CLASSES */
+
+.capture img {
+  width: 70%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* CONTAINER */
+
+.margin-constraint{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.useful-width{
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-constraint, .useful-width{
+  display: block;
+  width: auto;
+}
+
+/* MEDIA QUERIES */
