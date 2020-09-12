@@ -4,16 +4,12 @@
 
 September 2020
 
-> 🔨  This is a summary of my Github
+> 🔨  This is a summary of my Github and all my repositories. Soon a link to my Portfolio (WIP).
 
 * * *
 
 
-
 ![Avatar Github](_readme-img/avatar.png)
-
-
-
 
 
 ## Repositories: personnal trainings and projects, Becode training
@@ -92,9 +88,3 @@ September 2020
 - [Event Manager (fork)](https://github.com/Raigyo/group-project-react-laravel-fork): Same application using React and Laravel but forked from the work of another group. Bugs had to be corrected and new features had to be implemented.
 - [Super Socket Fighter](https://github.com/Raigyo/SuperSocketFighter): Videogame online using **React** as client-side and **Node.JS/Websockets/Socket IO** as server-side.
 - [Workshop React Native](https://github.com/Raigyo/workshop-react-native): Workshop given to introduce **React Native** with **Expo**.
-
-## Useful links
-
-- [CSS : .container, la classe à abattre](https://blog.engineering.publicissapient.fr/2017/06/30/css-container-la-classe-a-abattre/)
-- [xxx](#)
-- [xxx](#)
