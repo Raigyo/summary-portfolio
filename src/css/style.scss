@@ -5,7 +5,7 @@ $elementsBackgroundColor: #1D1D1D;
 
 /* SECTIONS ELEMENTS */
 
-section, header, footer {
+section, article, header, footer {
   text-align: center;
 }
 
@@ -16,7 +16,10 @@ header {
 }
 
 article {
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-content: center;
 }
 
 footer {
@@ -117,12 +120,6 @@ nav li:hover {
 // }
 
 /* ID */
-// #contact-section {
-//   border: 1px black solid;
-//   border-radius: 15px;
-//   padding: 30px;
-//   margin-bottom: 50px;
-// }
 
 #logo {
   margin: 15px 0px;
@@ -131,10 +128,10 @@ nav li:hover {
 }
 
 #projects {
-  display: flex;
+  //display: flex;
   /* return at the line */
-  flex-wrap: wrap;
-  justify-content: space-between;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
 }
 
 #contact-section {
@@ -143,7 +140,7 @@ nav li:hover {
   padding: 30px;
   margin-bottom: 50px;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   justify-content: space-between;
   background: white;
   padding-bottom: 15px;
@@ -156,6 +153,7 @@ nav li:hover {
   margin-right: 20px;
   padding-bottom: 25px;
 }
+
 
 /* CLASSES */
 
@@ -244,3 +242,9 @@ nav li:hover {
 }
 
 /* MEDIA QUERIES */
+@media all and (max-width: 100px){
+  .project { width: 100%; margin: 15px auto;}
+  .project img { width: 100%; min-width: auto; height: auto;}
+  .project .picture { width: 100%; height: auto;}
+  header h2 { width: 90%; }
+}
