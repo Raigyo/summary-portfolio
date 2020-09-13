@@ -3,6 +3,11 @@
 $mainBackgroundColor: #F4F7F6;
 $elementsBackgroundColor: #1D1D1D;
 
+/* Variable usage: just as exemple */
+// :root {
+//   --elementsBackgroundColor: #1D1D1D;
+// }
+
 /* SECTIONS ELEMENTS */
 
 section, header, footer {
@@ -11,6 +16,7 @@ section, header, footer {
 
 header {
   background-color: $elementsBackgroundColor;
+  //background-color: var(--elementsBackgroundColor);
   color: white;
   padding-bottom: 15px;
 }
@@ -31,6 +37,11 @@ footer {
 * {
   /* use the box as reference for padding */
   box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  height: 100%;
 }
 
 body {

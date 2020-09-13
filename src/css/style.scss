@@ -36,6 +36,11 @@ footer {
   box-sizing: border-box;
 }
 
+html {
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background: $mainBackgroundColor;
   font-family: Roboto, sans-serif;
@@ -127,12 +132,12 @@ nav li:hover {
   height: auto;
 }
 
-#projects {
-  //display: flex;
-  /* return at the line */
-  //flex-wrap: wrap;
-  //justify-content: space-between;
-}
+// #projects {
+//   display: flex;
+//   /* return at the line */
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
 
 #contact-section {
   border: 1px black solid;
