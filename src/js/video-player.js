@@ -96,11 +96,11 @@ player.onloadeddata = function () {
 fullScr.addEventListener('click', toggleFullscreen);
 // Create fullscreen video button
 function toggleFullscreen() {
-  if (video.requestFullScreen) {
-    video.requestFullScreen();
-  } else if (video.webkitRequestFullScreen) {
-    video.webkitRequestFullScreen();
-  } else if (video.mozRequestFullScreen) {
-    video.mozRequestFullScreen();
+  if (player.requestFullScreen) {
+    player.requestFullScreen();
+  } else if (player.webkitRequestFullScreen) {
+    player.webkitRequestFullScreen();
+  } else if (player.mozRequestFullScreen) {
+    player.mozRequestFullScreen();
   }
 }

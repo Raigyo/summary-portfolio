@@ -12,6 +12,7 @@
   <meta name="keywords" content="frontend, developer, portfolio, wordpress">
   <meta name=”robots” content=”index,follow”>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Styles -->
   <link href="../../css/style-project.scss" rel="stylesheet">
   <link href="../../css/video-player.scss" rel="stylesheet">
 </head>
@@ -38,8 +39,8 @@
     <div class="useful-width">
 
       <!-- SECTION SUMMARY -->
-      <section>
-        <h2>Summary</h2>
+      <h2>Summary</h2>
+      <section id="summary">
         <p>
           Sed tellus enim, elementum non quam at, pulvinar lobortis ipsum. Nulla facilisi.
           Sed ut interdum magna. Pellentesque facilisis luctus sem, id tempor lectus tincidunt
@@ -48,45 +49,74 @@
       </section>
       <!-- / SECTION SUMMARY -->
 
-      <!-- SECTION CAPTURE -->
-      <section class="capture" id="picture-project">
-        <h2>Medias</h2>
-        <img src="../../img/cms/cms-wordpress-foo-dog.webp" alt="Screen capture of the website" />
-      </section>
-      <!-- / SECTION CAPTURE -->
-
-      <!-- SECTION VIDEO -->
-      <section id="player" class="player">
-          <video>
-            <source src="../../videos/logo-vhs.mp4" type="video/mp4">
-            <source src="../../videos/logo-vhs.ogg" type="video/ogg">
-            <source src="../../videos/logo-vhs.webm" type="video/webm">
-            <p>Sorry, your browser doesn't support embedded videos.
-              Here is a <a href="../../videos/logo-vhs.mp4">link to the video</a> instead.</p>
-          </video>
-          <div class="controls">
-            <button class="playpause">Play</button>
-            <button class="stop">Stop</button>
-            <button class="rwd">Rwd</button>
-            <button class="fwd">Fwd</button>
-            <span class="time">00:00</span> / <span class="totaltime">00:00</span>
-            <button class="fullscreen">Full screen</button>
+      <h2>Medias</h2>
+      <!-- ARTICLE: Medias -->
+      <article>
+        <!-- SECTION CAPTURE -->
+        <section class="picture-project">
+          <div class="capture">
+            <img
+              src="../../img/cms/cms-wordpress-foo-dog.webp"
+              alt="Screen capture of the website"
+            />
           </div>
-      </section>
-      <!-- /SECTION VIDEO -->
-      <section id="links-section">
-        <h2>Links</h2>
-        <p>Liens</p>
-      </section>
-      <!-- SECTION LINKS -->
+        </section>
+        <!-- / SECTION CAPTURE -->
 
+        <!-- SECTION VIDEO -->
+        <section class="player">
+            <video>
+              <source src="../../videos/logo-vhs.mp4" type="video/mp4">
+              <source src="../../videos/logo-vhs.ogg" type="video/ogg">
+              <source src="../../videos/logo-vhs.webm" type="video/webm">
+              <p>Sorry, your browser doesn't support embedded videos.
+                Here is a <a href="../../videos/logo-vhs.mp4">link to the video</a> instead.</p>
+            </video>
+            <div class="controls">
+              <button class="playpause">Play</button>
+              <button class="stop">Stop</button>
+              <button class="rwd">Rwd</button>
+              <button class="fwd">Fwd</button>
+              <span class="counter">
+                <span class="time">00:00</span> / <span class="totaltime">00:00</span>
+              </span>
+              <button class="fullscreen">Full screen
+                <div class="sr-only">This feature use browser configuration and is not fully accessible.
+                  Press escape to leave fullscreen mode.</div>
+              </button>
+            </div>
+        </section>
+        <!-- /SECTION VIDEO -->
+      </article>
+      <!-- / ARTICLE: Medias -->
+
+      <!-- SECTION LINKS -->
+      <h2>Links</h2>
+      <section>
+        <!-- FlexBox Container -->
+        <div id="contact-section">
+          <div class="logo-contact">
+            <a href="https://github.com/Raigyo" target="_blank">
+              <img src="../../img/logo-github.png" alt="Logo Github"
+              title="To the project github repository" />
+            </a>
+            <p>Github repository</p>
+          </div>
+        </div>
+
+        <!-- / FlexBox Container -->
+      </section>
       <!-- / SECTION LINKS -->
-    </div>
-    <div id="top-link">
-      <a href="../../../index.html" title="Homepage">Home</a> |
-      <a href="#top">Top of the page</a>
+
     </div>
     <!-- /useful-width -->
+
+    <!-- Home / Top links -->
+    <div id="top-link">
+      <a href="../../../index.html" title="Link to Homepage">Home</a> |
+      <a href="#top" title="Link to top of the page">Back to top of the page</a>
+    </div>
+    <!-- / Home / Top links -->
 
     <!-- FOOTER -->
     <footer>
@@ -98,5 +128,6 @@
   <!-- /full-width -->
 
 </body>
+<!-- Scripts -->
 <script src="../../js/video-player.js"></script>
 </html>

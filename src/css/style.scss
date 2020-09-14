@@ -183,11 +183,16 @@ nav li:hover {
   padding-bottom: 15px;
   border: 0px black solid;
   border-radius: 10px;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 .logo-contact img {
   width: 30%;
+  transition: 0.5s all ease-in-out;
+}
+
+.logo-contact img:hover {
+  transform: scale(1.2);
 }
 
 .project:hover {
@@ -202,6 +207,11 @@ nav li:hover {
   min-width: 400px;
   height: 266px;
   align-items: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.project img:hover {
+  transform: scale(1.1);
 }
 
 .picture{
@@ -247,9 +257,12 @@ nav li:hover {
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 100px){
+@media all and (max-width: 1000px){
   .project { width: 100%; margin: 15px auto;}
   .project img { width: 100%; min-width: auto; height: auto;}
   .project .picture { width: 100%; height: auto;}
+  #contact-section { width: 100%; flex-wrap: wrap; margin: 15px auto;}
+  #contact-section img { width: 50%; min-width: auto; height: auto;}
+  #contact-section .logo-contact { width: 50%; height: auto;}
   header h2 { width: 90%; }
 }
