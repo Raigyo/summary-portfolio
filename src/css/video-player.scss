@@ -1,15 +1,11 @@
-.player {
-  width: 70%;
-  margin: 10px auto;
-  border: 1px solid #ccc;
-}
+/* Elements */
 
 video, audio, .controls {
   width: 100%;
 }
 
-.controls {
-  height: 36px;
+video {
+  margin-bottom: -5px;
 }
 
 button {
@@ -20,26 +16,34 @@ button {
   height: 100%;
   width: 50px;
   cursor: pointer;
+
+  &:hover,&:focus{
+    background-color: #ddd;
+  }
+
+  &:active {
+    background-color: #ccc;
+  }
 }
 
-button:hover, button:focus {
-  background-color: #ddd;
+/* Classes */
+
+.player {
+  width: 70%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
 }
 
-button:active {
-  background-color: #ccc;
-}
+.controls {
+  height: 36px;
 
-.controls div {
-  font-size: 12px;
-  //display: inline-block;
-  line-height: 36px;
-  width: 45px;
-  float: right;
-}
-
-video {
-  margin-bottom: -5px;
+  div {
+    font-size: 12px;
+    //display: inline-block;
+    line-height: 36px;
+    width: 45px;
+    float: right;
+  }
 }
 
 
