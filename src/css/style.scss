@@ -94,6 +94,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  text-align: center;
   text-transform: uppercase;
 
   &:before {
@@ -132,6 +133,15 @@ a {
 
 /* ID */
 
+#summary{
+  @include shadow-boxes;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
 #logo {
   margin: 15px 0px;
   max-width: 40%;
@@ -145,7 +155,10 @@ a {
 #contact-section {
   @include shadow-boxes;
   display: flex;
-  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 #top-link {

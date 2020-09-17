@@ -30,7 +30,32 @@
     "eslint-plugin-react-hooks": "^4.0.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-bundle-manifest": "^0.2.0",
+    "parcel-plugin-custom-dist-structure": "^1.1.16",
     "prettier": "^2.1.1",
     "sass": "^1.26.10"
+  },
+  "customDistStructure": {
+    "config": {
+      ".js": "assets/js",
+      ".map": "assets/maps",
+      ".css": "assets/css",
+      "assets/images": [
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".webp",
+        ".gif"
+      ],
+      "assets/medias": [
+        ".ogg",
+        ".webm",
+        ".mp4",
+        ".mp3",
+        ".wav"
+      ]
+    },
+    "options": {
+      "development": true
+    }
   }
 }
