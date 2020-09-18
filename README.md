@@ -20,6 +20,7 @@ September 2020
 - [SASS & SCSS](https://github.com/Raigyo/sass-scss): Overview of the CSS preprocessor (variables, nesting, mixins, inheritance...).
 - [CSS Grid](https://github.com/Raigyo/css-grid): Basics layout using Grid.
 - [CSS Flexbox](https://github.com/Raigyo/css-flexbox): Basic layout using Flexbox.
+- [CSS Flexbox - Guide](https://github.com/Raigyo/css-flexbox-guide): Advanced use of Flexbox Layout Module.
 - [Bootstrap](https://github.com/Raigyo/bootstrap-corporate) (Becode): Creation of a corporate website using Bootstrap.
 - [Mobirise](https://github.com/Raigyo/mobirise-band): Showcase project for a band using Mobirise Free Website Builder
 

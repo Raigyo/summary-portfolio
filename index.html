@@ -1,479 +1,506 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="language" content="english">
-  <meta http-equiv="content-type" content="text/html">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio | Vincent Chilot</title>
-  <meta name="description" content="My portfolio">
-  <meta name="author" content="Vincent Chilot">
-  <meta name="keywords" content="frontend, developer, portfolio">
-  <meta name=”robots” content=”index,follow”>
-  <!-- Open graph -->
-  <meta property="og:url" content="https://raigyo-dev.be/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Raigyo-dev" />
-  <meta property="og:description" content="My portfolio as Front End Developer!" />
-  <meta property="og:image" content="./src/img/logo.png" />
-  <!-- meta name="twitter:site" content="@userName" -->
-  <!-- meta name="twitter:creator" content="@creatorName" -->
-  <!-- Styles -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="./src/img/favicon.png">
-  <link href="./src/css/style.scss" rel="stylesheet">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="language" content="english">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio | Vincent Chilot</title>
+    <meta name="description" content="My portfolio">
+    <meta name="author" content="Vincent Chilot">
+    <meta name="keywords" content="frontend, developer, portfolio">
+    <meta name=”robots” content=”index,follow”>
+    <!-- Open graph -->
+    <meta property="og:url" content="https://raigyo-dev.be/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Raigyo-dev" />
+    <meta property="og:description" content="My portfolio as Front End Developer!" />
+    <meta property="og:image" content="./src/img/logo.png" />
+    <!-- meta name="twitter:site" content="@userName" -->
+    <!-- meta name="twitter:creator" content="@creatorName" -->
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./src/img/favicon.png" rel="icon" type="image/png">
+    <link href="./src/css/style.scss" rel="stylesheet">
+  </head>
 
-<body>
-  <!-- full-width -->
-  <div class="full-width">
+  <body>
+    <!-- full-width -->
+    <div class="full-width">
 
-    <!-- HEADER -->
-    <header>
-      <div>
-        <img src="./src/img/logo.png" alt="Logo with my nickname" title="Logo" id="logo"/>
+      <!-- HEADER -->
+      <header>
+        <div>
+          <img src="./src/img/logo.png" alt="Logo with my nickname" title="Logo" id="logo"/>
+        </div>
+        <span class="separator"></span>
+        <h1>Vincent Chilot</h1>
+        <h2>Front End Developer</h2>
+      </header>
+      <!-- /HEADER -->
+
+      <!-- NAVIGATION -->
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Link to Homepage">Home</a></li>
+          <li><a href="#projects-section" title="Link to projects section">Projects</a></li>
+          <li><a href="#contact-section" title="Link to contact section">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- /NAVIGATION -->
+
+      <!-- useful-width -->
+      <div class="useful-width">
+
+        <!-- SECTION INTRO -->
+        <h3>Welcome</h3>
+        <section id="summary">
+          <p>
+            Sed tellus enim, elementum non quam at, pulvinar lobortis ipsum. Nulla facilisi.
+            Sed ut interdum magna. Pellentesque facilisis luctus sem, id tempor lectus tincidunt
+            sit amet. Mauris maximus accumsan dolor eu congue. Nulla feugiat eros non consequat
+            consequat. Mauris ligula mauris, malesuada in iaculis eget, facilisis vel diam.
+            Ut luctus lacus lorem. Phasellus cursus nulla at venenatis varius.
+            Phasellus malesuada nec risus at rutrum.
+          </p>
+        </section>
+        <!-- /SECTION INTRO -->
+
+        <!-- SECTION PROJECTS -->
+        <h3>Projects</h3>
+        <section id="projects-section">
+          <!-- FlexBox Container -->
+          <div id="projects">
+
+            <!-- ARTICLE: CMS -->
+
+            <article>
+              <div class="project-type">
+                <h4>CMS</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/cms/cms-wordpress-foo-dog.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/cms-wordpress-foo-dog.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Wordpress: Foo Dog Blog</span>
+                    <span class="date-project">May 2019 (Update: September 2020)</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/cms/cms-drupal-bar-cat.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/cms-drupal-bar-cat.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Drupal: Bar Cat Blog</span>
+                    <span class="date-project">September 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: CMS -->
+
+            <!-- ARTICLE: NodeJS -->
+            <article>
+              <div class="project-type">
+                <h4>NodeJS</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/nodejs/node-library-management.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/node-library-management.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Library Management</span>
+                    <span class="date-project">March 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: NodeJS -->
+
+            <!-- ARTICLE: React -->
+            <article>
+              <div class="project-type">
+                <h4>React</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react/react-strapi-store.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/react-strapi-store.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Online store</span>
+                    <span class="date-project">July / August 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react/react-netflix.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/react-netflix.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Netflix clone</span>
+                    <span class="date-project">April / May 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react/react-360.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/react-360..jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>React 360 / React VR</span>
+                    <span class="date-project">February 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react/react-character-manager.html">
+                    <div class="picture">
+                        <img src="./src/img/hp-cards/react-character-manager.jpg" alt="Project"
+                        title="Project" />
+                    </div>
+                    <span>Character Manager</span>
+                    <span class="date-project">March 2019</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: React -->
+
+            <!-- ARTICLE: React Native -->
+
+            <article>
+              <div class="project-type">
+                <h4>React Native</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react-native/react-native-facebook-login.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/react-native-facebook-login.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Facebook Login</span>
+                    <span class="date-project">March 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react-native/react-native-tinder-ui.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/react-native-tinder-ui.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Tinder UI Clone</span>
+                    <span class="date-project">February 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/react-native/react-native-video-library.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/react-native-video-library.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>My Video Library</span>
+                    <span class="date-project">June 2019</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: React Native -->
+
+            <!-- ARTICLE: VueJS -->
+            <article>
+              <div class="project-type">
+                <h4>VueJS</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/vue/vue-contact-manager.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/vue-contact-manager.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Contact Manager</span>
+                    <span class="date-project">April 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: VueJS -->
+
+            <!-- ARTICLE: Angular -->
+            <article>
+              <div class="project-type">
+                <h4>Angular</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/angular/angular-restaurant.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/angular-restaurant.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Restaurant Website</span>
+                    <span class="date-project">March 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: Angular -->
+
+            <!-- ARTICLE: WebGL -->
+            <article>
+              <div class="project-type">
+              <h4>WebGL</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/webgl/webgl-three-exemples.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/webgl-three-exemples.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>ThreeJS: Exemples</span>
+                    <span class="date-project">April 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/webgl/webgl-babylon-fps.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/webgl-babylon-fps.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>BabylonJS: FPS Online</span>
+                    <span class="date-project">April 2020</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/webgl/web-gl-unity-teminal-hacker.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/web-gl-unity-teminal-hacker.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Unity: Quiz Terminal Hacker</span>
+                    <span class="date-project">August 2019</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: NodeJS -->
+
+            <!-- ARTICLE: Unity -->
+            <article>
+              <div class="project-type">
+              <h4>Unity</h4>
+              <!-- RELATED PROJECT -->
+              <div class="project">
+                <a href="./src/projects/unity/unity-archviz-vr.html">
+                  <div class="picture">
+                      <img
+                        src="./src/img/hp-cards/unity-archviz-vr.jpg"
+                        alt="Picture of the project"
+                        title="Link to project page"
+                      />
+                  </div>
+                  <span>Archviz: Virtual Reality</span>
+                  <span class="date-project">January 2020</span>
+                </a>
+              </div>
+              <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/unity/unity-archviz.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/unity-archviz.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Archviz</span>
+                    <span class="date-project">December 2019</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/unity/unity-game-forest.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/unity-game-forest.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Original game: A Forest</span>
+                    <span class="date-project">November / December 2019</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- ARTICLE: Unity -->
+
+            <!-- ARTICLE: PHP -->
+            <article>
+              <div class="project-type">
+                <h4>PHP</h4>
+                <!-- RELATED PROJECT -->
+                <div class="project">
+                  <a href="./src/projects/php/php-laravel-crud.html">
+                    <div class="picture">
+                        <img
+                          src="./src/img/hp-cards/php-laravel-crud.jpg"
+                          alt="Picture of the project"
+                          title="Link to project page"
+                        />
+                    </div>
+                    <span>Laravel: Api with CRUD</span>
+                    <span class="date-project">June 2019</span>
+                  </a>
+                </div>
+                <!-- /RELATED PROJECT -->
+              </div>
+            </article>
+            <!-- / ARTICLE: PHP -->
+
+          </div>
+          <!-- /FlexBox Container -->
+
+        </section>
+        <!-- /SECTION PROJECTS -->
+
+        <!-- SECTION CONTACTS -->
+        <h3>Contact</h3>
+        <section>
+          <!-- FlexBox Container -->
+          <div id="contact-section">
+            <div class="logo-contact">
+              <a href="https://github.com/Raigyo" target="_blank">
+                <img
+                  src="./src/img/logo-github.png"
+                  alt="Logo Github"
+                  title="To my Github"
+                />
+              </a>
+              <p>Github</p>
+            </div>
+            <div class="logo-contact">
+              <a href="https://www.linkedin.com/in/vincent-chilot/" target="_blank">
+                <img
+                  src="./src/img/logo-linkedin.png"
+                  alt="Logo linkedIn"
+                  title="To my LinkedIn"
+                />
+              </a>
+              <p>LinkedIn</p>
+            </div>
+            <div class="logo-contact">
+              <a href="mailto:vincent.chilot@gmail.com">
+                <img
+                  src="./src/img/logo-email.png"
+                  alt="Logo Email"
+                  title="Email me"
+                />
+              </a>
+              <p>Email</p>
+            </div>
+          </div>
+          <!-- / FlexBox Container -->
+        </section>
+        <!-- SECTION CONTACTS -->
+
       </div>
-      <span class="separator"></span>
-      <h1>Vincent Chilot</h1>
-      <h2>Front End Developer</h2>
-    </header>
-    <!-- /HEADER -->
+      <!-- /useful-width -->
 
-    <!-- NAVIGATION -->
-    <nav>
-      <ul>
-        <li><a href="index.html" title="Link to Homepage">Home</a></li>
-        <li><a href="#projects-section" title="Link to projects section">Projects</a></li>
-        <li><a href="#contact-section" title="Link to contact section">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- /NAVIGATION -->
+      <!-- Top link -->
+      <div id="top-link">
+        <a href="#top" title="Link to top of the page">Top of the page</a>
+      </div>
+      <!-- /Top link -->
 
-    <!-- useful-width -->
-    <div class="useful-width">
-
-      <!-- SECTION INTRO -->
-      <h3>Welcome</h3>
-      <section id="summary">
-        <p>
-          Sed tellus enim, elementum non quam at, pulvinar lobortis ipsum. Nulla facilisi.
-          Sed ut interdum magna. Pellentesque facilisis luctus sem, id tempor lectus tincidunt
-          sit amet. Mauris maximus accumsan dolor eu congue. Nulla feugiat eros non consequat
-          consequat. Mauris ligula mauris, malesuada in iaculis eget, facilisis vel diam.
-          Ut luctus lacus lorem. Phasellus cursus nulla at venenatis varius.
-          Phasellus malesuada nec risus at rutrum.
-        </p>
-      </section>
-      <!-- /SECTION INTRO -->
-
-      <!-- SECTION PROJECTS -->
-      <h3>Projects</h3>
-      <section id="projects-section">
-        <!-- FlexBox Container -->
-        <div id="projects">
-
-          <!-- ARTICLE: CMS -->
-          <h4>CMS</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/cms/cms-wordpress-foo-dog.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/cms-wordpress-foo-dog.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Wordpress: Foo Dog Blog</span>
-                <span class="date-project">May 2019 (Update: September 2020)</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/cms/cms-drupal-bar-cat.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/cms-drupal-bar-cat.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Drupal: Bar Cat Blog</span>
-                <span class="date-project">September 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: CMS -->
-
-          <!-- ARTICLE: NodeJS -->
-          <h4>NodeJS</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/nodejs/node-library-management.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/node-library-management.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Library Management</span>
-                <span class="date-project">March 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: NodeJS -->
-
-          <!-- ARTICLE: React -->
-          <h4>React</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react/react-strapi-store.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/react-strapi-store.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Online store</span>
-                <span class="date-project">July / August 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react/react-netflix.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/react-netflix.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Netflix clone</span>
-                <span class="date-project">April / May 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react/react-360.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/react-360..jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>React 360 / React VR</span>
-                <span class="date-project">February 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react/react-character-manager.html">
-                <div class="picture">
-                    <img src="./src/img/hp-cards/react-character-manager.jpg" alt="Project"
-                    title="Project" />
-                </div>
-                <span>Character Manager</span>
-                <span class="date-project">March 2019</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: React -->
-
-          <!-- ARTICLE: React Native -->
-          <h4>React Native</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react-native/react-native-tinder-ui.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/react-native-tinder-ui.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Tinder UI Clone</span>
-                <span class="date-project">February 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react-native/react-native-facebook-login.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/react-native-facebook-login.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Facebook Login</span>
-                <span class="date-project">March 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/react-native/react-native-video-library.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/react-native-video-library.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>My Video Library</span>
-                <span class="date-project">June 2019</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: React Native -->
-
-          <!-- ARTICLE: VueJS -->
-          <h4>VueJS</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/vue/vue-contact-manager.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/vue-contact-manager.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Contact Manager</span>
-                <span class="date-project">April 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: VueJS -->
-
-          <!-- ARTICLE: Angular -->
-          <h4>Angular</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/angular/angular-restaurant.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/angular-restaurant.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Restaurant Website</span>
-                <span class="date-project">March 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: Angular -->
-
-          <!-- ARTICLE: WebGL -->
-          <h4>WebGL</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/webgl/web-gl-unity-teminal-hacker.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/web-gl-unity-teminal-hacker.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Unity: Quiz Terminal Hacker</span>
-                <span class="date-project">August 2019</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/webgl/webgl-three-exemples.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/webgl-three-exemples.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>ThreeJS: Exemples</span>
-                <span class="date-project">April 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/webgl/webgl-babylon-fps.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/webgl-babylon-fps.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>BabylonJS: FPS Online</span>
-                <span class="date-project">April 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: NodeJS -->
-
-          <!-- ARTICLE: Unity -->
-          <h4>Unity</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/unity/unity-game-forest.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/unity-game-forest.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Original game: A Forest</span>
-                <span class="date-project">November / December 2019</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/unity/unity-archviz.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/unity-archviz.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Archviz</span>
-                <span class="date-project">December 2019</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/unity/unity-archviz-vr.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/unity-archviz-vr.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Archviz: Virtual Reality</span>
-                <span class="date-project">January 2020</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- ARTICLE: Unity -->
-
-          <!-- ARTICLE: PHP -->
-          <h4>PHP</h4>
-          <article>
-            <!-- RELATED PROJECT -->
-            <div class="project">
-              <a href="./src/projects/php/php-laravel-crud.html">
-                <div class="picture">
-                    <img
-                      src="./src/img/hp-cards/php-laravel-crud.jpg"
-                      alt="Picture of the project"
-                      title="Link to project page"
-                    />
-                </div>
-                <span>Laravel: Api with CRUD</span>
-                <span class="date-project">June 2019</span>
-              </a>
-            </div>
-            <!-- /RELATED PROJECT -->
-          </article>
-          <!-- / ARTICLE: PHP -->
-
-        </div>
-        <!-- /FlexBox Container -->
-
-      </section>
-      <!-- /SECTION PROJECTS -->
-
-      <!-- SECTION CONTACTS -->
-      <h3>Contact</h3>
-      <section>
-        <!-- FlexBox Container -->
-        <div id="contact-section">
-          <div class="logo-contact">
-            <a href="https://github.com/Raigyo" target="_blank">
-              <img
-                src="./src/img/logo-github.png"
-                alt="Logo Github"
-                title="To my Github"
-              />
-            </a>
-            <p>Github</p>
-          </div>
-          <div class="logo-contact">
-            <a href="https://www.linkedin.com/in/vincent-chilot/" target="_blank">
-              <img
-                src="./src/img/logo-linkedin.png"
-                alt="Logo linkedIn"
-                title="To my LinkedIn"
-              />
-            </a>
-            <p>LinkedIn</p>
-          </div>
-          <div class="logo-contact">
-            <a href="mailto:vincent.chilot@gmail.com">
-              <img
-                src="./src/img/logo-email.png"
-                alt="Logo Email"
-                title="Email me"
-              />
-            </a>
-            <p>Email</p>
-          </div>
-        </div>
-        <!-- / FlexBox Container -->
-      </section>
-      <!-- SECTION CONTACTS -->
+      <!-- FOOTER -->
+      <footer>
+        <span>2020 &copy; Vincent Chilot</span>
+      </footer>
+      <!-- /FOOTER -->
 
     </div>
-    <!-- /useful-width -->
+    <!-- /full-width -->
+  <!-- Scripts -->
+  <script src="./src/js/index.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    <!-- Top link -->
-    <div id="top-link">
-      <a href="#top" title="Link to top of the page">Top of the page</a>
-    </div>
-    <!-- /Top link -->
-
-    <!-- FOOTER -->
-    <footer>
-      <span>2020 &copy; Vincent Chilot</span>
-    </footer>
-    <!-- /FOOTER -->
-
-  </div>
-  <!-- /full-width -->
-
-</body>
-<!-- Scripts -->
-<script src="./src/js/index.js"></script>
+    gtag('config', 'UA-178392896-1');
+  </script>
+  </body>
 </html>

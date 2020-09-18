@@ -150,6 +150,18 @@ a {
 
 #projects-section{
   @include shadow-boxes;
+  
+}
+
+
+#projects{
+  //display: flex;
+  //flex-wrap: wrap;
+  //flex-direction: column;
+}
+
+#projects>* {
+  //flex: 1 1 160px;
 }
 
 #contact-section {
