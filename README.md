@@ -16,7 +16,7 @@ September 2020
 
 ### HTML & CSS
 
-- [My portfolio](https://github.com/Raigyo/summary-portfolio): It's this repo! It use static HTML, Flex and media queries. --WIP
+- [My portfolio](https://github.com/Raigyo/summary-portfolio): It's this repo! It uses static HTML, Flex and media queries. --WIP
 - [SASS & SCSS](https://github.com/Raigyo/sass-scss): Overview of the CSS preprocessor (variables, nesting, mixins, inheritance...).
 - [CSS Flexbox](https://github.com/Raigyo/css-flexbox): Basic layout using Flexbox.
 - [CSS Flexbox - Guide](https://github.com/Raigyo/css-flexbox-guide): Advanced use of Flexbox Layout Module.
