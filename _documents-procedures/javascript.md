@@ -1,3 +1,48 @@
+
+
+# Javascript: Table of content
+
+- [Javascript: overview](#javascript--overview)
+  * [JavaScript Programming Paradigms](#javascript-programming-paradigms)
+    + [Procedural programming](#procedural-programming)
+    + [Functional programming](#functional-programming)
+    + [Prototype-based / object-oriented programming](#prototype-based---object-oriented-programming)
+  * [Data types](#data-types)
+  * [Scope](#scope)
+  * [Context / .this](#context---this)
+  * [Stack data structure](#stack-data-structure)
+  * [Execution Context](#execution-context)
+    + [Global Execution Context](#global-execution-context)
+    + [Function Execution Context](#function-execution-context)
+  * [Execution Stack / Call Stack](#execution-stack---call-stack)
+  * [Execution Context Phases](#execution-context-phases)
+    + [Creation phase](#creation-phase)
+    + [Execution Phase / hoisting](#execution-phase---hoisting)
+  * [Useful links / Sources](#useful-links---sources)
+- [Javascript: concepts](#javascript--concepts)
+  * [Classes](#classes)
+    + [Constructors and methods](#constructors-and-methods)
+    + [Inheritance](#inheritance)
+    + [Accessors: Getters / Setters](#accessors--getters---setters)
+  * [Factory function pattern](#factory-function-pattern)
+  * [(Fat) Arrow Functions](#-fat--arrow-functions)
+  * [Higher-order functions](#higher-order-functions)
+  * [Callback](#callback)
+  * [Recursive functions](#recursive-functions)
+  * [Asynchronous functions](#asynchronous-functions)
+    + [Callback](#callback-1)
+    + [Promises](#promises)
+    + [Async / Await](#async---await)
+  * [Ternary Operator](#ternary-operator)
+  * [Property accessors](#property-accessors)
+  * [Destructuring](#destructuring)
+  * [Useful links / Sources](#useful-links---sources-1)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
+
 # Javascript: overview
 
 **JavaScript®** (often shortened to JS) is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well. It is a prototype-based, multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.
