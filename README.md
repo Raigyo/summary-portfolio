@@ -21,7 +21,7 @@ September 2020
 - [CSS Flexbox](https://github.com/Raigyo/css-flexbox): Basic layout using Flexbox.
 - [CSS Flexbox - Guide](https://github.com/Raigyo/css-flexbox-guide): Advanced use of Flexbox Layout Module.
 - [CSS Grid](https://github.com/Raigyo/css-grid): Basics layout using Grid.
-- [CSS Grid - Guide](https://github.com/Raigyo/css-grid-guided): Advanced use of Grid layout.
+- [CSS Grid - Guide](https://github.com/Raigyo/css-grid-guide): Advanced use of Grid layout.
 - [Bootstrap](https://github.com/Raigyo/bootstrap-corporate) (Becode): Creation of a corporate website using Bootstrap.
 - [Mobirise](https://github.com/Raigyo/mobirise-band): Showcase project for a band using Mobirise Free Website Builder.
 
