@@ -63,9 +63,9 @@ September 2020
 
 ### VueJS
 
-- [Book Shop application](https://github.com/Raigyo/vue-contact-manager): Vue application using VueX, Axios and JSon Server. --WIP
+- [Book Shop application](https://github.com/Raigyo/vuex-shop): Online shop using VueX, Axios and JSon Server.
 - [Ideas manager / Kanban](https://github.com/Raigyo/vuex-ideas): Brainstorming with drag and drop using VueX.
-- [Contact Manager](https://github.com/Raigyo/vue-contact-manager): Vue application using Google Cloud Firestore to store datas.
+- [Contact Manager](https://github.com/Raigyo/vue-contact-manager): Contact cards app using Google Cloud Firestore to store datas.
 
 ### WebGL
 
