@@ -12,7 +12,6 @@ $elementsBackgroundColor: #1D1D1D;
 
 @mixin shadow-boxes {
   background: white;
-  padding-bottom: 15px;
   border: 1px rgb(172, 170, 170) solid;
   border-radius: 10px;
   overflow: hidden;
@@ -137,8 +136,9 @@ a {
 
 .capture img {
   width: 100%;
-  margin-bottom: 25px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  margin: 25px 0px;
+  //margin-bottom: 25px;
+  //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .logo-contact {

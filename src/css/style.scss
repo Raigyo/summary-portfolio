@@ -150,9 +150,7 @@ a {
 
 #projects-section{
   @include shadow-boxes;
-  
 }
-
 
 #projects{
   //display: flex;
@@ -199,9 +197,9 @@ a {
   }
 
   img {
-    min-width: 400px;
+    width: 400px;
     height: 266px;
-    align-items: center;
+    margin-left: -25%;
     transition: 0.5s all ease-in-out;
     filter: grayscale(100%) blur(0.5px);
   }
@@ -271,7 +269,7 @@ a {
 /* MEDIA QUERIES */
 @media all and (max-width: 1000px){
   .project { width: 100%; margin: 15px auto;}
-  .project img { width: 100%; min-width: auto; height: auto;}
+  .project img { width: 100%; min-width: auto; height: auto; margin-left: 0%;}
   .project .picture { width: 100%; height: auto;}
   #contact-section { width: 100%; flex-wrap: wrap; margin: 15px auto;}
   #contact-section img { width: 50%; min-width: auto; height: auto;}
