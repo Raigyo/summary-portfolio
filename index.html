@@ -24,6 +24,16 @@
     <link href="./src/css/style.scss" rel="stylesheet">
   </head>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178392896-1');
+  </script>
+
   <body>
     <!-- full-width -->
     <div class="full-width">
@@ -31,7 +41,7 @@
       <!-- HEADER -->
       <header>
         <div>
-          <img src="./src/img/logo.png" alt="Logo with my nickname" title="Logo" id="logo"/>
+          <img src="./src/img/logo.png" alt="Website logo" title="Website logo" id="logo"/>
         </div>
         <span class="separator"></span>
         <h1>Vincent Chilot</h1>
@@ -660,14 +670,5 @@
     <!-- /full-width -->
   <!-- Scripts -->
   <script src="./src/js/index.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-178392896-1');
-  </script>
   </body>
 </html>
