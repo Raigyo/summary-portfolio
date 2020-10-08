@@ -4,13 +4,18 @@
 
 September 2020
 
-> 🔨  This is a summary of my Github and all my repositories. Soon a link to my Portfolio (WIP).
+> 🔨  This is a summary of my Github and all my repositories. You could find a link to my portfolio.
 
 * * *
 
 
 ![Avatar Github](_readme-img/avatar.png)
 
+## Portfolio
+
+Please visit my website with my portfolio: [https://raigyo-dev.be/index.html](https://raigyo-dev.be/index.html)
+
+<a href="https://raigyo-dev.be/index.html">![My portfolio online](_readme-img/portfolio.png)</a>
 
 ## Repositories: personnal trainings and projects, Becode training
 
@@ -40,9 +45,10 @@ September 2020
 
 - [Bar Cat](https://github.com/Raigyo/drupal-bar-cat): A blog made with Drupal 9.
 
-### NodeJS
+### Javascript & NodeJS
 
 - [Libray Management](https://github.com/Raigyo/express-locallibrary): REST API with Express.js using Mongoose ORM / MongoDB Atlas.
+- [Javascript for the web](https://github.com/Raigyo/becode-js-for-the-web): Becode exercises about javascript for the web: use of Parcel.JS and strict mode, forms, API requests...
 
 ### React
 

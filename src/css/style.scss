@@ -131,6 +131,11 @@ a {
   }
 }
 
+span {
+  display: block;
+  text-transform: uppercase;
+}
+
 /* ID */
 
 #summary{
@@ -150,16 +155,6 @@ a {
 
 #projects-section{
   @include shadow-boxes;
-}
-
-#projects{
-  //display: flex;
-  //flex-wrap: wrap;
-  //flex-direction: column;
-}
-
-#projects>* {
-  //flex: 1 1 160px;
 }
 
 #contact-section {
@@ -188,14 +183,6 @@ a {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 
-  &:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    img{
-      transform: scale(1.1);
-      filter: none;
-    }
-  }
-
   img {
     width: 400px;
     height: 266px;
@@ -204,14 +191,25 @@ a {
     filter: grayscale(100%) blur(0.5px);
   }
 
-  span {
-    display: block;
-    text-transform: uppercase;
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    img{
+      transform: scale(1.1);
+      filter: none;
+    }
   }
 
   .date-project {
     font-size: 0.7em;
   }
+}
+
+.picture{
+  width: 400px;
+  height: 266px;
+  z-index: 4;
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
 .logo-contact {
@@ -231,13 +229,6 @@ a {
   img:hover {
     transform: scale(1.2);
   }
-}
-
-.picture{
-  width: 400px;
-  height: 266px;
-  overflow: hidden;
-  margin-bottom: 15px;
 }
 
 .separator {
