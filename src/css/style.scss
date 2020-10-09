@@ -47,6 +47,10 @@ nav {
       }
     }
   }
+
+  .selected {
+    font-weight: bold;
+  }
 }
 
 article {
@@ -143,8 +147,15 @@ span {
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 25px;
+
+  div{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 #logo {
@@ -170,6 +181,18 @@ span {
   text-align: right;
   margin-right: 20px;
   padding-bottom: 25px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 /* CLASSES */

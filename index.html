@@ -24,12 +24,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Raigyo-dev" />
     <meta property="og:description" content="My portfolio as Front End Developer!" />
-    <meta property="og:image" content="./src/img/logo.png" />
+    <meta property="og:image" content="./src/img/logos/logo-social.png" />
     <!-- meta name="twitter:site" content="@userName" -->
     <!-- meta name="twitter:creator" content="@creatorName" -->
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="./src/img/favicon.png" rel="icon" type="image/png">
+    <link href="./src/img/icons/favicon.png" rel="icon" type="image/png">
     <link href="./src/css/style.scss" rel="stylesheet">
   </head>
 
@@ -40,7 +40,7 @@
       <!-- HEADER -->
       <header>
         <div>
-          <img src="./src/img/logo.png" alt="Website logo" title="Website logo" id="logo"/>
+          <img src="./src/img/logos/logo-site.png" alt="Website logo" title="Website logo" id="logo"/>
         </div>
         <span class="separator"></span>
         <h1>Vincent Chilot</h1>
@@ -51,9 +51,9 @@
       <!-- NAVIGATION -->
       <nav>
         <ul>
-          <li><a href="index.html" title="Link to Homepage">Home</a></li>
-          <li><a href="#projects-section" title="Link to projects section">Projects</a></li>
-          <li><a href="#contact-section" title="Link to contact section">Contact</a></li>
+          <li class="selected">Home</li>
+          <li><a href="#projects-header" title="Link to projects section">Projects</a></li>
+          <li><a href="#contact-header" title="Link to contact section">Contact</a></li>
         </ul>
       </nav>
       <!-- /NAVIGATION -->
@@ -64,16 +64,21 @@
         <!-- SECTION INTRO -->
         <h3>Welcome</h3>
         <section id="summary">
-          <p>
-            Bachelor in communication,
-            I'm' active in the field of ICT and web development since 2001.
-            Here is my portfolio including a large part of my projects.
-          </p>
+            <div>
+              <p>
+                Bachelor in communication,
+                I'm' active in the field of ICT and web development since 2001.
+              </p>
+              <p>
+                Here is my portfolio including a part of my recent projects.
+              </p>
+            </div>
+          </section>
         </section>
         <!-- /SECTION INTRO -->
 
         <!-- SECTION PROJECTS -->
-        <h3>Projects</h3>
+        <h3 id="projects-header">Projects</h3>
         <section id="projects-section">
           <!-- FlexBox Container -->
           <div id="projects">
@@ -624,14 +629,14 @@
         <!-- /SECTION PROJECTS -->
 
         <!-- SECTION CONTACTS -->
-        <h3>Contact</h3>
+        <h3 id="contact-header">Contact</h3>
         <section>
           <!-- FlexBox Container -->
           <div id="contact-section">
             <div class="logo-contact">
               <a href="https://github.com/Raigyo" target="_blank">
                 <img
-                  src="./src/img/logo-github.png"
+                  src="./src/img/icons/icon-github.png"
                   alt="Logo Github"
                   title="To my Github"
                 />
@@ -641,7 +646,7 @@
             <div class="logo-contact">
               <a href="https://www.linkedin.com/in/vincent-chilot/" target="_blank">
                 <img
-                  src="./src/img/logo-linkedin.png"
+                  src="./src/img/icons/icon-linkedin.png"
                   alt="Logo linkedIn"
                   title="To my LinkedIn"
                 />
@@ -651,7 +656,7 @@
             <div class="logo-contact">
               <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%69%6E%63%65%6E%74%2E%63%68%69%6C%6F%74%40%67%6D%61%69%6C%2E%63%6F%6D">
                 <img
-                  src="./src/img/logo-email.png"
+                  src="./src/img/icons/icon-email.png"
                   alt="Logo Email"
                   title="Email me"
                 />
@@ -668,7 +673,12 @@
 
       <!-- Top link -->
       <div id="top-link">
-        <a href="#top" title="Link to top of the page">Top of the page</a>
+        <a href="#top" title="Link to top of the page">
+          <img
+            src="./src/img/icons/icon-top.png"
+            alt="Top of the page icon"
+          />
+        </a>
       </div>
       <!-- /Top link -->
 

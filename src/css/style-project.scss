@@ -137,6 +137,7 @@ h2 {
   font-family: 'Open Sans', sans-serif;
   font-size-adjust: 1.5em;
   text-align: center;
+  text-transform: uppercase;
   margin: auto;
   padding-bottom: 25px;
 
@@ -194,9 +195,10 @@ a {
 #summary{
   @include shadow-boxes;
   text-align: left;
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
+  padding: 25px 25%;
   margin-bottom: 25px;
 }
 
@@ -214,6 +216,19 @@ a {
   text-align: right;
   margin-right: 20px;
   padding-bottom: 25px;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+
+  a {
+    margin-left: 20px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 /* CONTAINER */
