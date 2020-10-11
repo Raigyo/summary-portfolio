@@ -93,7 +93,7 @@ Please visit my website with my portfolio: [https://raigyo-dev.be/index.html](ht
 ### Becode group works
 
 - [Bad Ideas Kanban](https://github.com/Raigyo/jepsen-js-web-majopovi): **Javascript** CRUD and Api request. A group exercice for getting better at working together with **Git**.
-- [Blog PHP](https://github.com/Raigyo/blog-php): Client server application using **PHP** that allows users to post articles, comment them or delete them according their user rights. Using **PHP Slim framework**.
+- [Blog PHP](https://github.com/Raigyo/becode-php-blog): Client server application using **PHP** that allows users to post articles, comment them or delete them according their user rights. Using **PHP Slim framework**.
 - [Event Manager](https://github.com/Raigyo/group-project-react-laravel): Event manager using **React** as front-end and **Laravel** that provides the API.
 - [Event Manager (fork)](https://github.com/Raigyo/group-project-react-laravel-fork): Same application using **React** and **Laravel** but forked from the work of another group. Bugs had to be corrected and new features had to be implemented.
 - [Super Socket Fighter](https://github.com/Raigyo/SuperSocketFighter): Videogame online using **React** as client-side and **Node.JS/Websockets/Socket IO** as server-side.
