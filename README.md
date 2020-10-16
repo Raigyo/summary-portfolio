@@ -22,7 +22,8 @@ Please visit my website with my portfolio: [https://raigyo-dev.be/index.html](ht
 ### HTML & CSS
 
 - [My portfolio](https://github.com/Raigyo/summary-portfolio): It's this repo! It uses static HTML, Flex and media queries.
-- [SASS & SCSS](https://github.com/Raigyo/sass-scss): Overview of the CSS preprocessor (variables, nesting, mixins, inheritance...).
+
+- [CSS Animations](https://github.com/Raigyo/css-animations): How to animate with CSS.
 - [CSS Flexbox](https://github.com/Raigyo/css-flexbox): Basic layout using Flexbox.
 - [CSS Flexbox - Guide](https://github.com/Raigyo/css-flexbox-guide): Advanced use of Flexbox Layout Module.
 - [CSS Grid](https://github.com/Raigyo/css-grid): Basics layout using Grid.
@@ -32,6 +33,7 @@ Please visit my website with my portfolio: [https://raigyo-dev.be/index.html](ht
 
 ### Tools and Configs
 
+- [SASS & SCSS](https://github.com/Raigyo/sass-scss): Overview of the CSS preprocessor (variables, nesting, mixins, inheritance...).
 - [Parcel, Module Bundler](https://github.com/Raigyo/parcel-bundler): How to configurate Parcel. Eslint+Prettier, Babel, SASS, CSS postprocessor...
 - [Webpack overview](https://github.com/Raigyo/webpack-overview): Webpack configuration with Babel, Sass, Eslint, Dev Server...
 - [Webpack for React](https://github.com/Raigyo/webpack-react-hot-reload): Webpack with a focus on hot reload using Hot Module Replacement (HMR) in React with classes and persistant states during reload.
