@@ -8,7 +8,7 @@ October 2020
 
 ## Portfolio
 
-Please visit my website with my portfolio: [https://raigyo-dev.be/index.html](https://raigyo-dev.be/index.html)
+Please visit my website with my portfolio: [https://raigyo-dev.be](https://raigyo-dev.be)
 
-<a href="https://raigyo-dev.be/index.html" target="_blank">![My portfolio online](_readme-img/portfolio.png)</a>
+<a href="https://raigyo-dev.be" target="_blank">![My portfolio online](_readme-img/portfolio.png)</a>
 
