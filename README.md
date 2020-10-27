@@ -6,9 +6,6 @@ October 2020
 
 * * *
 
-
-![Avatar Github](_readme-img/avatar.png)
-
 ## Portfolio
 
 Please visit my website with my portfolio: [https://raigyo-dev.be/index.html](https://raigyo-dev.be/index.html)
