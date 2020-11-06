@@ -3,9 +3,9 @@
 $mainBackgroundColor: #F4F7F6;
 $elementsBackgroundColor: #1D1D1D;
 
-/* Mixin */
+/* Placeholder */
 
-@mixin shadow-boxes {
+%shadow-boxes {
   background: white;
   padding-bottom: 15px;
   border: 1px rgb(172, 170, 170) solid;
@@ -87,12 +87,20 @@ body {
 h1 {
   margin-top: 0;
   padding-top: 0;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size-adjust: 1.5em;
+  font-size: 1.6em;
   margin: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 
@@ -100,6 +108,9 @@ h3 {
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-weight: bold;
 
   &:before {
     content: "« ";
@@ -114,6 +125,11 @@ h3 {
 
 h4 {
   font-size: 1.2em;
+  font-weight: bold;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   text-transform: uppercase;
 
   &:before {
@@ -129,6 +145,8 @@ h4 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: blue;
 
   &:hover {
     text-decoration: underline;
@@ -140,10 +158,18 @@ span {
   text-transform: uppercase;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 /* ID */
 
 #summary{
-  @include shadow-boxes;
+  @extend %shadow-boxes;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -165,11 +191,11 @@ span {
 }
 
 #projects-section{
-  @include shadow-boxes;
+  @extend %shadow-boxes;
 }
 
 #contact-section {
-  @include shadow-boxes;
+  @extend %shadow-boxes;
   display: flex;
   padding: 30px;
   margin-bottom: 50px;
@@ -201,10 +227,11 @@ span {
   width: 300px;
   margin: 30px;
   display: inline-block;
-  @include shadow-boxes;
+  @extend %shadow-boxes;
   border: 0px black solid;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  margin-bottom: 25px;
 
   img {
     width: 400px;

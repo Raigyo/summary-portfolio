@@ -8,9 +8,9 @@ $elementsBackgroundColor: #1D1D1D;
 //   --elementsBackgroundColor: #1D1D1D;
 // }
 
-/* Mixin */
+/* Placeholder */
 
-@mixin shadow-boxes {
+%shadow-boxes {
   background: white;
   border: 1px rgb(172, 170, 170) solid;
   border-radius: 10px;
@@ -56,7 +56,7 @@ nav {
 }
 
 article {
-  @include shadow-boxes;
+  @extend %shadow-boxes;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -134,12 +134,12 @@ h1 {
 }
 
 h2 {
-  font-family: 'Open Sans', sans-serif;
-  font-size-adjust: 1.5em;
+  font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
-  margin: auto;
+  padding-top: 25px;
   padding-bottom: 25px;
+  font-weight: bold;
 
   &:before {
     content: "« ";
@@ -154,9 +154,20 @@ h2 {
 
 a {
   text-decoration: none;
+  cursor: pointer;
+  color: blue;
+
   &:hover {
     text-decoration: underline;
   }
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 /* CLASSES */
@@ -190,10 +201,14 @@ a {
   padding: 8px;
 }
 
+.capture-border{
+  border: 1px black solid;
+}
+
 /* ID */
 
 #summary{
-  @include shadow-boxes;
+  @extend %shadow-boxes;
   text-align: left;
   display: block;
   margin-left: auto;
@@ -204,7 +219,7 @@ a {
 
 
 #contact-section {
-  @include shadow-boxes;
+  @extend %shadow-boxes;
   display: flex;
   padding: 30px;
   margin-bottom: 50px;

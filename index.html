@@ -42,11 +42,14 @@
     <meta property="og:image" content="./src/img/logos/logo-opengraph-image.png" />
     <!-- meta name="twitter:site" content="@userName" -->
     <!-- meta name="twitter:creator" content="@creatorName" -->
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Icons / Fonts / Styles -->
+    <link href="./src/img/icons/favicon.ico" rel="shortcut icon">
     <link href="./src/img/icons/favicon.png" rel="icon" type="image/png">
-    <link href="./src/css/style.scss" rel="stylesheet">
     <link href="./src/img/icons/icon-apple-touch.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="./src/css/reset.scss" rel="stylesheet">
+    <link href="./src/css/style.scss" rel="stylesheet">
+    <link href="./src/manifest.webmanifest" rel="manifest"/>
   </head>
 
   <body>
@@ -709,6 +712,8 @@
             <div class="logo-contact">
               <a
                 href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%69%6E%63%65%6E%74%2E%63%68%69%6C%6F%74%40%67%6D%61%69%6C%2E%63%6F%6D"
+                target="_blank"
+                rel="noreferrer"
                 onclick="gtag('event', 'clic', {'event_category': 'to email', 'event_label': 'open-mailbox'});"
               >
                 <img
@@ -718,6 +723,19 @@
                 />
               </a>
               <p>Email</p>
+            </div>
+            <div class="logo-contact">
+              <a
+                href="https://drive.google.com/file/d/1erDpdBCUSD0jHNzver7oh6GsQpwetxDe/view"
+                onclick="gtag('event', 'clic', {'event_category': 'to my cv', 'event_label': 'open-cv'});"
+              >
+                <img
+                  src="./src/img/icons/icon-resume.png"
+                  alt="Logo resume"
+                  title="External link to emy resume"
+                />
+              </a>
+              <p>My resume</p>
             </div>
           </div>
           <!-- / FlexBox Container -->
@@ -741,7 +759,7 @@
 
       <!-- FOOTER -->
       <footer>
-        <span>2020 &copy; Vincent Chilot - Last update: October 2020</span>
+        <span>2020 &copy; Vincent Chilot - Last update: November 2020</span>
       </footer>
       <!-- /FOOTER -->
 
