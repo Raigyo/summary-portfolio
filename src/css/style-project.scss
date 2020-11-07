@@ -53,6 +53,11 @@ nav {
       }
     }
   }
+
+  //Safari accessibility
+  ul li::before {
+    content: "\200B";
+  }
 }
 
 article {
@@ -222,6 +227,15 @@ p {
 
   p {
     line-height: 20px;
+  }
+
+  ul{
+    list-style-type: circle;
+  }
+
+  li {
+    padding: 5px;
+    margin-left: 35px;
   }
 }
 
