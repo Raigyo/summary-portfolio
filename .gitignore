@@ -7,6 +7,7 @@ videos/
 dist/
 build/
 Préservation automatique Corel/
+package-lock.json
 
 # dependencies
 /node_modules
