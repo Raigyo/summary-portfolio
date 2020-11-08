@@ -1,0 +1,11 @@
+{
+  "modules": false,
+  "plugins": {
+    "autoprefixer": {
+      "grid": true
+    },
+    "css-mqpacker": {
+      "sort": true
+    }
+  }
+}

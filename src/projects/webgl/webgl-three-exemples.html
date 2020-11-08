@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-178392896-1', {'siteSpeedSampleRate':100});
+      // Feature detects Navigation Timing API support.
+      if (window.performance) {
+        // Gets the number of milliseconds since page load
+        // (and rounds the result since the value must be an integer).
+        var timeSincePageLoad = Math.round(performance.now());
+
+        // Sends the timing event to Google Analytics.
+        gtag('event', 'timing_complete', {
+          'name': 'load',
+          'value': timeSincePageLoad,
+          'event_category': 'JS Dependencies'
+        });
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="language" content="english">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio - WebGL Three.js 3D Library | Vincent Chilot</title>
+    <meta name="description" content="My portfolio - WebGL Three.js 3D Library">
+    <meta name="author" content="Vincent Chilot">
+    <meta
+      name="keywords"
+      content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, three.js, webgl"
+    >
+    <meta name=”robots” content=”index,follow”>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Open graph -->
+    <meta
+      property="og:url"
+      content="https://raigyo-dev.be/src/projects/webgl/webgl-three-exemples.html"
+    />
+    <meta property="og:type" content="projects" />
+    <meta property="og:title" content="Raigyo-dev: My portfolio" />
+    <meta property="og:description" content="WebGL / Three.JS | Three.js main concepts" />
+    <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
+    <!--  Icons / Styles -->
+    <link href="../../css/reset.scss" rel="stylesheet">
+    <link href="../../css/style-project.scss" rel="stylesheet">
+    <link href="../../img/icons/favicon.ico" rel="shortcut icon">
+    <link href="../../img/icons/favicon.png" rel="icon" type="image/png">
+    <link href="../../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
+    <!-- link href="../../manifest.webmanifest" rel="manifest"/ -->
+  </head>
+
+  <body id="top">
+    <!-- full-width -->
+    <div class="full-width">
+          <!-- HEADER -->
+          <header>
+            <h1>WebGL / Three.JS: <em>Three.js main concepts</em></h1>
+          </header>
+          <!-- /HEADER -->
+
+          <!-- NAVIGATION -->
+          <nav>
+            <ul>
+              <li><a href="../../../index.html#projects-webgl" title="Homepage">Home</a></li>
+              <li>WebGL / Three.JS | Three.js main concepts</li>
+            </ul>
+          </nav>
+          <!-- /NAVIGATION -->
+
+      <!-- useful-width -->
+      <main class="useful-width">
+
+        <!-- SECTION SUMMARY -->
+        <h2>Summary</h2>
+        <section id="summary">
+          <p>
+            Three.js main concepts.
+            Three.js is a cross-browser JavaScript library and application programming
+            interface (API) used to create and display animated 3D computer graphics in a web browser.
+            Three.js uses WebGL.
+          </p>
+        </section>
+        <!-- / SECTION SUMMARY -->
+
+        <h2>Medias</h2>
+        <!-- ARTICLE: Medias -->
+        <article>
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture">
+              <img
+                src="../../img/webgl/web-three-00.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture">
+              <img
+                src="../../img/webgl/web-three-01.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture">
+              <img
+                src="../../img/webgl/web-three-02.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+        </article>
+        <!-- / ARTICLE: Medias -->
+
+        <!-- SECTION LINKS -->
+        <h2>Links</h2>
+        <section>
+          <!-- FlexBox Container -->
+          <div id="contact-section">
+            <div class="logo-contact">
+              <a
+                href="https://github.com/Raigyo/three-js"
+                target="_blank"
+                rel="noreferrer"
+                onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});"
+              >
+                <img src="../../img/icons/icon-github.png" alt="Logo Github"
+                title="External link to the project github repository" />
+              </a>
+              <p>Github repository:</p>
+              <p>three-js</p>
+            </div>
+            <div class="logo-contact">
+              <a
+                href="https://three-js-first-steps.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer"
+                onclick="gtag('event', 'clic', {'event_category': 'to projet online', 'event_label': 'open-project-online'});"
+              >
+                <img src="../../img/icons/icone-online.png" alt="Logo Github"
+                title="External link to the online version" />
+              </a>
+              <p>Online version:</p>
+              <p>Three.js overview</p>
+            </div>
+          </div>
+
+          <!-- / FlexBox Container -->
+        </section>
+        <!-- / SECTION LINKS -->
+
+      </main>
+      <!-- /useful-width -->
+
+      <!-- Home / Top links -->
+      <div id="top-link">
+        <a href="../../../index.html#projects-webgl" title="Link to Homepage">
+          <img
+            src="../../img/icons/icon-homepage.png"
+            alt="Homepage icon"
+          />
+        </a>
+        <a href="#top" title="Back to top of the page">
+          <img
+            src="../../img/icons/icon-top.png"
+            alt="Top of the page icon"
+          />
+        </a>
+      </div>
+      <!-- / Home / Top links -->
+
+      <!-- FOOTER -->
+      <footer>
+        <span>2020 &copy; Vincent Chilot</span>
+      </footer>
+      <!-- /FOOTER -->
+
+    </div>
+    <!-- /full-width -->
+
+  </body>
+</html>

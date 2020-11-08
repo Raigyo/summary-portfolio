@@ -1,0 +1,49 @@
+/* Elements */
+
+video, audio, .controls {
+  width: 100%;
+}
+
+video {
+  margin-bottom: -5px;
+}
+
+button {
+  display: block;
+  float: left;
+  border: 0;
+  margin-right: 2px;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+
+  &:hover,&:focus{
+    background-color: #ddd;
+  }
+
+  &:active {
+    background-color: #ccc;
+  }
+}
+
+/* Classes */
+
+.player {
+  width: 70%;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+.controls {
+  height: 36px;
+
+  div {
+    font-size: 12px;
+    //display: inline-block;
+    line-height: 36px;
+    width: 45px;
+    float: right;
+  }
+}
+
+

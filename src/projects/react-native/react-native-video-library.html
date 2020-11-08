@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-178392896-1', {'siteSpeedSampleRate':100});
+      // Feature detects Navigation Timing API support.
+      if (window.performance) {
+        // Gets the number of milliseconds since page load
+        // (and rounds the result since the value must be an integer).
+        var timeSincePageLoad = Math.round(performance.now());
+
+        // Sends the timing event to Google Analytics.
+        gtag('event', 'timing_complete', {
+          'name': 'load',
+          'value': timeSincePageLoad,
+          'event_category': 'JS Dependencies'
+        });
+      }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="language" content="english">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio - React Native Video Library | Vincent Chilot</title>
+    <meta name="description" content="My portfolio - React Native Video Library">
+    <meta name="author" content="Vincent Chilot">
+    <meta
+      name="keywords"
+      content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, react native, redux"
+    >
+    <meta name=”robots” content=”index,follow”>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Open graph -->
+    <meta
+      property="og:url"
+      content="https://raigyo-dev.be/src/projects/react-native/react-native-video-library.html"
+    />
+    <meta property="og:type" content="projects" />
+    <meta property="og:title" content="Raigyo-dev: My portfolio" />
+    <meta property="og:description" content="React Native | Video Library" />
+    <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
+    <!--  Icons / Styles -->
+    <link href="../../css/reset.scss" rel="stylesheet">
+    <link href="../../css/style-project.scss" rel="stylesheet">
+    <link href="../../img/icons/favicon.ico" rel="shortcut icon">
+    <link href="../../img/icons/favicon.png" rel="icon" type="image/png">
+    <link href="../../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
+    <!-- link href="../../manifest.webmanifest" rel="manifest"/ -->
+  </head>
+
+  <body id="top">
+    <!-- full-width -->
+    <div class="full-width">
+          <!-- HEADER -->
+          <header>
+            <h1>React Native: <em>My Video Library</em></h1>
+          </header>
+          <!-- /HEADER -->
+
+          <!-- NAVIGATION -->
+          <nav>
+            <ul>
+              <li><a href="../../../index.html#projects-react-native" title="Homepage">Home</a></li>
+              <li>React Native | Video Library</li>
+            </ul>
+          </nav>
+          <!-- /NAVIGATION -->
+
+      <!-- useful-width -->
+      <main class="useful-width">
+
+        <!-- SECTION SUMMARY -->
+        <h2>Summary</h2>
+        <section id="summary">
+          <p>
+            Video Library mobile application displaying
+            movies and their descriptions using API TMDB.
+          </p>
+          <p>The navigation bar will let you choose between 3 views:</p>
+          <p>
+            Search view: You can display a page with a selected movie and its datas
+            and add it to your favourites. You can also share your favourite movie with
+            your friend using a specific share button according the OS.
+          </p>
+          <ul>
+            <li>Favourite movies view: You can see your favourite movie list.</li>
+            <li>Latest movies view: You can see the latest movies available on theatre.</li>
+            <li>Extra features:</li>
+          </ul>
+          <ul>
+            <li>You can add an avatar in the application using your camera or your photo-gallery</li>
+            <li>Works on Android and IOS</li>
+            <li>Data is persistent</li>
+          </ul>
+          </p>
+        </section>
+        <!-- / SECTION SUMMARY -->
+
+        <h2>Medias</h2>
+        <!-- ARTICLE: Medias -->
+        <article>
+          <!-- SECTION LOGO BECODE -->
+          <section class="picture-project">
+            <div class="logo-becode">
+              <img
+                src="../../img/logos/logo-becode.png"
+                alt="Becode logo"
+              />
+            </div>
+          </section>
+          <!-- /SECTION LOGO BECODE -->
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture">
+              <img
+                class="capture-border"
+                src="../../img/react-native/react-native-video-library-00.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture-small">
+              <img
+                class="capture-border"
+                src="../../img/react-native/react-native-video-library-01.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture-small">
+              <img
+                class="capture-border"
+                src="../../img/react-native/react-native-video-library-02.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+          <!-- SECTION CAPTURE -->
+          <section class="picture-project">
+            <div class="capture-small">
+              <img
+                class="capture-border"
+                src="../../img/react-native/react-native-video-library-03.webp"
+                alt="Screen capture of the website"
+              />
+            </div>
+          </section>
+          <!-- / SECTION CAPTURE -->
+        </article>
+        <!-- / ARTICLE: Medias -->
+
+        <!-- SECTION LINKS -->
+        <h2>Links</h2>
+        <section>
+          <!-- FlexBox Container -->
+          <div id="contact-section">
+            <div class="logo-contact">
+              <a
+                href="https://github.com/Raigyo/video-library"
+                target="_blank"
+                rel="noreferrer"
+                onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});"
+              >
+                <img src="../../img/icons/icon-github.png" alt="Logo Github"
+                title="External link to the project github repository" />
+              </a>
+              <p>Github repository:</p>
+              <p>video-library</p>
+            </div>
+            <div class="logo-contact">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.myvideolibrary"
+                target="_blank"
+                rel="noreferrer"
+                onclick="gtag('event', 'clic', {'event_category': 'to google play', 'event_label': 'open-google-play'});"
+              >
+                <img src="../../img/icons/icon-android.png" alt="Logo Github"
+                title="External link to the Google Play Store" />
+              </a>
+              <p>Google Play:</p>
+              <p>My Video Library</p>
+            </div>
+          </div>
+
+          <!-- / FlexBox Container -->
+        </section>
+        <!-- / SECTION LINKS -->
+
+      </main>
+      <!-- /useful-width -->
+
+      <!-- Home / Top links -->
+      <div id="top-link">
+        <a href="../../../index.html#projects-react-native" title="Link to Homepage">
+          <img
+            src="../../img/icons/icon-homepage.png"
+            alt="Homepage icon"
+          />
+        </a>
+        <a href="#top" title="Back to top of the page">
+          <img
+            src="../../img/icons/icon-top.png"
+            alt="Top of the page icon"
+          />
+        </a>
+      </div>
+      <!-- / Home / Top links -->
+
+      <!-- FOOTER -->
+      <footer>
+        <span>2020 &copy; Vincent Chilot</span>
+      </footer>
+      <!-- /FOOTER -->
+
+    </div>
+    <!-- /full-width -->
+
+  </body>
+</html>
