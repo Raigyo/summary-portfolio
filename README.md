@@ -11,7 +11,7 @@ October 2020
 Please visit my website with my portfolio: [https://raigyo-dev.be](https://raigyo-dev.be)
 
 <h1 align="center">
-    <img src="img_readme/portfolio.png">
+    <img src="_readme-img/portfolio.png">
 </h1>
 
 ## Useful links
