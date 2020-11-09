@@ -10,9 +10,9 @@ October 2020
 
 Please visit my website with my portfolio: [https://raigyo-dev.be](https://raigyo-dev.be)
 
-<a href="https://raigyo-dev.be" target="_blank">
-  ![My portfolio online](_readme-img/portfolio.png)
-</a>
+<h1 align="center">
+    <img src="img_readme/portfolio.png">
+</h1>
 
 ## Useful links
 
