@@ -21,6 +21,7 @@ $elementsBackgroundColor: #1D1D1D;
 /* SECTIONS */
 
 section, header, footer {
+  font-size: 18px;
   text-align: center;
 }
 
@@ -62,6 +63,7 @@ nav {
 
 article {
   @extend %shadow-boxes;
+  background: rgba(60, 72, 88, 0.14);
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -181,7 +183,6 @@ p {
   width: 300px;
   margin: 30px;
   display: inline-block;
-  background: white;
   padding-bottom: 15px;
   border: 0px black solid;
   border-radius: 10px;
@@ -218,6 +219,7 @@ p {
 
 #summary{
   @extend %shadow-boxes;
+  background: rgba(60, 72, 88, 0.14);
   text-align: left;
   display: block;
   margin-left: auto;
@@ -242,6 +244,7 @@ p {
 
 #contact-section {
   @extend %shadow-boxes;
+  background: rgba(60, 72, 88, 0.14);
   display: flex;
   padding: 30px;
   margin-bottom: 50px;
