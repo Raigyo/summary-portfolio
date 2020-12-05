@@ -246,10 +246,14 @@ p {
   @extend %shadow-boxes;
   background: rgba(60, 72, 88, 0.14);
   display: flex;
+  flex-wrap: wrap;
   padding: 30px;
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
+  .note{
+    flex-basis: 100%;
+  }
 }
 
 #top-link {
@@ -260,6 +264,11 @@ p {
   img {
     width: 40px;
     height: 40px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  img:hover {
+    transform: scale(1.1);
   }
 
   a {
@@ -292,12 +301,13 @@ p {
 /* MEDIA QUERIES */
 
 @media all and (max-width: 1000px){
-  article { width: 100%; margin: 15px auto;}
-  .article img { width: 100%; min-width: auto; height: auto;}
-  .project .capture { width: 100%; height: auto;}
-  #contact-section { width: 100%; flex-wrap: wrap; margin: 15px auto;}
-  #contact-section img { width: 50%; min-width: auto; height: auto;}
-  #contact-section .logo-contact { width: 50%; height: auto;}
+  article { width: 100%; margin: 15px auto; }
+  .article img { width: 100%; min-width: auto; height: auto; }
+  .project .capture { width: 100%; height: auto; }
+  #contact-section { width: 100%; flex-wrap: wrap; margin: 15px auto; }
+  #contact-section img { width: 50%; min-width: auto; height: auto; }
+  #contact-section .logo-contact { height: auto; }
+  #contact-section .logo-contact p { white-space: nowrap; }
   header h1 { width: 90%; }
 }
 
