@@ -9,164 +9,207 @@
 
 <url>
   <loc>https://raigyo-dev.be/index.html</loc>
-  <lastmod>2020-10-09T16:51:41+00:00</lastmod>
+  <lastmod>2021-01-19T16:27:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://raigyo-dev.be/src/projects/html-css/html-css-material-design.html</loc>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/html-css/html-css-animate.html</loc>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://raigyo-dev.be/src/projects/html-css/html-css-grid.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/html-css/html-css-flexbox.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/html-css/html-css-mobirise.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/html-css/html-css-bootstrap.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/cms/cms-wordpress-foo-dog.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <loc>https://raigyo-dev.be/src/projects/js-nodejs/node-rest-members.html</loc>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/cms/cms-drupal-bar-cat.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <loc>https://raigyo-dev.be/src/projects/js-nodejs/d3js.html</loc>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/js-nodejs/node-library-management.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/js-nodejs/javascript-for-the-web.html</loc>
-  <lastmod>2020-10-09T16:52:29+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/react/react-gatsby-portfolio.html</loc>
+  <lastmod>2021-02-08T11:59:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/react/react-twitch-clone.html</loc>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react/react-strapi-store.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react/react-netflix.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react/react-360.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react/react-character-manager.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react-native/react-native-facebook-login.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react-native/react-native-tinder-ui.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/react-native/react-native-video-library.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/vue/vuex-shop.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/vue/vuex-ideas.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/vue/vue-contact-manager.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/svelte/svelte-miniblog.html</loc>
+  <lastmod>2021-01-19T16:28:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/svelte/svelte-expenses.html</loc>
+  <lastmod>2021-01-19T16:28:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/svelte/svelte-pokedex.html</loc>
+  <lastmod>2021-01-19T16:28:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/angular/angular-restaurant.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/webgl/webgl-three-exemples.html</loc>
-  <lastmod>2020-10-09T16:52:32+00:00</lastmod>
+  <loc>https://raigyo-dev.be/src/projects/cms/cms-wordpress-foo-dog.html</loc>
+  <lastmod>2021-01-19T16:28:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/webgl/webgl-babylon-fps.html</loc>
-  <lastmod>2020-10-09T16:52:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/webgl/web-gl-unity-terminal-hacker.html</loc>
-  <lastmod>2020-10-09T16:52:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/unity/unity-archviz-vr.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/unity/unity-archviz.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/unity/unity-game-forest.html</loc>
-  <lastmod>2020-10-09T16:52:31+00:00</lastmod>
+  <loc>https://raigyo-dev.be/src/projects/cms/cms-drupal-bar-cat.html</loc>
+  <lastmod>2021-01-19T16:28:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/php/php-laravel-crud.html</loc>
-  <lastmod>2020-10-09T16:52:30+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/webgl/webgl-three-exemples.html</loc>
+  <lastmod>2021-01-19T16:28:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/webgl/webgl-babylon-fps.html</loc>
+  <lastmod>2021-01-19T16:28:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/webgl/web-gl-unity-terminal-hacker.html</loc>
+  <lastmod>2021-01-19T16:28:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/unity/unity-archviz-vr.html</loc>
+  <lastmod>2021-01-19T16:28:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/unity/unity-archviz.html</loc>
+  <lastmod>2021-01-19T16:28:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/unity/unity-game-forest.html</loc>
+  <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/becode-group/becode-group-super-socket-fighter.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/becode-group/project-becode-do-nuts-events.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <loc>https://raigyo-dev.be/src/projects/becode-group/becode-group-do-nuts-events.html</loc>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/becode-group/becode-group-event-dab.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/becode-group/becode-group-php-blog.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://raigyo-dev.be/src/projects/becode-group/becode-group-majopovi.html</loc>
-  <lastmod>2020-10-09T16:52:28+00:00</lastmod>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
-
 </urlset>
