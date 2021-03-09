@@ -14,6 +14,7 @@ $elementsBackgroundColor: #1D1D1D;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+
 /* animation */
 
 @keyframes bouncing {
@@ -99,6 +100,13 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /* ELEMENTS */
@@ -395,6 +403,71 @@ p {
   width: auto;
 }
 
+
+/* COOKIE CONSENT */
+
+#consent-popup {
+  position: fixed;
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 8rem;
+  background-color: #382C78;
+  transition: opacity 1s ease;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+
+  p a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons-consent {
+    display: flex;
+    justify-content: center;
+    button {
+      border: none;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 25px;
+      a{
+        color: white;
+        font-size: 22px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    #accept{
+      background-color: rgb(48, 223, 62);
+      &:hover {
+        background-color: rgb(144, 202, 57);
+      }
+    }
+    #refuse{
+      background-color: rgb(218, 41, 41);
+      &:hover {
+        background-color: rgb(209, 85, 85);
+      }
+    }
+  }
+
+  &.hidden {
+      display: none;
+  }
+}
+
 /* MEDIA QUERIES */
 @media all and (max-width: 1000px){
   .project { width: 100%; margin: 15px auto;}
@@ -405,4 +478,19 @@ p {
   #contact-section .logo-contact { height: auto; }
   #contact-section .logo-contact p { white-space: nowrap; }
   header h2 { width: 90%; }
+  #consent-popup {
+    position: fixed;
+    bottom: 0px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    padding: 5px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .buttons-consent {
+      flex-wrap: wrap;
+    }
+  }
 }

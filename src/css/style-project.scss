@@ -41,7 +41,7 @@ nav {
   margin-bottom: 25px;
 
   ul {
-    padding: 0;
+    padding: 0 0 5px 0;
     display: inline;
 
     li {
@@ -76,9 +76,10 @@ article {
 
   section  {
     width: 100%;
-    margin: 10px;
     display: flex;
     flex-direction: column;
+    margin: 10px;
+    padding-bottom: 10px;
     // outline: 1px dashed red; /* To show the size of sections */
 
     .capture img{
@@ -102,6 +103,13 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 /* ELEMENTS */
@@ -123,6 +131,7 @@ body {
 
 p {
   margin-top: 0px;
+  line-height: normal;
 }
 
 h1 {
@@ -298,6 +307,151 @@ p {
   width: auto;
 }
 
+/* COOKIE CONSENT */
+
+#consent-popup {
+  position: fixed;
+  color: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 8rem;
+  background-color: #382C78;
+  transition: opacity 1s ease;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+
+  p a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .buttons-consent {
+    display: flex;
+    justify-content: center;
+    button {
+      border: none;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+      border-radius: 25px;
+      a{
+        color: white;
+        font-size: 22px;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    #accept{
+      background-color: rgb(48, 223, 62);
+      &:hover {
+        background-color: rgb(144, 202, 57);
+      }
+    }
+    #refuse{
+      background-color: rgb(218, 41, 41);
+      &:hover {
+        background-color: rgb(209, 85, 85);
+      }
+    }
+  }
+
+  &.hidden {
+      display: none;
+  }
+}
+
+/* Privacy page */
+
+code {
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+
+table.blueTable {
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  td, table.blueTable th {
+    border: 1px solid #AAAAAA;
+    padding: 3px 2px;
+  }
+  tbody td {
+    font-size: 13px;
+  }
+  tr:nth-child(even) {
+    background: #D0E4F5;
+  }
+  thead {
+    background: #1C6EA4;
+    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    border-bottom: 2px solid #444444;
+  }
+  thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-left: 2px solid #D0E4F5;
+  }
+  thead th:first-child {
+    border-left: none;
+  }
+  tfoot {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: #D0E4F5;
+    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    border-top: 2px solid #444444;
+  }
+  tfoot td {
+    font-size: 14px;
+  }
+  tfoot .links {
+    text-align: right;
+  }
+  tfoot .links a{
+    display: inline-block;
+    background: #1C6EA4;
+    color: #FFFFFF;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+}
+
+
+/* ACCESSIBILITY */
+
+.sr-only {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+
 /* MEDIA QUERIES */
 
 @media all and (max-width: 1000px){
@@ -309,15 +463,19 @@ p {
   #contact-section .logo-contact { height: auto; }
   #contact-section .logo-contact p { white-space: nowrap; }
   header h1 { width: 90%; }
-}
-
-/* Accessibility */
-
-.sr-only {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  #consent-popup {
+    position: fixed;
+    bottom: 0px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    padding: 5px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .buttons-consent {
+      flex-wrap: wrap;
+    }
+  }
 }
