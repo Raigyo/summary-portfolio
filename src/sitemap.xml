@@ -13,6 +13,11 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://raigyo-dev.be/src/privacy/privacy.html</loc>
+  <lastmod>2021-03-09T14:39:33+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
   <loc>https://raigyo-dev.be/src/projects/html-css/html-css-material-design.html</loc>
   <lastmod>2021-01-19T16:28:09+00:00</lastmod>
   <priority>0.80</priority>
