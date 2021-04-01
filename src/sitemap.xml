@@ -173,32 +173,22 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/webgl/webgl-three-exemples.html</loc>
+  <loc>https://raigyo-dev.be/src/projects/unity-webgl/webgl-three-exemples.html</loc>
   <lastmod>2021-01-19T16:28:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/webgl/webgl-babylon-fps.html</loc>
-  <lastmod>2021-01-19T16:28:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/webgl/web-gl-unity-terminal-hacker.html</loc>
-  <lastmod>2021-01-19T16:28:13+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/unity/unity-archviz-vr.html</loc>
+  <loc>https://raigyo-dev.be/src/projects/unity-webgl/unity-archviz-vr.html</loc>
   <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/unity/unity-archviz.html</loc>
+  <loc>https://raigyo-dev.be/src/projects/unity-webgl/unity-archviz.html</loc>
   <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/unity/unity-game-forest.html</loc>
+  <loc>https://raigyo-dev.be/src/projects/unity-webgl/unity-game-forest.html</loc>
   <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
 </url>

@@ -25,3 +25,5 @@ Please visit my website with my portfolio: [https://raigyo-dev.be](https://raigy
 - [codebubb/cookie-consent-tutorial](https://github.com/codebubb/cookie-consent-tutorial/blob/complete/src/index.html)
 - [GA - Sécurité et confidentialité des donnéesMode Consentement (bêta)](https://support.google.com/analytics/answer/9976101?hl=fr)
 - [Checking if Consent Mode is properly implemented](https://support.cookiebot.com/hc/en-us/articles/360018413380-Checking-if-Consent-Mode-is-properly-implemented)
+- [3 Animations de lien géniales](https://www.youtube.com/watch?v=77x3THWUHVo)
+- [MDN scroll-behavior](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-behavior)

@@ -3,12 +3,7 @@
 $mainBackgroundColor: #F4F7F6;
 $elementsBackgroundColor: #1D1D1D;
 
-/* Variable usage: just as exemple */
-// :root {
-//   --elementsBackgroundColor: #1D1D1D;
-// }
-
-/* Placeholder */
+/* PLACEHOLDERS */
 
 %shadow-boxes {
   background: white;
@@ -16,6 +11,13 @@ $elementsBackgroundColor: #1D1D1D;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/* Appearance */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 /* SECTIONS */
@@ -27,7 +29,6 @@ section, header, footer {
 
 header {
   background-color: $elementsBackgroundColor;
-  //background-color: var(--elementsBackgroundColor);
   color: white;
   padding-bottom: 15px;
 }
@@ -122,11 +123,14 @@ footer {
 html {
   padding: 0;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   background: $mainBackgroundColor;
   font-family: Roboto, sans-serif;
+  margin: 0;
+  animation: fadein 1s;
 }
 
 p {
@@ -309,6 +313,8 @@ p {
 
 /* COOKIE CONSENT */
 
+/* COOKIE CONSENT */
+
 #consent-popup {
   position: fixed;
   color: white;
@@ -316,7 +322,7 @@ p {
   left: 0;
   right: 0;
   padding: 2rem 8rem;
-  background-color: #382C78;
+  background-color: #140668ef;
   transition: opacity 1s ease;
   line-height: normal;
   margin-left: auto;
@@ -326,6 +332,7 @@ p {
   p a {
     color: white;
     text-transform: uppercase;
+    text-decoration: underline;
   }
 
   h3 {
@@ -353,15 +360,15 @@ p {
       }
     }
     #accept{
-      background-color: rgb(48, 223, 62);
+      background-color: rgba(48, 223, 63, 0.787);
       &:hover {
-        background-color: rgb(144, 202, 57);
+        background-color: rgb(48, 223, 77);
       }
     }
     #refuse{
-      background-color: rgb(218, 41, 41);
+      background-color: rgba(218, 41, 41, 0.753);
       &:hover {
-        background-color: rgb(209, 85, 85);
+        background-color: rgb(218, 41, 41);
       }
     }
   }
@@ -439,7 +446,6 @@ table.blueTable {
   }
 }
 
-
 /* ACCESSIBILITY */
 
 .sr-only {
@@ -451,6 +457,11 @@ table.blueTable {
   overflow:hidden;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 /* MEDIA QUERIES */
 
@@ -465,17 +476,67 @@ table.blueTable {
   header h1 { width: 90%; }
   #consent-popup {
     position: fixed;
-    bottom: 0px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    padding: 5px 14px;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    padding: 0px 14px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    overflow: auto;
+    h3, p {
+      padding-bottom: 0;
+    }
     .buttons-consent {
+      margin: auto;
       flex-wrap: wrap;
+      button{
+        width: 90%;
+        padding: 10px;
+        margin: 15px;
+        margin-bottom: 10px;
+      }
     }
   }
+}
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  // Default to hidden
+  display: none;
+
+  // Overlay entire screen
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // A bit of padding around image
+  padding: 1em;
+  // Translucent background
+  background: rgba(0, 0, 0, 0.8);
+}
+
+// Unhide the lightbox when it's the target
+.lightbox:target {
+  display: block;
+}
+
+.lightbox span {
+  // Full width and height
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  // Size and position background image
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.lightbox button{
+  opacity: 0;
 }

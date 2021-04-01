@@ -1,9 +1,10 @@
 /* VARIABLES */
 
-$mainBackgroundColor: rgb(60 72 88 / 7%);
-$elementsBackgroundColor: #1D1D1D;
+$mainBackgroundColor: rgba(230, 230, 230, 0.7);
+$headerFooterBackgroundColor: #000;
+$sectionsBackgroundColor: rgba(60, 72, 88, 0.14);
 
-/* Placeholder */
+/* PLACEHOLDERS */
 
 %shadow-boxes {
   background: white;
@@ -15,32 +16,47 @@ $elementsBackgroundColor: #1D1D1D;
 }
 
 
-/* animation */
+/* ANIMATIONS */
+
+/* Top arrow bouncing */
 
 @keyframes bouncing {
   15% {
-      -webkit-transform: translateY(5px);
       transform: translateY(5px);
   }
   30% {
-      -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
   }
   50% {
-      -webkit-transform: translateY(3px);
       transform: translateY(3px);
   }
   65% {
-      -webkit-transform: translateY(-3px);
       transform: translateY(-3px);
   }
   80% {
-      -webkit-transform: translateY(2px);
       transform: translateY(2px);
   }
   100% {
-      -webkit-transform: translateY(0);
       transform: translateY(0);
+  }
+}
+
+/* Appearance */
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+@keyframes appearance {
+  100% {
+      opacity: 1;
+      transform: none;
   }
 }
 
@@ -51,29 +67,69 @@ section, article, header, footer {
 }
 
 header {
-  background-color: $elementsBackgroundColor;
+  background-color: $headerFooterBackgroundColor;
   color: white;
   padding-bottom: 15px;
+
+  img {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: appearance 0.2s 1s ease-out forwards;
+  }
+  h1 {
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: appearance 0.2s 2s ease-out forwards;
+  }
+  h2 {
+    opacity: 0;
+    transform: translateX(30px);
+    animation: appearance 0.2s 2.5s ease-out forwards;
+  }
+  .separator{
+    opacity: 0;
+    animation: appearance 0.2s 3s ease-out forwards;
+  }
 }
 
 nav {
   text-align: center;
-  background: white;
+  background: #000;
   box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
   font-size-adjust: 1.1em;
   padding: 15px;
-
   ul {
     padding: 0;
     display: inline;
-
     li {
       list-style-type: none;
       display: inline;
       margin: 10px;
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
 
-      a:hover {
-        font-weight: bold;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+      }
+      a::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      a:hover::after {
+        width: 100%;
+        left: 0;
       }
     }
   }
@@ -81,10 +137,6 @@ nav {
   //Safari accessibility
   ul li::before {
     content: "\200B";
-  }
-
-  .selected {
-    font-weight: bold;
   }
 }
 
@@ -96,7 +148,7 @@ article {
 }
 
 footer {
-  background: $elementsBackgroundColor;
+  background: $headerFooterBackgroundColor;
   color: white;
   text-align: center;
   padding: 15px;
@@ -119,11 +171,13 @@ footer {
 html {
   padding: 0;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   background: $mainBackgroundColor;
   font-family: Roboto, sans-serif;
+  animation: fadein 1s;
 }
 
 h1 {
@@ -174,7 +228,7 @@ h4 {
   margin-inline-end: 0px;
   text-transform: uppercase;
 
-  &:before {
+  &::before {
     content: "« ";
     color: grey;
   }
@@ -182,16 +236,6 @@ h4 {
   &::after {
     content: " »";
     color: grey;
-  }
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: blue;
-
-  &:hover {
-    text-decoration: underline;
   }
 }
 
@@ -212,7 +256,7 @@ p {
 
 #summary{
   @extend %shadow-boxes;
-  background: rgba(60, 72, 88, 0.14);
+  background: $sectionsBackgroundColor;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
@@ -248,7 +292,7 @@ p {
 
 #projects-section{
   @extend %shadow-boxes;
-  background: rgba(60, 72, 88, 0.14);
+  background: $sectionsBackgroundColor;
   margin-bottom: 25px;
 }
 
@@ -311,7 +355,7 @@ p {
 /* CLASSES */
 
 .project {
-  background: rgb(5 8 12 / 65%);
+  background: rgba(12, 119, 241, 0.65);
   color: aliceblue;
   width: 300px;
   margin: 30px;
@@ -403,7 +447,6 @@ p {
   width: auto;
 }
 
-
 /* COOKIE CONSENT */
 
 #consent-popup {
@@ -413,7 +456,7 @@ p {
   left: 0;
   right: 0;
   padding: 2rem 8rem;
-  background-color: #382C78;
+  background-color: #140668ef;
   transition: opacity 1s ease;
   line-height: normal;
   margin-left: auto;
@@ -423,6 +466,7 @@ p {
   p a {
     color: white;
     text-transform: uppercase;
+    text-decoration: underline;
   }
 
   h3 {
@@ -450,21 +494,29 @@ p {
       }
     }
     #accept{
-      background-color: rgb(48, 223, 62);
+      background-color: rgba(48, 223, 63, 0.787);
       &:hover {
-        background-color: rgb(144, 202, 57);
+        background-color: rgb(48, 223, 77);
       }
     }
     #refuse{
-      background-color: rgb(218, 41, 41);
+      background-color: rgba(218, 41, 41, 0.753);
       &:hover {
-        background-color: rgb(209, 85, 85);
+        background-color: rgb(218, 41, 41);
       }
     }
   }
 
   &.hidden {
       display: none;
+  }
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
@@ -480,17 +532,28 @@ p {
   header h2 { width: 90%; }
   #consent-popup {
     position: fixed;
-    bottom: 0px;
-    left: 5%;
-    right: 5%;
-    width: 90%;
-    padding: 5px 14px;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    padding: 0px 14px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    overflow: auto;
+    h3, p {
+      padding-bottom: 0;
+    }
     .buttons-consent {
+      margin: auto;
       flex-wrap: wrap;
+      button{
+        width: 90%;
+        padding: 10px;
+        margin: 15px;
+        margin-bottom: 10px;
+      }
     }
   }
 }
+
