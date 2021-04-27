@@ -1,7 +1,8 @@
 /* VARIABLES */
 
-$mainBackgroundColor: #F4F7F6;
-$elementsBackgroundColor: #1D1D1D;
+$mainBackgroundColor: #f4f7f6;
+$elementsBackgroundColor: rgba(0, 0, 0, 1);
+$articlesBackground: rgba(60, 72, 88, 0.14);
 
 /* PLACEHOLDERS */
 
@@ -10,19 +11,25 @@ $elementsBackgroundColor: #1D1D1D;
   border: 1px rgb(172, 170, 170) solid;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 /* Appearance */
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* SECTIONS */
 
-section, header, footer {
+section,
+header,
+footer {
   font-size: 18px;
   text-align: center;
 }
@@ -35,36 +42,57 @@ header {
 
 nav {
   text-align: center;
-  background: white;
+  background: #000;
   box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
   font-size-adjust: 1.1em;
   padding: 15px;
-  margin-bottom: 25px;
-
   ul {
-    padding: 0 0 5px 0;
+    padding: 0;
     display: inline;
-
     li {
       list-style-type: none;
       display: inline;
       margin: 10px;
 
-      a:hover {
-        font-weight: bold;
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+      }
+      a::after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      a:hover::after {
+        width: 100%;
+        left: 0;
       }
     }
-  }
-
-  //Safari accessibility
-  ul li::before {
-    content: "\200B";
+    .selected {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.15em;
+    }
   }
 }
 
 article {
   @extend %shadow-boxes;
-  background: rgba(60, 72, 88, 0.14);
+  background: $articlesBackground;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -75,7 +103,7 @@ article {
   margin-bottom: 30px;
   padding-top: 15px;
 
-  section  {
+  section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,17 +111,22 @@ article {
     padding-bottom: 10px;
     // outline: 1px dashed red; /* To show the size of sections */
 
-    .capture img{
-      width: 80%;
-      margin: 25px 0px;
+    .capture {
+      a {
+        cursor: zoom-in;
+      }
+      img {
+        width: 80%;
+        margin: 25px 0px;
+      }
     }
 
-    .capture-small img{
+    .capture-small img {
       width: 40%;
       margin: 25px 0px;
     }
 
-    .logo-becode img{
+    .logo-becode img {
       width: 50%;
     }
   }
@@ -143,12 +176,12 @@ h1 {
   padding-top: 25px;
 
   &:before {
-    content: "« ";
+    content: '« ';
     color: grey;
   }
 
   &:after {
-    content: " »";
+    content: ' »';
     color: grey;
   }
 }
@@ -162,12 +195,12 @@ h2 {
   font-weight: bold;
 
   &:before {
-    content: "« ";
+    content: '« ';
     color: grey;
   }
 
   &:after {
-    content: " »";
+    content: ' »';
     color: grey;
   }
 }
@@ -215,7 +248,8 @@ p {
   }
 }
 
-.controls span, button {
+.controls span,
+button {
   font-weight: bold;
 }
 
@@ -224,15 +258,15 @@ p {
   padding: 8px;
 }
 
-.capture-border{
+.capture-border {
   border: 1px black solid;
 }
 
 /* ID */
 
-#summary{
+#summary {
   @extend %shadow-boxes;
-  background: rgba(60, 72, 88, 0.14);
+  background: $articlesBackground;
   text-align: left;
   display: block;
   margin-left: auto;
@@ -244,7 +278,7 @@ p {
     line-height: 20px;
   }
 
-  ul{
+  ul {
     list-style-type: circle;
   }
 
@@ -254,17 +288,16 @@ p {
   }
 }
 
-
 #contact-section {
   @extend %shadow-boxes;
-  background: rgba(60, 72, 88, 0.14);
+  background: $articlesBackground;
   display: flex;
   flex-wrap: wrap;
   padding: 30px;
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
-  .note{
+  .note {
     flex-basis: 100%;
   }
 }
@@ -295,23 +328,22 @@ p {
 
 /* CONTAINER */
 
-.margin-constraint{
+.margin-constraint {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.useful-width{
+.useful-width {
   max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.margin-constraint, .useful-width{
+.margin-constraint,
+.useful-width {
   display: block;
   width: auto;
 }
-
-/* COOKIE CONSENT */
 
 /* COOKIE CONSENT */
 
@@ -351,7 +383,7 @@ p {
       display: inline-block;
       margin: 5px;
       border-radius: 25px;
-      a{
+      a {
         color: white;
         font-size: 22px;
         &:hover {
@@ -359,13 +391,13 @@ p {
         }
       }
     }
-    #accept{
+    #accept {
       background-color: rgba(48, 223, 63, 0.787);
       &:hover {
         background-color: rgb(48, 223, 77);
       }
     }
-    #refuse{
+    #refuse {
       background-color: rgba(218, 41, 41, 0.753);
       &:hover {
         background-color: rgb(218, 41, 41);
@@ -374,14 +406,14 @@ p {
   }
 
   &.hidden {
-      display: none;
+    display: none;
   }
 }
 
 /* Privacy page */
 
 code {
-  font-family: Consolas,"courier new";
+  font-family: Consolas, 'courier new';
   color: crimson;
   background-color: #f1f1f1;
   padding: 2px;
@@ -389,34 +421,50 @@ code {
 }
 
 table.blueTable {
-  border: 1px solid #1C6EA4;
-  background-color: #EEEEEE;
+  border: 1px solid #1c6ea4;
+  background-color: #eeeeee;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
   margin-bottom: 10px;
-  td, table.blueTable th {
-    border: 1px solid #AAAAAA;
+  td,
+  table.blueTable th {
+    border: 1px solid #aaaaaa;
     padding: 3px 2px;
   }
   tbody td {
     font-size: 13px;
   }
   tr:nth-child(even) {
-    background: #D0E4F5;
+    background: #d0e4f5;
   }
   thead {
-    background: #1C6EA4;
-    background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
-    background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+    background: #1c6ea4;
+    background: -moz-linear-gradient(
+      top,
+      #5592bb 0%,
+      #327cad 66%,
+      #1c6ea4 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #5592bb 0%,
+      #327cad 66%,
+      #1c6ea4 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      #5592bb 0%,
+      #327cad 66%,
+      #1c6ea4 100%
+    );
     border-bottom: 2px solid #444444;
   }
   thead th {
     font-size: 15px;
     font-weight: bold;
-    color: #FFFFFF;
-    border-left: 2px solid #D0E4F5;
+    color: #ffffff;
+    border-left: 2px solid #d0e4f5;
   }
   thead th:first-child {
     border-left: none;
@@ -424,11 +472,26 @@ table.blueTable {
   tfoot {
     font-size: 14px;
     font-weight: bold;
-    color: #FFFFFF;
-    background: #D0E4F5;
-    background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-    background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
-    background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+    color: #ffffff;
+    background: #d0e4f5;
+    background: -moz-linear-gradient(
+      top,
+      #dcebf7 0%,
+      #d4e6f6 66%,
+      #d0e4f5 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #dcebf7 0%,
+      #d4e6f6 66%,
+      #d0e4f5 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      #dcebf7 0%,
+      #d4e6f6 66%,
+      #d0e4f5 100%
+    );
     border-top: 2px solid #444444;
   }
   tfoot td {
@@ -437,10 +500,10 @@ table.blueTable {
   tfoot .links {
     text-align: right;
   }
-  tfoot .links a{
+  tfoot .links a {
     display: inline-block;
-    background: #1C6EA4;
-    color: #FFFFFF;
+    background: #1c6ea4;
+    color: #ffffff;
     padding: 2px 8px;
     border-radius: 5px;
   }
@@ -449,12 +512,12 @@ table.blueTable {
 /* ACCESSIBILITY */
 
 .sr-only {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -465,15 +528,40 @@ table.blueTable {
 
 /* MEDIA QUERIES */
 
-@media all and (max-width: 1000px){
-  article { width: 100%; margin: 15px auto; }
-  .article img { width: 100%; min-width: auto; height: auto; }
-  .project .capture { width: 100%; height: auto; }
-  #contact-section { width: 100%; flex-wrap: wrap; margin: 15px auto; }
-  #contact-section img { width: 50%; min-width: auto; height: auto; }
-  #contact-section .logo-contact { height: auto; }
-  #contact-section .logo-contact p { white-space: nowrap; }
-  header h1 { width: 90%; }
+@media all and (max-width: 1000px) {
+  article {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .article img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+  }
+  .project .capture {
+    width: 100%;
+    height: auto;
+  }
+  #contact-section {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 15px auto;
+  }
+  #contact-section img {
+    width: 50%;
+    min-width: auto;
+    height: auto;
+  }
+  #contact-section .logo-contact {
+    height: auto;
+  }
+  #contact-section .logo-contact p {
+    white-space: nowrap;
+  }
+  header h1 {
+    width: 90%;
+  }
+
   #consent-popup {
     position: fixed;
     bottom: 2rem;
@@ -485,13 +573,16 @@ table.blueTable {
     align-items: center;
     justify-content: space-between;
     overflow: auto;
-    h3, p {
+
+    h3,
+    p {
       padding-bottom: 0;
     }
+
     .buttons-consent {
       margin: auto;
       flex-wrap: wrap;
-      button{
+      button {
         width: 90%;
         padding: 10px;
         margin: 15px;
@@ -506,7 +597,6 @@ table.blueTable {
 .lightbox {
   // Default to hidden
   display: none;
-
   // Overlay entire screen
   position: fixed;
   z-index: 999;
@@ -530,6 +620,7 @@ table.blueTable {
   display: block;
   width: 100%;
   height: 100%;
+  cursor: zoom-out;
 
   // Size and position background image
   background-position: center;
@@ -537,6 +628,6 @@ table.blueTable {
   background-size: contain;
 }
 
-.lightbox button{
+.lightbox button {
   opacity: 0;
 }

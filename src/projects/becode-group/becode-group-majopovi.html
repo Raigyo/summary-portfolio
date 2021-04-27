@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      // Default ad_storage / analytics_storageto 'denied'.
-      // False (refused) or doesn't exists (no opt-in): DENIED
-      let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
-      // console.log('cond: ', cond);
-      if (!cond || cond === false || cond.toString() === 'false') {
-        // console.log('Onload: GA DENIED');
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          analytics_storage: 'denied',
-          wait_for_update: 500,
-        });
-      } else {
-        // console.log('Onload: GA ACCEPTED');
-        gtag('consent', 'update', {
-          ad_storage: 'granted',
-          analytics_storage: 'granted',
-        });
-      }
-      gtag('js', new Date());
-      gtag(
-        'config',
-        'UA-178392896-1',
-        { anonymize_ip: true },
-        { siteSpeedSampleRate: 100 }
-      );
-      // Feature detects Navigation Timing API support.
-      if (window.performance) {
-        // Gets the number of milliseconds since page load
-        // (and rounds the result since the value must be an integer).
-        var timeSincePageLoad = Math.round(performance.now());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    // Default ad_storage / analytics_storageto 'denied'.
+    // False (refused) or doesn't exists (no opt-in): DENIED
+    let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
+    // console.log('cond: ', cond);
+    if (!cond || cond === false || cond.toString() === 'false') {
+      // console.log('Onload: GA DENIED');
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+      });
+    } else {
+      // console.log('Onload: GA ACCEPTED');
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+      });
+    }
+    gtag('js', new Date());
+    gtag(
+      'config',
+      'UA-178392896-1',
+      { anonymize_ip: true },
+      { siteSpeedSampleRate: 100 }
+    );
+    // Feature detects Navigation Timing API support.
+    if (window.performance) {
+      // Gets the number of milliseconds since page load
+      // (and rounds the result since the value must be an integer).
+      var timeSincePageLoad = Math.round(performance.now());
 
-        // Sends the timing event to Google Analytics.
-        gtag('event', 'timing_complete', {
-          name: 'load',
-          value: timeSincePageLoad,
-          event_category: 'JS Dependencies',
-        });
-      }
-    </script>
-    <script>
+      // Sends the timing event to Google Analytics.
+      gtag('event', 'timing_complete', {
+        name: 'load',
+        value: timeSincePageLoad,
+        event_category: 'JS Dependencies',
+      });
+    }
+  </script>
+  <script>
     function consentGranted() {
       // console.log("consentGranted()");
       gtag('consent', 'update', {
@@ -56,202 +56,175 @@
         analytics_storage: 'granted',
       });
     }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="language" content="english">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-      My portfolio - Becode group works - Javascript - MAJOPOVI: Bad Ideas Kanban | Vincent Chilot
-    </title>
-    <meta
-      name="description"
-      content="My portfolio - Becode group works - Javascript - MAJOPOVI: Bad Ideas Kanban"
-      >
-    <meta name="author" content="Vincent Chilot">
-    <meta
-      name="keywords"
-      content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, becode, javascript"
-    >
-    <meta name=”robots” content=”index,follow”>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Open graph -->
-    <meta
-      property="og:url"
-      content="https://raigyo-dev.be/src/projects/becode-group/becode-group-majopovi.html"
-    />
-    <meta property="og:type" content="projects" />
-    <meta property="og:title" content="Raigyo-dev: My portfolio" />
-    <meta property="og:description" content="Becode group works | MAJOPOVI: Bad Ideas Kanban" />
-    <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
-    <!--  Icons / Styles -->
-    <link href="../../css/reset.scss" rel="stylesheet">
-    <link href="../../css/style-project.scss" rel="stylesheet">
-    <link href="../../img/icons/favicon.ico" rel="shortcut icon">
-    <link href="../../img/icons/favicon.png" rel="icon" type="image/png">
-    <link href="../../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
-    <!-- link href="../../manifest.webmanifest" rel="manifest"/ -->
-  </head>
+  </script>
+  <meta charset="UTF-8">
+  <meta name="language" content="english">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    My portfolio - Becode group works - Javascript - MAJOPOVI: Bad Ideas Kanban | Vincent Chilot
+  </title>
+  <meta name="description" content="My portfolio - Becode group works - Javascript - MAJOPOVI: Bad Ideas Kanban">
+  <meta name="author" content="Vincent Chilot">
+  <meta name="keywords"
+    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, becode, javascript">
+  <meta name=”robots” content=”index,follow”>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Open graph -->
+  <meta property="og:url" content="https://raigyo-dev.be/src/projects/becode-group/becode-group-majopovi.html" />
+  <meta property="og:type" content="projects" />
+  <meta property="og:title" content="Raigyo-dev: My portfolio" />
+  <meta property="og:description" content="Becode group works | MAJOPOVI: Bad Ideas Kanban" />
+  <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
+  <!--  Icons / Styles -->
+  <link href="../../css/reset.scss" rel="stylesheet">
+  <link href="../../css/style-project.scss" rel="stylesheet">
+  <link href="../../img/icons/favicon.ico" rel="shortcut icon">
+  <link href="../../img/icons/favicon.png" rel="icon" type="image/png">
+  <link href="../../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
+  <link href="../../manifest.webmanifest" rel="manifest">
+</head>
 
-  <body id="top">
-    <!-- full-width -->
-    <div class="full-width">
-          <!-- HEADER -->
-          <header>
-            <h1>Becode group works: Javascript <em>MAJOPOVI: Bad Ideas Kanban</em></h1>
-          </header>
-          <!-- /HEADER -->
+<body id="top">
+  <!-- full-width -->
+  <div class="full-width">
+    <!-- HEADER -->
+    <header>
+      <h1>Becode group works: Javascript <em>MAJOPOVI: Bad Ideas Kanban</em></h1>
+    </header>
+    <!-- /HEADER -->
 
-          <!-- NAVIGATION -->
-          <nav>
-            <ul>
-              <li><a href="../../../index.html#projects-becode-groups" title="Homepage">Home</a></li>
-              <li>Becode group works | MAJOPOVI: Bad Ideas Kanban</li>
-            </ul>
-          </nav>
-          <!-- /NAVIGATION -->
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href="../../../index.html#projects-becode-groups" title="Homepage">Home</a></li>
+        <li class="selected">Becode group works | MAJOPOVI: Bad Ideas Kanban</li>
+      </ul>
+    </nav>
+    <!-- /NAVIGATION -->
 
-      <!-- useful-width -->
-      <main class="useful-width">
+    <!-- useful-width -->
+    <main class="useful-width">
 
-        <!-- SECTION SUMMARY -->
-        <h2>Summary</h2>
-        <section id="summary">
-          <p>The Mad Jobless Powerfull Villain: centralize your ideas to take over the world.</p>
-          <p>
-            Group exercice for getting better at working together with Git.
-            It's writtent in JS and HTML/CSS.
-          </p>
-        </section>
-        <!-- / SECTION SUMMARY -->
-
-        <h2>Medias</h2>
-        <!-- ARTICLE: Medias -->
-        <article>
-          <!-- SECTION LOGO BECODE -->
-          <section class="picture-project">
-            <div class="logo-becode">
-              <img
-                src="../../img/logos/logo-becode.png"
-                alt="Becode logo"
-              />
-            </div>
-          </section>
-          <!-- /SECTION LOGO BECODE -->
-          <!-- SECTION CAPTURE -->
-          <section class="picture-project">
-            <div class="capture">
-              <a href="#img1">
-                <img
-                  src="../../img/becode-group/becode-group-majopovi-01.webp"
-                  alt="Screen capture of the website - will open an overlay on click"
-                />
-              </a>
-            </div>
-            <!-- lightbox container hidden with CSS -->
-            <a href="#0" class="lightbox" id="img1">
-              <button aria-label="Close"></button>
-              <span style="background-image: url('../../img/becode-group/becode-group-majopovi-01.webp')"></span>
-            </a>
-          </section>
-          <!-- / SECTION CAPTURE -->
-          <!-- SECTION CAPTURE -->
-          <section class="picture-project">
-            <div class="capture">
-              <a href="#img2">
-                <img
-                  src="../../img/becode-group/becode-group-majopovi-02.webp"
-                  alt="Screen capture of the website - will open an overlay on click"
-                />
-              </a>
-            </div>
-            <!-- lightbox container hidden with CSS -->
-            <a href="#0" class="lightbox" id="img2">
-              <button aria-label="Close"></button>
-              <span style="background-image: url('../../img/becode-group/becode-group-majopovi-02.webp')"></span>
-            </a>
-          </section>
-          <!-- / SECTION CAPTURE -->
-        </article>
-        <!-- / ARTICLE: Medias -->
-
-        <!-- SECTION LINKS -->
-        <h2>Links</h2>
-        <section>
-          <!-- FlexBox Container -->
-          <div id="contact-section">
-            <div class="logo-contact">
-              <a
-                href="https://github.com/Raigyo/jepsen-js-web-majopovi"
-                target="_blank"
-                rel="noreferrer"
-                onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});"
-              >
-                <img src="../../img/icons/icon-github.png" alt="Logo Github"
-                title="External link to the project github repository" />
-              </a>
-              <p>Github repository:</p>
-              <p>jepsen-js-web-majopovi</p>
-            </div>
-            <div class="logo-contact">
-              <a
-                href="https://raigyo.github.io/jepsen-js-web-majopovi/"
-                target="_blank"
-                rel="noreferrer"
-                onclick="gtag('event', 'clic', {'event_category': 'to projet online', 'event_label': 'open-project-online'});"
-              >
-                <img src="../../img/icons/icone-online.png" alt="Logo Github"
-                title="External link to the online version" />
-              </a>
-              <p>Online version:</p>
-              <p>Bad ideas manager / Kanban</p>
-            </div>
-          </div>
-
-          <!-- / FlexBox Container -->
-        </section>
-        <!-- / SECTION LINKS -->
-
-      </main>
-      <!-- /useful-width -->
-
-      <!-- Home / Top links -->
-      <div id="top-link">
-        <a href="../../../index.html#projects-becode-groups" title="Link to Homepage">
-          <img
-            src="../../img/icons/icon-homepage.png"
-            alt="Homepage icon"
-          />
-        </a>
-        <a href="#top" title="Back to top of the page">
-          <img
-            src="../../img/icons/icon-top.png"
-            alt="Top of the page icon"
-          />
-        </a>
-      </div>
-      <!-- / Home / Top links -->
-
-      <!-- FOOTER -->
-      <footer>
-        <span>2021 &copy; Vincent Chilot - <a href="../../privacy/privacy.html">Privacy Policies and Terms and Conditions</a></span>
-      </footer>
-      <!-- /FOOTER -->
-
-      <!-- COOKIE CONSENT -->
-      <div id="consent-popup" class="hidden">
-        <h2>Let us know you agree to cookies</h2>
-        <p>By Clicking on "Yes, I agree", you agree to the storing of cookies on your device and tracking
-          to analyze site usage.
-          For more informations, please visit our <a href="../../privacy/privacy.html">Privacy Policy</a>.</p>
-        <div class="buttons-consent">
-          <button id="accept"><a onclick="consentGranted()" href="#0">Yes, I agree</a></button>
-          <button id="refuse"><a  href="#0">No, let me visit this site without cookies / tracking</a></button>
-        </div>
+      <!-- SECTION SUMMARY -->
+      <h2>Summary</h2>
+      <section id="summary">
+        <p>The Mad Jobless Powerfull Villain: centralize your ideas to take over the world.</p>
+        <p>
+          Group exercice for getting better at working together with Git.
+          It's writtent in JS and HTML/CSS.
         </p>
-      </div>
-      <!-- / COOKIE CONSENT -->
+      </section>
+      <!-- / SECTION SUMMARY -->
+
+      <h2>Medias</h2>
+      <!-- ARTICLE: Medias -->
+      <article>
+        <!-- SECTION LOGO BECODE -->
+        <section class="picture-project">
+          <div class="logo-becode">
+            <img src="../../img/logos/logo-becode.png" alt="Becode logo" />
+          </div>
+        </section>
+        <!-- /SECTION LOGO BECODE -->
+        <!-- SECTION CAPTURE -->
+        <section class="picture-project">
+          <div class="capture">
+            <a href="#img1">
+              <img src="../../img/becode-group/becode-group-majopovi-01.webp"
+                alt="Screen capture of the website - will open an overlay on click" />
+            </a>
+          </div>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#0" class="lightbox" id="img1">
+            <button aria-label="Close"></button>
+            <span style="background-image: url('../../img/becode-group/becode-group-majopovi-01.webp')"></span>
+          </a>
+        </section>
+        <!-- / SECTION CAPTURE -->
+        <!-- SECTION CAPTURE -->
+        <section class="picture-project">
+          <div class="capture">
+            <a href="#img2">
+              <img src="../../img/becode-group/becode-group-majopovi-02.webp"
+                alt="Screen capture of the website - will open an overlay on click" />
+            </a>
+          </div>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#0" class="lightbox" id="img2">
+            <button aria-label="Close"></button>
+            <span style="background-image: url('../../img/becode-group/becode-group-majopovi-02.webp')"></span>
+          </a>
+        </section>
+        <!-- / SECTION CAPTURE -->
+      </article>
+      <!-- / ARTICLE: Medias -->
+
+      <!-- SECTION LINKS -->
+      <h2>Links</h2>
+      <section>
+        <!-- FlexBox Container -->
+        <div id="contact-section">
+          <div class="logo-contact">
+            <a href="https://github.com/Raigyo/jepsen-js-web-majopovi" target="_blank" rel="noreferrer"
+              onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});">
+              <img src="../../img/icons/icon-github.png" alt="Logo Github"
+                title="External link to the project github repository" />
+            </a>
+            <p>Github repository:</p>
+            <p>jepsen-js-web-majopovi</p>
+          </div>
+          <div class="logo-contact">
+            <a href="https://raigyo.github.io/jepsen-js-web-majopovi/" target="_blank" rel="noreferrer"
+              onclick="gtag('event', 'clic', {'event_category': 'to projet online', 'event_label': 'open-project-online'});">
+              <img src="../../img/icons/icone-online.png" alt="Logo Github"
+                title="External link to the online version" />
+            </a>
+            <p>Online version:</p>
+            <p>Bad ideas manager / Kanban</p>
+          </div>
+        </div>
+
+        <!-- / FlexBox Container -->
+      </section>
+      <!-- / SECTION LINKS -->
+
+    </main>
+    <!-- /useful-width -->
+
+    <!-- Home / Top links -->
+    <div id="top-link">
+      <a href="../../../index.html#projects-becode-groups" title="Link to Homepage">
+        <img src="../../img/icons/icon-homepage.png" alt="Homepage icon" />
+      </a>
+      <a href="#top" title="Back to top of the page">
+        <img src="../../img/icons/icon-top.png" alt="Top of the page icon" />
+      </a>
     </div>
-    <!-- /full-width -->
-    <script src="../../js/app.js"></script>
-  </body>
+    <!-- / Home / Top links -->
+
+    <!-- FOOTER -->
+    <footer>
+      <span>2021 &copy; Vincent Chilot - <a href="../../privacy/privacy.html">Privacy Policies and Terms and
+          Conditions</a></span>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- COOKIE CONSENT -->
+    <div id="consent-popup" class="hidden">
+      <h2>Let us know you agree to cookies</h2>
+      <p>By Clicking on "Yes, I agree", you agree to the storing of cookies on your device and tracking
+        to analyze site usage.
+        For more informations, please visit our <a href="../../privacy/privacy.html">Privacy Policy</a>.</p>
+      <div class="buttons-consent">
+        <button id="accept"><a onclick="consentGranted()" href="#0">Yes, I agree</a></button>
+        <button id="refuse"><a href="#0">No, let me visit this site without cookies / tracking</a></button>
+      </div>
+      </p>
+    </div>
+    <!-- / COOKIE CONSENT -->
+  </div>
+  <!-- /full-width -->
+  <script src="../../js/app.js"></script>
+</body>
+
 </html>

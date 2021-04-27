@@ -12,9 +12,8 @@ $sectionsBackgroundColor: rgba(60, 72, 88, 0.14);
   border: 1px rgb(172, 170, 170) solid;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-
 
 /* ANIMATIONS */
 
@@ -22,47 +21,58 @@ $sectionsBackgroundColor: rgba(60, 72, 88, 0.14);
 
 @keyframes bouncing {
   15% {
-      transform: translateY(5px);
+    transform: translateY(5px);
   }
   30% {
-      transform: translateY(-5px);
+    transform: translateY(-5px);
   }
   50% {
-      transform: translateY(3px);
+    transform: translateY(3px);
   }
   65% {
-      transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   80% {
-      transform: translateY(2px);
+    transform: translateY(2px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 /* Appearance */
 
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeout {
-  from { opacity: 1; }
-  to   { opacity: 0; }
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 @keyframes appearance {
   100% {
-      opacity: 1;
-      transform: none;
+    opacity: 1;
+    transform: none;
   }
 }
 
 /* SECTIONS */
 
-section, article, header, footer {
+section,
+article,
+header,
+footer {
   text-align: center;
 }
 
@@ -86,7 +96,7 @@ header {
     transform: translateX(30px);
     animation: appearance 0.2s 2.5s ease-out forwards;
   }
-  .separator{
+  .separator {
     opacity: 0;
     animation: appearance 0.2s 3s ease-out forwards;
   }
@@ -118,7 +128,7 @@ nav {
       a::after {
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
-        content: "";
+        content: '';
         display: block;
         height: 2px;
         left: 50%;
@@ -136,7 +146,7 @@ nav {
 
   //Safari accessibility
   ul li::before {
-    content: "\200B";
+    content: '\200B';
   }
 }
 
@@ -176,6 +186,7 @@ html {
 
 body {
   background: $mainBackgroundColor;
+  margin: 0px;
   font-family: Roboto, sans-serif;
   animation: fadein 1s;
 }
@@ -199,7 +210,6 @@ h2 {
   padding-bottom: 15px;
 }
 
-
 h3 {
   font-size: 1.5em;
   text-align: center;
@@ -209,12 +219,12 @@ h3 {
   font-weight: bold;
 
   &:before {
-    content: "« ";
+    content: '« ';
     color: grey;
   }
 
   &:after {
-    content: " »";
+    content: ' »';
     color: grey;
   }
 }
@@ -229,12 +239,12 @@ h4 {
   text-transform: uppercase;
 
   &::before {
-    content: "« ";
+    content: '« ';
     color: grey;
   }
 
   &::after {
-    content: " »";
+    content: ' »';
     color: grey;
   }
 }
@@ -254,7 +264,7 @@ p {
 
 /* ID */
 
-#summary{
+#summary {
   @extend %shadow-boxes;
   background: $sectionsBackgroundColor;
   text-align: left;
@@ -264,7 +274,7 @@ p {
   padding-bottom: 25px;
   margin-bottom: 25px;
 
-  div{
+  div {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -274,7 +284,7 @@ p {
     line-height: 20px;
   }
 
-  ul{
+  ul {
     list-style-type: circle;
   }
 
@@ -290,7 +300,7 @@ p {
   height: auto;
 }
 
-#projects-section{
+#projects-section {
   @extend %shadow-boxes;
   background: $sectionsBackgroundColor;
   margin-bottom: 25px;
@@ -362,8 +372,8 @@ p {
   display: inline-block;
   @extend %shadow-boxes;
   border: 0px black solid;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   margin-bottom: 25px;
 
   a {
@@ -376,17 +386,18 @@ p {
     margin-left: -25%;
     transition: 0.5s all ease-in-out;
     filter: grayscale(100%) blur(0.5px);
+    object-fit: cover;
   }
 
   &:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    img{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    img {
       transform: scale(1.1);
       filter: none;
     }
   }
 
-  span{
+  span {
     line-height: 18px;
   }
 
@@ -395,7 +406,7 @@ p {
   }
 }
 
-.picture{
+.picture {
   width: 400px;
   height: 266px;
   z-index: 4;
@@ -431,18 +442,19 @@ p {
 
 /* CONTAINER */
 
-.margin-constraint{
+.margin-constraint {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-.useful-width{
-  max-width: 80%;
+.useful-width {
+  max-width: 84%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.margin-constraint, .useful-width{
+.margin-constraint,
+.useful-width {
   display: block;
   width: auto;
 }
@@ -485,7 +497,7 @@ p {
       display: inline-block;
       margin: 5px;
       border-radius: 25px;
-      a{
+      a {
         color: white;
         font-size: 22px;
         &:hover {
@@ -493,13 +505,13 @@ p {
         }
       }
     }
-    #accept{
+    #accept {
       background-color: rgba(48, 223, 63, 0.787);
       &:hover {
         background-color: rgb(48, 223, 77);
       }
     }
-    #refuse{
+    #refuse {
       background-color: rgba(218, 41, 41, 0.753);
       &:hover {
         background-color: rgb(218, 41, 41);
@@ -508,7 +520,7 @@ p {
   }
 
   &.hidden {
-      display: none;
+    display: none;
   }
 }
 
@@ -521,15 +533,53 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media all and (max-width: 1000px){
-  .project { width: 100%; margin: 15px auto;}
-  .project img { width: 100%; min-width: auto; height: auto; margin-left: 0%;}
-  .project .picture { width: 100%; height: auto;}
-  #contact-section { width: 100%; flex-wrap: wrap; margin: 15px auto;}
-  #contact-section img { width: 50%; min-width: auto; height: auto;}
-  #contact-section .logo-contact { height: auto; }
-  #contact-section .logo-contact p { white-space: nowrap; }
-  header h2 { width: 90%; }
+
+@media (max-width: 480px) {
+  .project {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .project img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    margin-left: 0%;
+    object-fit: cover;
+  }
+  .project .picture {
+    width: 100%;
+    height: auto;
+  }
+  #logo {
+    max-width: 80%;
+  }
+  #contact-section {
+    display: none;
+  }
+  #contact-section-mobile {
+    display: block;
+    .logo-contact {
+      width: 80%;
+      margin: 8px;
+      text-align: center;
+      background: #000;
+      box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
+      font-size-adjust: 1.1em;
+      padding: 2px;
+
+      a {
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  header h2 {
+    width: 90%;
+  }
   #consent-popup {
     position: fixed;
     bottom: 2rem;
@@ -541,13 +591,14 @@ p {
     align-items: center;
     justify-content: space-between;
     overflow: auto;
-    h3, p {
+    h3,
+    p {
       padding-bottom: 0;
     }
     .buttons-consent {
       margin: auto;
       flex-wrap: wrap;
-      button{
+      button {
         width: 90%;
         padding: 10px;
         margin: 15px;
@@ -557,3 +608,90 @@ p {
   }
 }
 
+@media (min-width: 481px) and (max-width: 1024px) {
+  .useful-width {
+    max-width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .project {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+  }
+  .project img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    margin-left: 0%;
+  }
+  .project .picture {
+    width: 100%;
+    height: auto;
+  }
+  #logo {
+    max-width: 80%;
+  }
+  #contact-section {
+    display: none;
+  }
+  #contact-section-mobile {
+    display: block;
+    .logo-contact {
+      width: 80%;
+      margin: 8px;
+      text-align: center;
+      background: #000;
+      box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
+      font-size-adjust: 1.1em;
+      padding: 2px;
+
+      a {
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  header h2 {
+    width: 90%;
+  }
+  #consent-popup {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    padding: 0px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    h3,
+    p {
+      padding-bottom: 0;
+    }
+    .buttons-consent {
+      margin: auto;
+      flex-wrap: wrap;
+      button {
+        width: 90%;
+        padding: 10px;
+        margin: 15px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .project img {
+    object-fit: fill;
+  }
+  #contact-section-mobile {
+    display: none;
+  }
+}
