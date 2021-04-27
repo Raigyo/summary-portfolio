@@ -65,6 +65,7 @@ nav {
         position: relative;
       }
       a::after {
+        text-decoration: none;
         background: none repeat scroll 0 0 transparent;
         bottom: 0;
         content: '';
@@ -205,16 +206,6 @@ h2 {
   }
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: blue;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
 p {
   display: block;
   margin-block-start: 1em;
@@ -224,6 +215,16 @@ p {
 }
 
 /* CLASSES */
+
+.summary a {
+  text-decoration: none;
+  cursor: pointer;
+  color: blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 .logo-contact {
   width: 300px;
