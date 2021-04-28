@@ -8,6 +8,7 @@ dist/
 build/
 Préservation automatique Corel/
 package-lock.json
+.htaccess
 
 # dependencies
 /node_modules
