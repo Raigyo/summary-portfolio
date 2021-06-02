@@ -74,6 +74,8 @@ article,
 header,
 footer {
   text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 header {
@@ -161,6 +163,8 @@ footer {
   background: $headerFooterBackgroundColor;
   color: white;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   padding: 15px;
   a {
     color: white;
@@ -192,6 +196,9 @@ body {
 }
 
 h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   margin-top: 0;
   padding-top: 0;
   display: block;
@@ -204,7 +211,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   margin: auto;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -214,6 +223,7 @@ h3 {
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.15em;
   padding-top: 25px;
   padding-bottom: 25px;
   font-weight: bold;
@@ -232,6 +242,7 @@ h3 {
 h4 {
   font-size: 1.2em;
   font-weight: bold;
+  letter-spacing: 0.15em;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
   margin-inline-start: 0px;
@@ -251,7 +262,6 @@ h4 {
 
 span {
   display: block;
-  text-transform: uppercase;
 }
 
 p {
@@ -275,7 +285,7 @@ p {
   margin-bottom: 25px;
 
   div {
-    width: 50%;
+    padding: 25px 25%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -314,6 +324,10 @@ p {
   margin-bottom: 50px;
   align-items: center;
   justify-content: center;
+  p {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
 }
 
 #top-link-small {
@@ -534,7 +548,13 @@ p {
 
 /* MEDIA QUERIES */
 
+/* Mobile */
 @media (max-width: 480px) {
+  #summary {
+    div {
+      padding: 25px 5%;
+    }
+  }
   .project {
     width: 100%;
     margin: 15px auto;
@@ -558,23 +578,31 @@ p {
   }
   #contact-section-mobile {
     display: block;
+
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: medium;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
     .logo-contact {
       width: 80%;
       margin: 8px;
       text-align: center;
+
       background: #000;
       box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
       font-size-adjust: 1.1em;
       padding: 2px;
-
-      a {
-        color: white;
-        font-size: 22px;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
     }
   }
   header h2 {
@@ -608,7 +636,13 @@ p {
   }
 }
 
+/* Tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
+  #summary {
+    div {
+      padding: 25px 5%;
+    }
+  }
   .useful-width {
     max-width: fit-content;
     margin-left: 5px;
@@ -637,6 +671,19 @@ p {
   }
   #contact-section-mobile {
     display: block;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: #fff;
+      }
+    }
+    p {
+      color: white;
+      font-size: large;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
     .logo-contact {
       width: 80%;
       margin: 8px;
@@ -647,8 +694,6 @@ p {
       padding: 2px;
 
       a {
-        color: white;
-        font-size: 22px;
         text-decoration: none;
         &:hover {
           text-decoration: underline;
@@ -687,6 +732,7 @@ p {
   }
 }
 
+/* Desktop */
 @media (min-width: 1025px) {
   .project img {
     object-fit: fill;

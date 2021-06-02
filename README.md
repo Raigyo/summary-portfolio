@@ -2,9 +2,9 @@
 
 October 2020
 
-> 🔨  Repo with my portfolio.
+> 🔨 Repo with my portfolio.
 
-* * *
+---
 
 ## Portfolio
 
@@ -27,3 +27,4 @@ Please visit my website with my portfolio: [https://raigyo-dev.be](https://raigy
 - [Checking if Consent Mode is properly implemented](https://support.cookiebot.com/hc/en-us/articles/360018413380-Checking-if-Consent-Mode-is-properly-implemented)
 - [3 Animations de lien géniales](https://www.youtube.com/watch?v=77x3THWUHVo)
 - [MDN scroll-behavior](https://developer.mozilla.org/fr/docs/Web/CSS/scroll-behavior)
+- [Update social media preview cards](https://help.medium.com/hc/en-us/articles/215769058-Update-social-media-preview-cards)

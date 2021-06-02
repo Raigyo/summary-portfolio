@@ -60,18 +60,18 @@
   <meta charset="UTF-8">
   <meta name="language" content="english">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio - CMS Drupal Bar Cat | Vincent Chilot</title>
-  <meta name="description" content="My portfolio - CMS Drupal Bar Cat ">
+  <title>My portfolio - MEAN Stack | Developers Blog</title>
+  <meta name="description" content="My portfolio - Developers Blog">
   <meta name="author" content="Vincent Chilot">
   <meta name="keywords"
-    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, drupal">
+    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, angular, mean stack, mongodb, node">
   <meta name=”robots” content=”index,follow”>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- Open graph -->
-  <meta property="og:url" content="https://raigyo-dev.be/src/projects/cms/cms-drupal-bar-cat.html" />
+  <meta property="og:url" content="https://raigyo-dev.be/src/projects/angular/angular-restaurant.html" />
   <meta property="og:type" content="projects" />
   <meta property="og:title" content="Raigyo-dev: My portfolio" />
-  <meta property="og:description" content="CMS | Drupal Bar cat" />
+  <meta property="og:description" content="Angular | Developers Blog" />
   <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
   <!--  Icons / Styles -->
   <link href="../../css/reset.scss" rel="stylesheet">
@@ -82,22 +82,20 @@
   <link href="../../manifest.webmanifest" rel="manifest">
 </head>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-
 <body id="top">
   <!-- full-width -->
   <div class="full-width">
     <!-- HEADER -->
     <header>
-      <h1>CMS Drupal: Blog <em>Bar Cat</em></h1>
+      <h1>Angular: <em>Developers Blog</em></h1>
     </header>
     <!-- /HEADER -->
 
     <!-- NAVIGATION -->
     <nav>
       <ul>
-        <li><a href="../../../index.html#projects-cms-php" title="Homepage">Home</a></li>
-        <li class="selected">CMS | Drupal Bar cat</li>
+        <li><a href="../../../index.html#projects-angular" title="Homepage">Home</a></li>
+        <li class="selected">MEAN Stack | Developers Blog</li>
       </ul>
     </nav>
     <!-- /NAVIGATION -->
@@ -109,8 +107,27 @@
       <h2>Summary</h2>
       <section id="summary">
         <p>
-          Blog made with Drupal 9.
+          Mean Stack refers to a collection of JavaScript technologies used to develop web applications. Therefore, from
+          the
+          client to the server and from server to database, everything is based on JavaScript. MEAN (MongoDB - Express -
+          Angular - Node JS) is a full-stack
+          development
+          toolkit used to develop a fast and robust web applications.
         </p>
+        <p>With this app, developers can register and login to add and share some articles about technologies,
+          languages,
+          librairies and so on.</p>
+        <p>The homepage displays all the articles (extracts). When clicking on them, we have access to the complete
+          article.
+          Authors can add, delete or update their own articles. Admin have the right to do the same but for all authors.
+        </p>
+        <p>Angular is the part that manage displaying of the views according to events. But evything is Managed with the
+          node
+          server including session management (passport), password encryption and credential validation (Mongoose
+          schemas) or user
+          registrations, sending the articles of the author only or all to the admins, check size and mime of the images
+          (Multer)
+          or send errors to the client side.</p>
       </section>
       <!-- / SECTION SUMMARY -->
 
@@ -121,14 +138,29 @@
         <section class="picture-project">
           <div class="capture">
             <a href="#img1">
-              <img src="../../img/cms/cms-drupal-bar-cat-01.webp"
+              <img src="../../img/angular/angular-mean-dev-blog-01.webp"
                 alt="Screen capture of the website - will open an overlay on click" />
             </a>
           </div>
           <!-- lightbox container hidden with CSS -->
           <a href="#0" class="lightbox" id="img1">
             <button aria-label="Close"></button>
-            <span style="background-image: url('../../img/cms/cms-drupal-bar-cat-01.webp')"></span>
+            <span style="background-image: url('../../img/angular/angular-mean-dev-blog-01.webp')"></span>
+          </a>
+        </section>
+        <!-- / SECTION CAPTURE -->
+        <!-- SECTION CAPTURE -->
+        <section class="picture-project">
+          <div class="capture">
+            <a href="#img2">
+              <img src="../../img/angular/angular-mean-dev-blog-02.webp"
+                alt="Screen capture of the website - will open an overlay on click" />
+            </a>
+          </div>
+          <!-- lightbox container hidden with CSS -->
+          <a href="#0" class="lightbox" id="img2">
+            <button aria-label="Close"></button>
+            <span style="background-image: url('../../img/angular/angular-mean-dev-blog-02.webp')"></span>
           </a>
         </section>
         <!-- / SECTION CAPTURE -->
@@ -141,22 +173,22 @@
         <!-- FlexBox Container -->
         <div id="contact-section">
           <div class="logo-contact">
-            <a href="https://github.com/Raigyo/drupal-bar-cat" target="_blank" rel="noreferrer"
+            <a href="https://github.com/Raigyo/mean-stack-whisky" target="_blank" rel="noreferrer"
               onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});">
               <img src="../../img/icons/icon-github.png" alt="Logo Github"
                 title="External link to the project github repository" />
             </a>
-            <p>Github repository:</p>
-            <p>drupal-bar-cat</p>
+            <p>Github repository:
+            <p>mean-stack-whisky</p>
           </div>
           <div class="logo-contact">
-            <a href="https://raigyo-dev.be/dp-bar-cat/" target="_blank" rel="noreferrer"
+            <a href="https://raigyo-mean-server.herokuapp.com/" target="_blank" rel="noreferrer"
               onclick="gtag('event', 'clic', {'event_category': 'to projet online', 'event_label': 'open-project-online'});">
               <img src="../../img/icons/icone-online.png" alt="Logo Github"
                 title="External link to the online version" />
             </a>
             <p>Online version:</p>
-            <p>Bar Cat blog</p>
+            <p>Developers Blog</p>
           </div>
         </div>
 
@@ -169,7 +201,7 @@
 
     <!-- Home / Top links -->
     <div id="top-link">
-      <a href="../../../index.html#projects-cms-php" title="Link to Homepage">
+      <a href="../../../index.html#projects-angular" title="Link to Homepage">
         <img src="../../img/icons/icon-homepage.png" alt="Homepage icon" />
       </a>
       <a href="#top" title="Back to top of the page">

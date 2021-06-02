@@ -32,6 +32,8 @@ header,
 footer {
   font-size: 18px;
   text-align: center;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 header {
@@ -130,6 +132,13 @@ article {
     .logo-becode img {
       width: 50%;
     }
+    a {
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -138,12 +147,17 @@ footer {
   color: white;
   text-align: center;
   padding: 15px;
+  letter-spacing: 0.15em;
   a {
     color: white;
+
     text-decoration: none;
     &:hover {
       text-decoration: underline;
     }
+  }
+  span {
+    text-transform: uppercase;
   }
 }
 
@@ -173,6 +187,9 @@ p {
 }
 
 h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
   margin-top: 0;
   padding-top: 25px;
 
@@ -188,6 +205,7 @@ h1 {
 }
 
 h2 {
+  letter-spacing: 0.15em;
   font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
@@ -227,8 +245,8 @@ p {
 }
 
 .logo-contact {
-  width: 300px;
-  margin: 30px;
+  width: 75%;
+  margin: 30px 2px;
   display: inline-block;
   padding-bottom: 15px;
   border: 0px black solid;
@@ -293,7 +311,7 @@ button {
   @extend %shadow-boxes;
   background: $articlesBackground;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 30px;
   margin-bottom: 50px;
   align-items: center;
@@ -419,6 +437,15 @@ code {
   background-color: #f1f1f1;
   padding: 2px;
   font-size: 105%;
+  word-break: break-all;
+}
+
+.logo-contact .privacyImg {
+  width: 15%;
+}
+
+.external-providers {
+  list-style-type: none;
 }
 
 table.blueTable {
@@ -527,72 +554,6 @@ table.blueTable {
   }
 }
 
-/* MEDIA QUERIES */
-
-@media all and (max-width: 1000px) {
-  article {
-    width: 100%;
-    margin: 15px auto;
-  }
-  .article img {
-    width: 100%;
-    min-width: auto;
-    height: auto;
-  }
-  .project .capture {
-    width: 100%;
-    height: auto;
-  }
-  #contact-section {
-    width: 100%;
-    flex-wrap: wrap;
-    margin: 15px auto;
-  }
-  #contact-section img {
-    width: 50%;
-    min-width: auto;
-    height: auto;
-  }
-  #contact-section .logo-contact {
-    height: auto;
-  }
-  #contact-section .logo-contact p {
-    white-space: nowrap;
-  }
-  header h1 {
-    width: 90%;
-  }
-
-  #consent-popup {
-    position: fixed;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    padding: 0px 14px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    overflow: auto;
-
-    h3,
-    p {
-      padding-bottom: 0;
-    }
-
-    .buttons-consent {
-      margin: auto;
-      flex-wrap: wrap;
-      button {
-        width: 90%;
-        padding: 10px;
-        margin: 15px;
-        margin-bottom: 10px;
-      }
-    }
-  }
-}
-
 /** LIGHTBOX MARKUP **/
 
 .lightbox {
@@ -631,4 +592,120 @@ table.blueTable {
 
 .lightbox button {
   opacity: 0;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile */
+@media (max-width: 480px) {
+  p {
+    font-size: 16px;
+  }
+  #summary {
+    padding: 25px 5%;
+  }
+  #contact-section {
+    flex-wrap: wrap;
+    .logo-contact {
+      width: 80%;
+      margin: 20px 2px;
+      img {
+        width: 30%;
+      }
+      p {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+  #summary {
+    padding: 25px 5%;
+  }
+  .useful-width {
+    max-width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  #contact-section {
+    flex-wrap: wrap;
+    .logo-contact {
+      width: 40%;
+      margin: 20px 2px;
+      img {
+        width: 25%;
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media all and (min-width: 1025px) {
+  article {
+    width: 100%;
+    margin: 15px auto;
+  }
+  .article img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+  }
+  .project .capture {
+    width: 100%;
+    height: auto;
+  }
+  #contact-section {
+    width: 100%;
+    margin: 15px auto;
+  }
+  #contact-section img {
+    width: 20%;
+    min-width: auto;
+    height: auto;
+
+    .privacyImg {
+      width: 15%;
+    }
+  }
+
+  #contact-section .logo-contact {
+    height: auto;
+  }
+  #contact-section .logo-contact p {
+    white-space: nowrap;
+  }
+
+  #consent-popup {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    padding: 0px 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+
+    h3,
+    p {
+      padding-bottom: 0;
+    }
+
+    .buttons-consent {
+      margin: auto;
+      flex-wrap: wrap;
+      button {
+        width: 90%;
+        padding: 10px;
+        margin: 15px;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

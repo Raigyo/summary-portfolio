@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      // Default ad_storage / analytics_storageto 'denied'.
-      // False (refused) or doesn't exists (no opt-in): DENIED
-      let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
-      // console.log('cond: ', cond);
-      if (!cond || cond === false || cond.toString() === 'false') {
-        // console.log('Onload: GA DENIED');
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          analytics_storage: 'denied',
-          wait_for_update: 500,
-        });
-      } else {
-        // console.log('Onload: GA ACCEPTED');
-        gtag('consent', 'update', {
-          ad_storage: 'granted',
-          analytics_storage: 'granted',
-        });
-      }
-      gtag('js', new Date());
-      gtag(
-        'config',
-        'UA-178392896-1',
-        { anonymize_ip: true },
-        { siteSpeedSampleRate: 100 }
-      );
-      // Feature detects Navigation Timing API support.
-      if (window.performance) {
-        // Gets the number of milliseconds since page load
-        // (and rounds the result since the value must be an integer).
-        var timeSincePageLoad = Math.round(performance.now());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    // Default ad_storage / analytics_storageto 'denied'.
+    // False (refused) or doesn't exists (no opt-in): DENIED
+    let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
+    // console.log('cond: ', cond);
+    if (!cond || cond === false || cond.toString() === 'false') {
+      // console.log('Onload: GA DENIED');
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+      });
+    } else {
+      // console.log('Onload: GA ACCEPTED');
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+      });
+    }
+    gtag('js', new Date());
+    gtag(
+      'config',
+      'UA-178392896-1',
+      { anonymize_ip: true },
+      { siteSpeedSampleRate: 100 }
+    );
+    // Feature detects Navigation Timing API support.
+    if (window.performance) {
+      // Gets the number of milliseconds since page load
+      // (and rounds the result since the value must be an integer).
+      var timeSincePageLoad = Math.round(performance.now());
 
-        // Sends the timing event to Google Analytics.
-        gtag('event', 'timing_complete', {
-          name: 'load',
-          value: timeSincePageLoad,
-          event_category: 'JS Dependencies',
-        });
-      }
-    </script>
-    <script>
+      // Sends the timing event to Google Analytics.
+      gtag('event', 'timing_complete', {
+        name: 'load',
+        value: timeSincePageLoad,
+        event_category: 'JS Dependencies',
+      });
+    }
+  </script>
+  <script>
     function consentGranted() {
       // console.log("consentGranted()");
       gtag('consent', 'update', {
@@ -56,329 +56,312 @@
         analytics_storage: 'granted',
       });
     }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="language" content="english">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio - Privacy Policies and Terms and Conditions | Vincent Chilot</title>
-    <meta name="description" content="My portfolio - Privacy Policies and Terms and Conditions">
-    <meta name="author" content="Vincent Chilot">
-    <meta
-      name="keywords"
-      content="frontend, developer, portfolio, Privacy Policies and Terms and Conditions"
-    >
-    <meta name=”robots” content=”index,follow”>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Open graph -->
-    <meta
-      property="og:url"
-      content="https://raigyo-dev.be/src/privacy/privacy.html"
-    />
-    <meta property="og:type" content="projects" />
-    <meta property="og:title" content="Raigyo-dev: My portfolio" />
-    <meta property="og:description" content="Privacy Policies and Terms and Conditions" />
-    <meta property="og:image" content="../img/logos/logo-opengraph-image.png" />
-    <!--  Icons / Styles -->
-    <link href="../css/reset.scss" rel="stylesheet">
-    <link href="../css/style-project.scss" rel="stylesheet">
-    <link href="../img/icons/favicon.ico" rel="shortcut icon">
-    <link href="../img/icons/favicon.png" rel="icon" type="image/png">
-    <link href="../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
-    <!-- link href="../manifest.webmanifest" rel="manifest"/ -->
-  </head>
+  </script>
+  <meta charset="UTF-8">
+  <meta name="language" content="english">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio - Privacy Policies and Terms and Conditions | Vincent Chilot</title>
+  <meta name="description" content="My portfolio - Privacy Policies and Terms and Conditions">
+  <meta name="author" content="Vincent Chilot">
+  <meta name="keywords" content="frontend, developer, portfolio, Privacy Policies and Terms and Conditions">
+  <meta name=”robots” content=”index,follow”>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Open graph -->
+  <meta property="og:url" content="https://raigyo-dev.be/src/privacy/privacy.html" />
+  <meta property="og:type" content="projects" />
+  <meta property="og:title" content="Raigyo-dev: My portfolio" />
+  <meta property="og:description" content="Privacy Policies and Terms and Conditions" />
+  <meta property="og:image" content="../img/logos/logo-opengraph-image.png" />
+  <!--  Icons / Styles -->
+  <link href="../css/reset.scss" rel="stylesheet">
+  <link href="../css/style-project.scss" rel="stylesheet">
+  <link href="../img/icons/favicon.ico" rel="shortcut icon">
+  <link href="../img/icons/favicon.png" rel="icon" type="image/png">
+  <link href="../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
+  <!-- link href="../manifest.webmanifest" rel="manifest"/ -->
+</head>
 
-  <body id="top">
-    <!-- full-width -->
-    <div class="full-width">
-          <!-- HEADER -->
-          <header>
-            <h1>Privacy Policies and Terms and Conditions</em></h1>
-          </header>
-          <!-- /HEADER -->
+<body id="top">
+  <!-- full-width -->
+  <div class="full-width">
+    <!-- HEADER -->
+    <header>
+      <h1>Privacy Policies and Terms and Conditions</em></h1>
+    </header>
+    <!-- /HEADER -->
 
-          <!-- NAVIGATION -->
-          <nav>
-            <ul>
-              <li><a href=" ../../index.html" title="Homepage">Home</a></li>
-              <li>Privacy Policies and Terms and Conditions</li>
-            </ul>
-          </nav>
-          <!-- /NAVIGATION -->
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href=" ../../index.html" title="Homepage">Home</a></li>
+        <li class="selected">Privacy Policies and Terms and Conditions</li>
+      </ul>
+    </nav>
+    <!-- /NAVIGATION -->
 
-      <!-- useful-width -->
-      <main class="useful-width">
+    <!-- useful-width -->
+    <main class="useful-width">
 
-        <!-- SECTION SUMMARY -->
-        <h2>Data privacy statement</h2>
-        <section id="summary">
-          <p>
-            This data privacy statement explains how and what personal data we collect
-            from you through our website.
-          </p>
-          <p>
-            Personal data means all data that can relate to you personally, such as your name,
-            address, e-mail account(s), user behaviour.
-          </p>
-        </section>
-        <!-- / SECTION SUMMARY -->
+      <!-- SECTION SUMMARY -->
+      <h2>Data privacy statement</h2>
+      <section id="summary">
+        <p>
+          This data privacy statement explains how and what personal data we collect
+          from you through our website.
+        </p>
+        <p>
+          Personal data means all data that can relate to you personally, such as your name,
+          address, e-mail account(s), user behaviour.
+        </p>
+      </section>
+      <!-- / SECTION SUMMARY -->
 
-        <h2>We do not track by default</h2>
-        <!-- ARTICLE -->
-        <article>
-          <!-- SECTION POLICY-->
-          <section>
-            <div>
-              <p>By default, this website do not track your data. It uses the <strong>opt-in</strong> principle.</p>
-              <p>
-                If you choose "No, let me visit this site without cookies / tracking" or you don't
-                make a choice (meaning that you still see the cookie consent banner), the website won't
-                track anything.
-              </p>
-              <p>
-                But you won't have any restrictions when viewing the content.
-              </p>
-              <code>
+      <h2>We do not track by default</h2>
+      <!-- ARTICLE -->
+      <article>
+        <!-- SECTION POLICY-->
+        <section>
+          <div>
+            <p>By default, this website do not track your data. It uses the <strong>opt-in</strong> principle.</p>
+            <p>
+              If you choose "No, let me visit this site without cookies / tracking" or you don't
+              make a choice (meaning that you still see the cookie consent banner), the website won't
+              track anything.
+            </p>
+            <p>
+              But you won't have any restrictions when viewing the content.
+            </p>
+            <code>
               gtag('consent', 'default', {
                 ad_storage: 'denied',
                 analytics_storage: 'denied',
               });
               </code>
-              <p>If you choose "Yes, I agree" on the cookie consent notice, tracking using <strong>Google Analytics</strong> will be activated.</p>
-              <code>
+            <p>If you choose "Yes, I agree" on the cookie consent notice, tracking using <strong>Google
+                Analytics</strong> will be activated.</p>
+            <code>
               gtag('consent', 'update', {
                 ad_storage: 'granted',
                 analytics_storage: 'granted',
               });
               </code>
-            </div>
-          </section>
-          <!-- / SECTION POLICY -->
+          </div>
+        </section>
+        <!-- / SECTION POLICY -->
 
-        </article>
-        <!-- / ARTICLE -->
+      </article>
+      <!-- / ARTICLE -->
 
-        <h2>Which data are tracked by Google Analytics?</h2>
-        <!-- ARTICLE -->
-        <article>
-          <!-- SECTION POLICY-->
-          <section>
-            <div>
-              <p>
-                This website use <strong>Google Analytics</strong> to collect some data including:
-                pages viewed, rebound rate, device used.
-              </p>
-              <p>This site doesn't send your IP adress to Google Analytics.</p>
-              <p>Because it doesn't comply with the
-                <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="External link to the regulation">
-                  General Data Protection Regulation (GDPR) (EU) 2016/679
-                </a>
-                , the collect of data is anonymized.
-              </p>
-              <p>So we use the following tag on each page:</p>
-              <code>
+      <h2>Which data are tracked by Google Analytics?</h2>
+      <!-- ARTICLE -->
+      <article>
+        <!-- SECTION POLICY-->
+        <section>
+          <div>
+            <p>
+              This website use <strong>Google Analytics</strong> to collect some data including:
+              pages viewed, rebound rate, device used.
+            </p>
+            <p>This site doesn't send your IP adress to Google Analytics.</p>
+            <p>Because it doesn't comply with the
+              <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noreferrer"
+                title="External link to the regulation">
+                General Data Protection Regulation (GDPR) (EU) 2016/679
+              </a>
+              , the collect of data is anonymized.
+            </p>
+            <p>So we use the following tag on each page:</p>
+            <code>
               gtag('config', '&lt;GA_MEASUREMENT_ID&gt;', { 'anonymize_ip': true });
               </code>
-            </div>
-          </section>
-          <!-- / SECTION POLICY -->
-
-        </article>
-        <!-- / ARTICLE -->
-
-        <h2>Cookies policy / Cookie consent</h2>
-        <!-- ARTICLE -->
-        <article>
-          <!-- SECTION POLICY-->
-          <section>
-            <div>
-              <p>
-                Cookies are usually small text files, given ID tags that are stored on your
-                computer's browser directory or program data subfolders.
-              </p>
-              <p>Cookies are created when you use your browser to visit a website that uses
-                cookies to keep track of your movements within the site, help you resume where
-                 you left off, remember your registered login, theme selection, preferences,
-                 and other customization functions.
-                </p>
-              <p>Use of cookies is regulated by the
-                <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32009L0136"
-                  target="_blank"
-                  rel="noreferrer"
-                  title="External link to the directive">E-privacy Directive 2009/136/EC
-                </a>. That's the reason of cookie consent notice.
-              </p>
-              <p>The cookie consent is displayed on each static page of this website including
-                homepage and landing pages, even if you don't reach this website with the homepage.
-                It will be removed only after approval or rejection.
-              </p>
-              <p>This website doesn't use cookies. But Google Analytics could use some - if cookie
-                consent has been accepted.
-              </p>
-              <table class="blueTable">
-                <thead>
-                  <tr>
-                    <th>Cookie Name</th>
-                    <th>Expiration Time</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>_ga</td>
-                    <td>2 years</td>
-                    <td>Used to distinguish users.</td>
-                  </tr>
-                  <tr>
-                    <td>_gid</td>
-                    <td>24 hours</td>
-                    <td>Used to distinguish users.</td>
-                  </tr>
-                  <tr>
-                    <td>_gat</td>
-                    <td>1 minute</td>
-                    <td>Used to throttle request rate. If Google Analytics is deployed via Google Tag Manager, this cookie will be named _dc_gtm_&lt;property-id&gt;.</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div>Source: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" target="_blank"rel="noreferrer" title="External link to the Google cookie policy">Google Analytics Cookie Usage on Websites</a></div>
-              <p>
-                We do not have any access to the cookies delivered by Google Analytics
-                on your computer.
-              </p>
-            </div>
-          </section>
-          <!-- / SECTION POLICY -->
-
-        </article>
-        <!-- / ARTICLE -->
-
-        <h2>Data storage</h2>
-        <!-- ARTICLE -->
-        <article>
-          <!-- SECTION POLICY-->
-          <section>
-            <div>
-              <p>This website uses session storage data hosted on your browser cache.</p>
-              <p>These data are deleted each time you close your browser.</p>
-              <p>
-                It means that your consent is available for one session only.
-                Each time you will connect to this website, your sonsent will be asked
-              </p>
-              <code>raigyo-dev_consent-policy-popup-read</code>
-              <p>Is used to know if cookie consent has been validated (meaning "accepted" or "declined").</p>
-              <p>The aim is to avoid to see the banner all the time</p>
-              <p> true = Banner read and closed</p>
-              <p> false = Banner not read and still visible on each pages</p>
-              <code>raigyo-dev_consent-policy-accepted</code>
-              <p>
-                They aim of this data is to remember the your choice and send data
-                to Google Analytics or not:
-              </p>
-              <p>true = accepted</p>
-              <p>false = declined</p>
-            </div>
-          </section>
-          <!-- / SECTION POLICY -->
-
-        </article>
-        <!-- / ARTICLE -->
-
-        <h2>External links</h2>
-        <!-- ARTICLE -->
-        <article>
-          <!-- SECTION POLICY-->
-          <section>
-            <div>
-              <p>Websites and demos provided in this portfolio do not make use of cookies.</p>
-              <p>
-                But, we can't provide any policy security about the external providers
-                from this website including:
-              </p>
-              <ul>
-                <li>Github (Microsoft Corporation)</li>
-                <li>LinkedIn (Microsoft Corporation)</li>
-                <li>Google Drive (Google LLC / Alphabet)</li>
-                <li>Heroku (Salesforce)</li>
-                <li>Netlify</li>
-                <li>PlanetHoster</li>
-              </ul>
-            </div>
-          </section>
-          <!-- / SECTION POLICY -->
-
-        </article>
-        <!-- / ARTICLE -->
-
-        <!-- SECTION CONTACTS -->
-        <h2 id="contact-header">Contact / Questions</h2>
-        <section>
-          <!-- FlexBox Container -->
-          <div id="contact-section">
-            <div class="logo-contact">
-              <a
-                href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%69%6E%63%65%6E%74%2E%63%68%69%6C%6F%74%40%67%6D%61%69%6C%2E%63%6F%6D"
-                target="_blank"
-                rel="noreferrer"
-                onclick="gtag('event', 'clic', {'event_category': 'to email', 'event_label': 'open-mailbox'});"
-              >
-                <img
-                  src="../img/icons/icon-email.png"
-                  alt="Logo Email"
-                  title="External link to email application"
-                />
-              </a>
-              <p>Email</p>
-            </div>
           </div>
-          <!-- / FlexBox Container -->
         </section>
-        <!-- SECTION CONTACTS -->
+        <!-- / SECTION POLICY -->
 
-      </main>
-      <!-- /useful-width -->
+      </article>
+      <!-- / ARTICLE -->
 
-      <!-- Home / Top links -->
-      <div id="top-link">
-        <a href="../../index.html" title="Link to Homepage">
-          <img
-            src="../img/icons/icon-homepage.png"
-            alt="Homepage icon"
-          />
-        </a>
-        <a href="#top" title="Back to top of the page">
-          <img
-            src="../img/icons/icon-top.png"
-            alt="Top of the page icon"
-          />
-        </a>
-      </div>
-      <!-- / Home / Top links -->
+      <h2>Cookies policy / Cookie consent</h2>
+      <!-- ARTICLE -->
+      <article>
+        <!-- SECTION POLICY-->
+        <section>
+          <div>
+            <p>
+              Cookies are usually small text files, given ID tags that are stored on your
+              computer's browser directory or program data subfolders.
+            </p>
+            <p>Cookies are created when you use your browser to visit a website that uses
+              cookies to keep track of your movements within the site, help you resume where
+              you left off, remember your registered login, theme selection, preferences,
+              and other customization functions.
+            </p>
+            <p>Use of cookies is regulated by the
+              <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32009L0136" target="_blank"
+                rel="noreferrer" title="External link to the directive">E-privacy Directive 2009/136/EC
+              </a>. That's the reason of cookie consent notice.
+            </p>
+            <p>The cookie consent is displayed on each static page of this website including
+              homepage and landing pages, even if you don't reach this website with the homepage.
+              It will be removed only after approval or rejection.
+            </p>
+            <p>This website doesn't use cookies. But Google Analytics could use some - if cookie
+              consent has been accepted.
+            </p>
+            <table class="blueTable">
+              <thead>
+                <tr>
+                  <th>Cookie Name</th>
+                  <th>Expiration Time</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>_ga</td>
+                  <td>2 years</td>
+                  <td>Used to distinguish users.</td>
+                </tr>
+                <tr>
+                  <td>_gid</td>
+                  <td>24 hours</td>
+                  <td>Used to distinguish users.</td>
+                </tr>
+                <tr>
+                  <td>_gat</td>
+                  <td>1 minute</td>
+                  <td>Used to throttle request rate. If Google Analytics is deployed via Google Tag Manager, this cookie
+                    will be named _dc_gtm_&lt;property-id&gt;.</td>
+                </tr>
+              </tbody>
+            </table>
+            <div>Source: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
+                target="_blank" rel="noreferrer" title="External link to the Google cookie policy">Google Analytics
+                Cookie Usage on Websites</a></div>
+            <p>
+              We do not have any access to the cookies delivered by Google Analytics
+              on your computer.
+            </p>
+          </div>
+        </section>
+        <!-- / SECTION POLICY -->
 
-      <!-- FOOTER -->
-      <footer>
-        <span>2021 &copy; Vincent Chilot - Privacy Policies and Terms and Conditions</span>
-      </footer>
-      <!-- /FOOTER -->
+      </article>
+      <!-- / ARTICLE -->
 
-      <!-- COOKIE CONSENT -->
-      <div id="consent-popup" class="hidden">
-        <h2>Let us know you agree to cookies</h2>
-        <p>By Clicking on "Yes, I agree", you agree to the storing of cookies on your device and tracking
-          to analyze site usage.
-          For more informations, please visit our PRIVACY POLICY.</p>
-        <div class="buttons-consent">
-          <button id="accept"><a onclick="consentGranted()" href="#0">Yes, I agree</a></button>
-          <button id="refuse"><a  href="#0">No, let me visit this site without cookies / tracking</a></button>
+      <h2>Data storage</h2>
+      <!-- ARTICLE -->
+      <article>
+        <!-- SECTION POLICY-->
+        <section>
+          <div>
+            <p>This website uses session storage data hosted on your browser cache.</p>
+            <p>These data are deleted each time you close your browser.</p>
+            <p>
+              It means that your consent is available for one session only.
+              Each time you will connect to this website, your consent will be asked
+            </p>
+            <code>raigyo-dev_consent-policy-popup-read</code>
+            <p>Is used to know if cookie consent has been validated (meaning "accepted" or "declined").</p>
+            <p>The aim is to avoid to see the banner all the time</p>
+            <p> true = Banner read and closed</p>
+            <p> false = Banner not read and still visible on each pages</p>
+            <code>raigyo-dev_consent-policy-accepted</code>
+            <p>
+              They aim of this data is to remember the your choice and send data
+              to Google Analytics or not:
+            </p>
+            <p>true = accepted</p>
+            <p>false = declined</p>
+          </div>
+        </section>
+        <!-- / SECTION POLICY -->
+
+      </article>
+      <!-- / ARTICLE -->
+
+      <h2>External links</h2>
+      <!-- ARTICLE -->
+      <article>
+        <!-- SECTION POLICY-->
+        <section>
+          <div>
+            <p>Websites and demos provided in this portfolio do not make use of cookies.</p>
+            <p>
+              But, we can't provide any policy security about the external providers
+              from this website including:
+            </p>
+            <ul class="external-providers">
+              <li>Github (Microsoft Corporation)</li>
+              <li>LinkedIn (Microsoft Corporation)</li>
+              <li>Google Drive (Google LLC / Alphabet)</li>
+              <li>Heroku (Salesforce)</li>
+              <li>Netlify</li>
+              <li>PlanetHoster</li>
+            </ul>
+          </div>
+        </section>
+        <!-- / SECTION POLICY -->
+
+      </article>
+      <!-- / ARTICLE -->
+
+      <!-- SECTION CONTACTS -->
+      <h2 id="contact-header">Contact / Questions</h2>
+      <section>
+        <!-- FlexBox Container -->
+        <div id="contact-section">
+          <div class="logo-contact">
+            <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%69%6E%63%65%6E%74%2E%63%68%69%6C%6F%74%40%67%6D%61%69%6C%2E%63%6F%6D"
+              target="_blank" rel="noreferrer"
+              onclick="gtag('event', 'clic', {'event_category': 'to email', 'event_label': 'open-mailbox'});">
+              <img class="privacyImg" src="../img/icons/icon-email.png" alt="Logo Email"
+                title="External link to email application" />
+            </a>
+            <p>Email</p>
+          </div>
         </div>
-        </p>
-      </div>
-      <!-- / COOKIE CONSENT -->
-    </div>
-    <!-- /full-width -->
+        <!-- / FlexBox Container -->
+      </section>
+      <!-- SECTION CONTACTS -->
 
-    <script src="../js/app.js"></script>
-  </body>
+    </main>
+    <!-- /useful-width -->
+
+    <!-- Home / Top links -->
+    <div id="top-link">
+      <a href="../../index.html" title="Link to Homepage">
+        <img src="../img/icons/icon-homepage.png" alt="Homepage icon" />
+      </a>
+      <a href="#top" title="Back to top of the page">
+        <img src="../img/icons/icon-top.png" alt="Top of the page icon" />
+      </a>
+    </div>
+    <!-- / Home / Top links -->
+
+    <!-- FOOTER -->
+    <footer>
+      <span>2021 &copy; Vincent Chilot - Privacy Policies and Terms and Conditions</span>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- COOKIE CONSENT -->
+    <div id="consent-popup" class="hidden">
+      <h2>Let us know you agree to cookies</h2>
+      <p>By Clicking on "Yes, I agree", you agree to the storing of cookies on your device and tracking
+        to analyze site usage.
+        For more informations, please visit our PRIVACY POLICY.</p>
+      <div class="buttons-consent">
+        <button id="accept"><a onclick="consentGranted()" href="#0">Yes, I agree</a></button>
+        <button id="refuse"><a href="#0">No, let me visit this site without cookies / tracking</a></button>
+      </div>
+      </p>
+    </div>
+    <!-- / COOKIE CONSENT -->
+  </div>
+  <!-- /full-width -->
+
+  <script src="../js/app.js"></script>
+</body>
+
 </html>
