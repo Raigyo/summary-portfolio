@@ -483,7 +483,7 @@ p {
   right: 0;
   padding: 2rem 8rem;
   background-color: #140668ef;
-  transition: opacity 1s ease;
+  // transition: opacity 0.1s ease;
   line-height: normal;
   margin-left: auto;
   margin-right: auto;
@@ -565,6 +565,7 @@ p {
     height: auto;
     margin-left: 0%;
     object-fit: cover;
+    filter: none;
   }
   .project .picture {
     width: 100%;
@@ -658,6 +659,7 @@ p {
     min-width: auto;
     height: auto;
     margin-left: 0%;
+    filter: none;
   }
   .project .picture {
     width: 100%;

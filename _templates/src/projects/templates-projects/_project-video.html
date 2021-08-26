@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      // Default ad_storage / analytics_storageto 'denied'.
-      // False (refused) or doesn't exists (no opt-in): DENIED
-      let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
-      // console.log('cond: ', cond);
-      if (!cond || cond === false || cond.toString() === 'false') {
-        // console.log('Onload: GA DENIED');
-        gtag('consent', 'default', {
-          ad_storage: 'denied',
-          analytics_storage: 'denied',
-          wait_for_update: 500,
-        });
-      } else {
-        // console.log('Onload: GA ACCEPTED');
-        gtag('consent', 'update', {
-          ad_storage: 'granted',
-          analytics_storage: 'granted',
-        });
-      }
-      gtag('js', new Date());
-      gtag(
-        'config',
-        'UA-178392896-1',
-        { anonymize_ip: true },
-        { siteSpeedSampleRate: 100 }
-      );
-      // Feature detects Navigation Timing API support.
-      if (window.performance) {
-        // Gets the number of milliseconds since page load
-        // (and rounds the result since the value must be an integer).
-        var timeSincePageLoad = Math.round(performance.now());
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    // Default ad_storage / analytics_storageto 'denied'.
+    // False (refused) or doesn't exists (no opt-in): DENIED
+    let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
+    // console.log('cond: ', cond);
+    if (!cond || cond === false || cond.toString() === 'false') {
+      // console.log('Onload: GA DENIED');
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        analytics_storage: 'denied',
+        // wait_for_update: 500,
+      });
+    } else {
+      // console.log('Onload: GA ACCEPTED');
+      gtag('consent', 'update', {
+        ad_storage: 'granted',
+        analytics_storage: 'granted',
+      });
+    }
+    gtag('js', new Date());
+    gtag(
+      'config',
+      'UA-178392896-1',
+      { anonymize_ip: true },
+      { siteSpeedSampleRate: 100 }
+    );
+    // Feature detects Navigation Timing API support.
+    if (window.performance) {
+      // Gets the number of milliseconds since page load
+      // (and rounds the result since the value must be an integer).
+      var timeSincePageLoad = Math.round(performance.now());
 
-        // Sends the timing event to Google Analytics.
-        gtag('event', 'timing_complete', {
-          name: 'load',
-          value: timeSincePageLoad,
-          event_category: 'JS Dependencies',
-        });
-      }
-    </script>
-    <script>
+      // Sends the timing event to Google Analytics.
+      gtag('event', 'timing_complete', {
+        name: 'load',
+        value: timeSincePageLoad,
+        event_category: 'JS Dependencies',
+      });
+    }
+  </script>
+  <script>
     function consentGranted() {
       // console.log("consentGranted()");
       gtag('consent', 'update', {
@@ -56,159 +56,146 @@
         analytics_storage: 'granted',
       });
     }
-    </script>
-    <meta charset="UTF-8">
-    <meta name="language" content="english">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio - Project name | Vincent Chilot</title>
-    <meta name="description" content="My portfolio - Project name">
-    <meta name="author" content="Vincent Chilot">
-    <meta
-      name="keywords"
-      content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, Project name"
-    >
-    <meta name=”robots” content=”index,follow”>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Open graph -->
-    <meta property="og:url" content="https://raigyo-dev.be/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Raigyo-dev: My portfolio" />
-    <meta property="og:description" content="My portfolio as Front End Developer!" />
-    <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
-    <!--  Icons / Styles -->
-    <link href="../../css/reset.scss" rel="stylesheet">
-    <link href="../../css/style-project.scss" rel="stylesheet">
-    <link href="../../img/icons/favicon.ico" rel="shortcut icon">
-    <link href="../../img/icons/favicon.png" rel="icon" type="image/png">
-    <link href="../../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
-    <link href="../../manifest.webmanifest" rel="manifest"/>
-  </head>
+  </script>
+  <meta charset="UTF-8">
+  <meta name="language" content="english">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My portfolio - Project name | Vincent Chilot</title>
+  <meta name="description" content="My portfolio - Project name">
+  <meta name="author" content="Vincent Chilot">
+  <meta name="keywords"
+    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, Project name">
+  <meta name=”robots” content=”index,follow”>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Open graph -->
+  <meta property="og:url" content="https://raigyo-dev.be/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Raigyo-dev: My portfolio" />
+  <meta property="og:description" content="My portfolio as Front End Developer!" />
+  <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
+  <!--  Icons / Styles -->
+  <link href="../../css/reset.scss" rel="stylesheet">
+  <link href="../../css/style-project.scss" rel="stylesheet">
+  <link href="../../img/icons/favicon.ico" rel="shortcut icon">
+  <link href="../../img/icons/favicon.png" rel="icon" type="image/png">
+  <link href="../../img/icons/icon-apple-touch.png" rel="apple-touch-icon">
+  <link href="../../manifest.webmanifest" rel="manifest" />
+</head>
 
-  <body id="top">
-    <!-- full-width -->
-    <div class="full-width">
-      <!-- HEADER -->
-      <header>
-        <h1>Language: <em>Project name</em></h1>
-      </header>
-      <!-- /HEADER -->
+<body id="top">
+  <!-- full-width -->
+  <div class="full-width">
+    <!-- HEADER -->
+    <header>
+      <h1>Language: <em>Project name</em></h1>
+    </header>
+    <!-- /HEADER -->
 
-      <!-- NAVIGATION -->
-      <nav>
-        <ul>
-          <li><a href="../../../index.html" title="Homepage">Home</a></li>
-          <li>Language | Project name</li>
-        </ul>
-      </nav>
-      <!-- /NAVIGATION -->
+    <!-- NAVIGATION -->
+    <nav>
+      <ul>
+        <li><a href="../../../index.html" title="Homepage">Home</a></li>
+        <li>Language | Project name</li>
+      </ul>
+    </nav>
+    <!-- /NAVIGATION -->
 
-      <!-- useful-width -->
-      <main class="useful-width">
+    <!-- useful-width -->
+    <main class="useful-width">
 
-        <!-- SECTION SUMMARY -->
-        <h2>Summary</h2>
-        <section id="summary">
-          <p>
-            Sed tellus enim, elementum non quam at, pulvinar lobortis ipsum. Nulla facilisi.
-            Sed ut interdum magna. Pellentesque facilisis luctus sem, id tempor lectus tincidunt
-            sit amet. Mauris maximus accumsan dolor eu congue.
-          </p>
-        </section>
-        <!-- / SECTION SUMMARY -->
+      <!-- SECTION SUMMARY -->
+      <h2>Summary</h2>
+      <section id="summary">
+        <p>
+          Sed tellus enim, elementum non quam at, pulvinar lobortis ipsum. Nulla facilisi.
+          Sed ut interdum magna. Pellentesque facilisis luctus sem, id tempor lectus tincidunt
+          sit amet. Mauris maximus accumsan dolor eu congue.
+        </p>
+      </section>
+      <!-- / SECTION SUMMARY -->
 
-        <h2>Medias</h2>
-        <!-- ARTICLE: Medias -->
-        <article>
-          <!-- SECTION CAPTURE -->
-          <section class="picture-project">
-            <div class="capture">
-              <img
-                src="../../img/cms/cms-wordpress-foo-dog.webp"
-                alt="Screen capture of the website"
-              />
-            </div>
-          </section>
-          <!-- / SECTION CAPTURE -->
-
-          <!-- SECTION VIDEO -->
-          <section class="player">
-              <video>
-                <source src="../../videos/logo-vhs.mp4" type="video/mp4">
-                <source src="../../videos/logo-vhs.ogg" type="video/ogg">
-                <source src="../../videos/logo-vhs.webm" type="video/webm">
-                <p>Sorry, your browser doesn't support embedded videos.
-                  Here is a <a href="../../videos/logo-vhs.mp4">link to the video</a> instead.</p>
-              </video>
-              <div class="controls">
-                <button class="playpause">Play</button>
-                <button class="stop">Stop</button>
-                <button class="rwd">Rwd</button>
-                <button class="fwd">Fwd</button>
-                <span class="counter">
-                  <span class="time">00:00</span> / <span class="totaltime">00:00</span>
-                </span>
-                <button class="fullscreen">Full screen
-                  <div class="sr-only">This feature use browser configuration and is not fully accessible.
-                    Press escape to leave fullscreen mode.</div>
-                </button>
-              </div>
-          </section>
-          <!-- /SECTION VIDEO -->
-        </article>
-        <!-- / ARTICLE: Medias -->
-
-        <!-- SECTION LINKS -->
-        <h2>Links</h2>
-        <section>
-          <!-- FlexBox Container -->
-          <div id="contact-section">
-            <div class="logo-contact">
-              <a
-                href="https://github.com/Raigyo"
-                target="_blank" rel="noreferrer"
-                onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});"
-              >
-                <img src="../../img/icons/icon-github.png" alt="Logo Github"
-                title="External link to the project github repository" />
-              </a>
-              <p>Github repository</p>
-            </div>
+      <h2>Medias</h2>
+      <!-- ARTICLE: Medias -->
+      <article>
+        <!-- SECTION CAPTURE -->
+        <section class="picture-project">
+          <div class="capture">
+            <img src="../../img/cms/cms-wordpress-foo-dog.webp" alt="Screen capture of the website" />
           </div>
-
-          <!-- / FlexBox Container -->
         </section>
-        <!-- / SECTION LINKS -->
+        <!-- / SECTION CAPTURE -->
 
-      </main>
-      <!-- /useful-width -->
+        <!-- SECTION VIDEO -->
+        <section class="player">
+          <video>
+            <source src="../../videos/logo-vhs.mp4" type="video/mp4">
+            <source src="../../videos/logo-vhs.ogg" type="video/ogg">
+            <source src="../../videos/logo-vhs.webm" type="video/webm">
+            <p>Sorry, your browser doesn't support embedded videos.
+              Here is a <a href="../../videos/logo-vhs.mp4">link to the video</a> instead.</p>
+          </video>
+          <div class="controls">
+            <button class="playpause">Play</button>
+            <button class="stop">Stop</button>
+            <button class="rwd">Rwd</button>
+            <button class="fwd">Fwd</button>
+            <span class="counter">
+              <span class="time">00:00</span> / <span class="totaltime">00:00</span>
+            </span>
+            <button class="fullscreen">Full screen
+              <div class="sr-only">This feature use browser configuration and is not fully accessible.
+                Press escape to leave fullscreen mode.</div>
+            </button>
+          </div>
+        </section>
+        <!-- /SECTION VIDEO -->
+      </article>
+      <!-- / ARTICLE: Medias -->
 
-      <!-- Home / Top links -->
-      <div id="top-link">
-        <a href="../../../index.html" title="Link to Homepage">
-          <img
-            src="../../img/icons/icon-homepage.png"
-            alt="Homepage icon"
-          />
-        </a>
-        <a href="#top" title="Back to top of the page">
-          <img
-            src="../../img/icons/icon-top.png"
-            alt="Top of the page icon"
-          />
-        </a>
-      </div>
-      <!-- / Home / Top links -->
+      <!-- SECTION LINKS -->
+      <h2>Links</h2>
+      <section>
+        <!-- FlexBox Container -->
+        <div id="contact-section">
+          <div class="logo-contact">
+            <a href="https://github.com/Raigyo" target="_blank" rel="noreferrer"
+              onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});">
+              <img src="../../img/icons/icon-github.png" alt="Logo Github"
+                title="External link to the project github repository" />
+            </a>
+            <p>Github repository</p>
+          </div>
+        </div>
 
-      <!-- FOOTER -->
-      <footer>
-        <span>2020 &copy; Vincent Chilot</span>
-      </footer>
-      <!-- /FOOTER -->
+        <!-- / FlexBox Container -->
+      </section>
+      <!-- / SECTION LINKS -->
 
+    </main>
+    <!-- /useful-width -->
+
+    <!-- Home / Top links -->
+    <div id="top-link">
+      <a href="../../../index.html" title="Link to Homepage">
+        <img src="../../img/icons/icon-homepage.png" alt="Homepage icon" />
+      </a>
+      <a href="#top" title="Back to top of the page">
+        <img src="../../img/icons/icon-top.png" alt="Top of the page icon" />
+      </a>
     </div>
-    <!-- /full-width -->
+    <!-- / Home / Top links -->
 
-  </body>
-  <!-- Scripts -->
-  <!-- script src="../../js/video-player.js"></script>  -->
+    <!-- FOOTER -->
+    <footer>
+      <span>2020 &copy; Vincent Chilot</span>
+    </footer>
+    <!-- /FOOTER -->
+
+  </div>
+  <!-- /full-width -->
+
+</body>
+<!-- Scripts -->
+<!-- script src="../../js/video-player.js"></script>  -->
+
 </html>

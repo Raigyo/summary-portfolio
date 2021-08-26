@@ -60,18 +60,18 @@
   <meta charset="UTF-8">
   <meta name="language" content="english">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio - Socket I/O: Chat | Vincent Chilot</title>
-  <meta name="description" content="My portfolio - Socket I/O: Chat">
+  <title>My portfolio - Angular | Pokémons management</title>
+  <meta name="description" content="My portfolio - Pokémons management">
   <meta name="author" content="Vincent Chilot">
   <meta name="keywords"
-    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, node.js, socket io, chat">
+    content="raigyo-dev.be, raigyo-dev, raigyo, vincent chilot, frontend, developer, développeur, portfolio, angular">
   <meta name=”robots” content=”index,follow”>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- Open graph -->
-  <meta property="og:url" content="https://raigyo-dev.be/src/projects/js-nodejs/node-socketio-chat.html" />
+  <meta property="og:url" content="https://raigyo-dev.be/src/projects/angular/angular-pokemons.html" />
   <meta property="og:type" content="projects" />
   <meta property="og:title" content="Raigyo-dev: My portfolio" />
-  <meta property="og:description" content="Node JS | Socket I/O: Chat" />
+  <meta property="og:description" content="Angular | Pokémons management" />
   <meta property="og:image" content="../../img/logos/logo-opengraph-image.png" />
   <!--  Icons / Styles -->
   <link href="../../css/reset.scss" rel="stylesheet">
@@ -87,15 +87,15 @@
   <div class="full-width">
     <!-- HEADER -->
     <header>
-      <h1>Node JS: <em>Socket I/O: Chat</em></h1>
+      <h1>Angular: <em>Pokémons management</em></h1>
     </header>
     <!-- /HEADER -->
 
     <!-- NAVIGATION -->
     <nav>
       <ul>
-        <li><a href="../../../index.html#projects-js" title="Homepage">Home</a></li>
-        <li class="selected">Node.js | Socket I/O: Chat</li>
+        <li><a href="../../../index.html#projects-angular" title="Homepage">Home</a></li>
+        <li class="selected">Angular | Pokémons management</li>
       </ul>
     </nav>
     <!-- /NAVIGATION -->
@@ -107,20 +107,22 @@
       <h2>Summary</h2>
       <section id="summary">
         <p>
-          Chat application using SocketIO.
+          Angular application of Pokémons from an empty folder, with Angular and TypeScript.
+        </p>
+        <p>Subjects covered:</p>
         <ul>
-          <li>Connexion in main room (Public discussion) with user name.</li>
-          <li>The main chat windows displays also when a user connects or disconnects, and lists of all the connected
-            people.</li>
-          <li>Everybody who's connected has is own room so users can send private messages.</li>
-          <li>A message is displayed when someone is writing but only if the user is in the same room.</li>
-          <li>Messaging uses script tags to prevent cross-site Scripting (XSS) vulnerabilities</li>
+          <li>Components</li>
+          <li>Templates</li>
+          <li>Directives (Components, Attribute, Structural</li>
+          <li>Pipes</li>
+          <li>Routes</li>
+          <li>Modules</li>
+          <li>Services and Dependancies injections (DI)</li>
+          <li>Forms (Template-driven forms, Reactive forms)</li>
+          <li>Reactive programming (RxJS), Streams</li>
+          <li>HTTP Request, Observables</li>
+          <li>Authentication / Guards</li>
         </ul>
-        </p>
-        <p>
-          A link to my repository 'In the heart of node' is also included as link. This repository provides
-          an overview about NodeJS advanced features like: event emitters, custom events, streams (duplex, transform)...
-        </p>
       </section>
       <!-- / SECTION SUMMARY -->
 
@@ -131,14 +133,14 @@
         <section class="picture-project">
           <div class="capture">
             <a href="#img1">
-              <img src="../../img/js-nodejs/node-socketio-chat-01.webp"
+              <img src="../../img/angular/angular-pokemons-01.webp"
                 alt="Screen capture of the website - will open an overlay on click" />
             </a>
           </div>
           <!-- lightbox container hidden with CSS -->
           <a href="#0" class="lightbox" id="img1">
             <button aria-label="Close"></button>
-            <span style="background-image: url('../../img/js-nodejs/node-socketio-chat-01.webp')"></span>
+            <span style="background-image: url('../../img/angular/angular-pokemons-01.webp')"></span>
           </a>
         </section>
         <!-- / SECTION CAPTURE -->
@@ -146,14 +148,14 @@
         <section class="picture-project">
           <div class="capture">
             <a href="#img2">
-              <img src="../../img/js-nodejs/node-socketio-chat-02.webp"
+              <img src="../../img/angular/angular-pokemons-02.webp"
                 alt="Screen capture of the website - will open an overlay on click" />
             </a>
           </div>
           <!-- lightbox container hidden with CSS -->
           <a href="#0" class="lightbox" id="img2">
             <button aria-label="Close"></button>
-            <span style="background-image: url('../../img/js-nodejs/node-socketio-chat-02.webp')"></span>
+            <span style="background-image: url('../../img/angular/angular-pokemons-02.webp')"></span>
           </a>
         </section>
         <!-- / SECTION CAPTURE -->
@@ -166,31 +168,22 @@
         <!-- FlexBox Container -->
         <div id="contact-section">
           <div class="logo-contact">
-            <a href="https://github.com/Raigyo/node-socket-io-chat" target="_blank" rel="noreferrer"
+            <a href="https://github.com/Raigyo/angular-pokemons" target="_blank" rel="noreferrer"
               onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});">
               <img src="../../img/icons/icon-github.png" alt="Logo Github"
                 title="External link to the project github repository" />
             </a>
-            <p>Github repository:</p>
-            <p>node-socket-io-chat</p>
+            <p>Github repository:
+            <p>angular-pokemons</p>
           </div>
           <div class="logo-contact">
-            <a href="https://github.com/Raigyo/in-the-heart-of-node" target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to projet github', 'event_label': 'open-project-github'});">
-              <img src="../../img/icons/icon-github.png" alt="Logo Github"
-                title="External link to the project github repository" />
-            </a>
-            <p>Github repository:</p>
-            <p>in-the-heart-of-node</p>
-          </div>
-          <div class="logo-contact">
-            <a href="https://raigyo-socket-chat.herokuapp.com/" target="_blank" rel="noreferrer"
+            <a href="https://kind-beaver-4ac55d.netlify.app/" target="_blank" rel="noreferrer"
               onclick="gtag('event', 'clic', {'event_category': 'to projet online', 'event_label': 'open-project-online'});">
               <img src="../../img/icons/icone-online.png" alt="Logo Github"
                 title="External link to the online version" />
             </a>
             <p>Online version:</p>
-            <p>Chat</p>
+            <p>Pokémons management</p>
           </div>
         </div>
 
@@ -203,7 +196,7 @@
 
     <!-- Home / Top links -->
     <div id="top-link">
-      <a href="../../../index.html#projects-js" title="Link to Homepage">
+      <a href="../../../index.html#projects-angular" title="Link to Homepage">
         <img src="../../img/icons/icon-homepage.png" alt="Homepage icon" />
       </a>
       <a href="#top" title="Back to top of the page">

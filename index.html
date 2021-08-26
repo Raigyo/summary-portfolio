@@ -14,14 +14,14 @@
     let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
     console.log('cond: ', cond);
     if (!cond || cond === false || cond.toString() === 'false') {
-      // console.log('Onload: GA DENIED');
+      console.log('Onload:', cond);
       gtag('consent', 'default', {
         ad_storage: 'denied',
         analytics_storage: 'denied',
-        wait_for_update: 500,
+        // wait_for_update: 500,
       });
     } else {
-      // console.log('Onload: GA ACCEPTED');
+      console.log('Onload: GA', cond);
       gtag('consent', 'update', {
         ad_storage: 'granted',
         analytics_storage: 'granted',
@@ -50,7 +50,7 @@
   </script>
   <script>
     function consentGranted() {
-      // console.log("consentGranted()");
+      console.log("consentGranted()");
       gtag('consent', 'update', {
         ad_storage: 'granted',
         analytics_storage: 'granted',
@@ -362,6 +362,18 @@
               <h4>React - React Native</h4>
               <!-- RELATED PROJECT -->
               <div class="project">
+                <a href="./src/projects/react/react-redux-nyt.html">
+                  <div class="picture">
+                    <img src="./src/img/hp-cards/react-redux-nyt.webp" alt="Picture of the project"
+                      title="Link to project page" />
+                  </div>
+                  <span>Context API: New York Times</span>
+                  <span class="date-project">June 2021</span>
+                </a>
+              </div>
+              <!-- /RELATED PROJECT -->
+              <!-- RELATED PROJECT -->
+              <div class="project">
                 <a href="./src/projects/react/react-nextjs-stream.html">
                   <div class="picture">
                     <img src="./src/img/hp-cards/react-nextjs-stream.webp" alt="Picture of the project"
@@ -592,6 +604,18 @@
               <h4>Angular</h4>
               <!-- RELATED PROJECT -->
               <div class="project">
+                <a href="./src/projects/angular/angular-pokemons.html">
+                  <div class="picture">
+                    <img src="./src/img/hp-cards/angular-pokemons.webp" alt="Picture of the project"
+                      title="Link to project page" />
+                  </div>
+                  <span>Pokémons management</span>
+                  <span class="date-project">July / August 2021</span>
+                </a>
+              </div>
+              <!-- /RELATED PROJECT -->
+              <!-- RELATED PROJECT -->
+              <div class="project">
                 <a href="./src/projects/angular/angular-mean-dev-blog.html">
                   <div class="picture">
                     <img src="./src/img/hp-cards/angular-mean-dev-blog.webp" alt="Picture of the project"
@@ -685,6 +709,18 @@
           <article>
             <div class="project-type" id="projects-3d">
               <h4>3D / Unity - C# / WebGL</h4>
+              <!-- RELATED PROJECT -->
+              <div class="project">
+                <a href="./src/projects/unity-webgl/webgl-three-js-typescript.html">
+                  <div class="picture">
+                    <img src="./src/img/hp-cards/webgl-three-js-typescript.webp" alt="Picture of the project"
+                      title="Link to project page" />
+                  </div>
+                  <span>Three.js and TypeScript</span>
+                  <span class="date-project">June / July / August 2021</span>
+                </a>
+              </div>
+              <!-- /RELATED PROJECT -->
               <!-- RELATED PROJECT -->
               <div class="project">
                 <a href="./src/projects/unity-webgl/webgl-three-js.html">
@@ -913,8 +949,8 @@
 
     <!-- FOOTER -->
     <footer>
-      <span>2021 &copy; Vincent Chilot - Last update: June 2021 - <a href="./src/privacy/privacy.html">Privacy Policies
-          and Terms and Conditions</a></span>
+      <span>2021 &copy; Vincent Chilot - Last update: August 2021 - <a href="./src/privacy/privacy.html">Privacy
+          Policies and Terms and Conditions</a></span>
     </footer>
     <!-- /FOOTER -->
 
