@@ -107,8 +107,7 @@ header {
 
 nav {
   text-align: center;
-  background: #000;
-  box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
+
   font-size-adjust: 1.1em;
   padding: 15px;
   ul {
@@ -150,6 +149,20 @@ nav {
   //Safari accessibility
   ul li::before {
     content: '\200B';
+  }
+}
+
+nav.main {
+  background: #000;
+  box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
+}
+
+nav.project-nav {
+  a {
+    color: rgb(0, 0, 0);
+  }
+  a::after {
+    background: rgb(0, 0, 0);
   }
 }
 
