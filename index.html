@@ -2,61 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    // Default ad_storage / analytics_storageto 'denied'.
-    // False (refused) or doesn't exists (no opt-in): DENIED
-    let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
-    console.log('cond: ', cond);
-    if (!cond || cond === false || cond.toString() === 'false') {
-      console.log('Onload:', cond);
-      gtag('consent', 'default', {
-        ad_storage: 'denied',
-        analytics_storage: 'denied',
-        // wait_for_update: 500,
-      });
-    } else {
-      console.log('Onload: GA', cond);
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-    gtag('js', new Date());
-    gtag(
-      'config',
-      'UA-178392896-1',
-      { anonymize_ip: true },
-      { siteSpeedSampleRate: 100 }
-    );
-    // Feature detects Navigation Timing API support.
-    if (window.performance) {
-      // Gets the number of milliseconds since page load
-      // (and rounds the result since the value must be an integer).
-      var timeSincePageLoad = Math.round(performance.now());
-
-      // Sends the timing event to Google Analytics.
-      gtag('event', 'timing_complete', {
-        name: 'load',
-        value: timeSincePageLoad,
-        event_category: 'JS Dependencies',
-      });
-    }
-  </script>
-  <script>
-    function consentGranted() {
-      console.log("consentGranted()");
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-  </script>
   <meta charset="UTF-8">
   <meta name="language" content="english">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -133,8 +78,8 @@
           </p>
         </div>
       </section>
-      </section>
       <!-- /SECTION INTRO -->
+
 
       <!-- SECTION PROJECTS -->
       <h3 id="projects-header">Projects</h3>
@@ -261,9 +206,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -349,9 +294,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -485,9 +430,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -562,9 +507,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -615,9 +560,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -668,9 +613,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -734,9 +679,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -811,9 +756,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -888,9 +833,9 @@
 
           <!-- Top link -->
           <div id="top-link-small">
-            <a href="#top" title="Link to top of the page">
-              <img src="./src/img/icons/icon-top-small.png" alt="Top of the page icon"
-                title="Link to top of the page" />
+            <a href="#projects-header" title="Link to top of the page">
+              <img src="./src/img/icons/icon-top-small.png" alt="Top of the project list icon"
+                title="Link to projects" />
             </a>
           </div>
           <!-- /Top link -->
@@ -907,31 +852,27 @@
         <!-- FlexBox Container -->
         <div id="contact-section">
           <div class="logo-contact">
-            <a href="https://github.com/Raigyo" target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to hp github', 'event_label': 'open-hp-github'});">
+            <a href="https://github.com/Raigyo" target="_blank" rel="noreferrer">
               <img src="./src/img/icons/icon-github.png" alt="Logo Github" title="External link to my Github" />
             </a>
             <p>Github</p>
           </div>
           <div class="logo-contact">
-            <a href="https://www.linkedin.com/in/vincent-chilot/" target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to linkedIn', 'event_label': 'open-linkedin'});">
+            <a href="https://www.linkedin.com/in/vincent-chilot/" target="_blank" rel="noreferrer">
               <img src="./src/img/icons/icon-linkedin.png" alt="Logo linkedIn" title="External link to my LinkedIn" />
             </a>
             <p>LinkedIn</p>
           </div>
           <div class="logo-contact">
             <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%69%6E%63%65%6E%74%2E%63%68%69%6C%6F%74%40%67%6D%61%69%6C%2E%63%6F%6D"
-              target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to email', 'event_label': 'open-mailbox'});">
+              target="_blank" rel="noreferrer">
               <img src="./src/img/icons/icon-email.png" alt="Logo Email" title="External link to email application" />
             </a>
             <p>Email</p>
           </div>
           <div class="logo-contact">
             <a href="https://drive.google.com/file/d/1erDpdBCUSD0jHNzver7oh6GsQpwetxDe/view" target="_blank"
-              rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to my cv', 'event_label': 'open-cv'});">
+              rel="noreferrer">
               <img src="./src/img/icons/icon-resume.png" alt="Logo resume" title="External link to my resume" />
             </a>
             <p>My resume</p>
@@ -941,29 +882,25 @@
         <!-- FlexBox Container -->
         <div id="contact-section-mobile">
           <div class="logo-contact">
-            <a href="https://github.com/Raigyo" title="External link to my Github" target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to hp github', 'event_label': 'open-hp-github'});">
+            <a href="https://github.com/Raigyo" title="External link to my Github" target="_blank" rel="noreferrer">
               <p>Github</p>
             </a>
           </div>
           <div class="logo-contact">
             <a href="https://www.linkedin.com/in/vincent-chilot/" title="External link to my LinkedIn" target="_blank"
-              rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to linkedIn', 'event_label': 'open-linkedin'});">
+              rel="noreferrer">
               <p>LinkedIn</p>
             </a>
           </div>
           <div class="logo-contact">
             <a href="mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#58;%76%69%6E%63%65%6E%74%2E%63%68%69%6C%6F%74%40%67%6D%61%69%6C%2E%63%6F%6D"
-              title="External link to email application" target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to email', 'event_label': 'open-mailbox'});">
+              title="External link to email application" target="_blank" rel="noreferrer">
               <p>Email</p>
             </a>
           </div>
           <div class="logo-contact">
             <a href="https://drive.google.com/file/d/1erDpdBCUSD0jHNzver7oh6GsQpwetxDe/view"
-              title="External link to my resume" target="_blank" rel="noreferrer"
-              onclick="gtag('event', 'clic', {'event_category': 'to my cv', 'event_label': 'open-cv'});">
+              title="External link to my resume" target="_blank" rel="noreferrer">
               <p>My resume</p>
             </a>
           </div>

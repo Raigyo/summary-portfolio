@@ -143,6 +143,16 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://raigyo-dev.be/src/projects/vue/vue-vuetify.html</loc>
+  <lastmod>2021-12-07T16:28:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/vue/vue-progressor.html</loc>
+  <lastmod>2021-12-07T16:28:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://raigyo-dev.be/src/projects/vue/vuex-shop.html</loc>
   <lastmod>2021-01-19T16:28:12+00:00</lastmod>
   <priority>0.80</priority>
@@ -155,6 +165,21 @@
 <url>
   <loc>https://raigyo-dev.be/src/projects/vue/vue-contact-manager.html</loc>
   <lastmod>2021-01-19T16:28:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/angular/angular-pokemons.html</loc>
+  <lastmod>2021-08-261T16:15:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/angular/angular-mean-dev-blog.html</loc>
+  <lastmod>2021-06-021T16:15:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://raigyo-dev.be/src/projects/angular/angular-restaurant.html</loc>
+  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -173,18 +198,8 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://raigyo-dev.be/src/projects/angular/angular-pokemons.html</loc>
-  <lastmod>2021-08-261T16:15:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/angular/angular-mean-dev-blog.html</loc>
-  <lastmod>2021-06-021T16:15:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://raigyo-dev.be/src/projects/angular/angular-restaurant.html</loc>
-  <lastmod>2021-01-19T16:28:05+00:00</lastmod>
+  <loc>https://raigyo-dev.be/src/projects/php/symfony-monitoring.html</loc>
+  <lastmod>2021-12-07T16:28:10+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>

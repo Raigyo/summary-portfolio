@@ -253,7 +253,8 @@ p {
   border-radius: 10px;
 
   img {
-    width: 30%;
+    width: 75px;
+    height: 75px;
     transition: 0.5s all ease-in-out;
     padding-bottom: 5px;
 
@@ -440,9 +441,9 @@ code {
   word-break: break-all;
 }
 
-.logo-contact .privacyImg {
-  width: 15%;
-}
+// .logo-contact .privacyImg {
+//   width: 15%;
+// }
 
 .external-providers {
   list-style-type: none;
@@ -663,14 +664,10 @@ table.blueTable {
     width: 100%;
     margin: 15px auto;
   }
-  #contact-section img {
-    width: 20%;
-    min-width: auto;
-    height: auto;
 
-    .privacyImg {
-      width: 15%;
-    }
+  #contact-section img {
+    width: 75px;
+    height: 75px;
   }
 
   #contact-section .logo-contact {
@@ -679,33 +676,4 @@ table.blueTable {
   #contact-section .logo-contact p {
     white-space: nowrap;
   }
-  /*
-  #consent-popup {
-    position: fixed;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    padding: 0px 14px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    overflow: auto;
-
-    h3,
-    p {
-      padding-bottom: 0;
-    }
-
-    .buttons-consent {
-      margin: auto;
-      flex-wrap: wrap;
-      button {
-        width: 90%;
-        padding: 10px;
-        margin: 15px;
-        margin-bottom: 10px;
-      }
-    }
-  }*/
 }
