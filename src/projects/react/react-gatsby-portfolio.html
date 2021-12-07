@@ -2,61 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    // Default ad_storage / analytics_storageto 'denied'.
-    // False (refused) or doesn't exists (no opt-in): DENIED
-    let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
-    // console.log('cond: ', cond);
-    if (!cond || cond === false || cond.toString() === 'false') {
-      // console.log('Onload: GA DENIED');
-      gtag('consent', 'default', {
-        ad_storage: 'denied',
-        analytics_storage: 'denied',
-        // wait_for_update: 500,
-      });
-    } else {
-      // console.log('Onload: GA ACCEPTED');
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-    gtag('js', new Date());
-    gtag(
-      'config',
-      'UA-178392896-1',
-      { anonymize_ip: true },
-      { siteSpeedSampleRate: 100 }
-    );
-    // Feature detects Navigation Timing API support.
-    if (window.performance) {
-      // Gets the number of milliseconds since page load
-      // (and rounds the result since the value must be an integer).
-      var timeSincePageLoad = Math.round(performance.now());
-
-      // Sends the timing event to Google Analytics.
-      gtag('event', 'timing_complete', {
-        name: 'load',
-        value: timeSincePageLoad,
-        event_category: 'JS Dependencies',
-      });
-    }
-  </script>
-  <script>
-    function consentGranted() {
-      // console.log("consentGranted()");
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-  </script>
   <meta charset="UTF-8">
   <meta name="language" content="english">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -217,23 +162,8 @@
           Conditions</a></span>
     </footer>
     <!-- /FOOTER -->
-
-    <!-- COOKIE CONSENT -->
-    <div id="consent-popup" class="hidden">
-      <h2>Let us know you agree to cookies</h2>
-      <p>By Clicking on "Yes, I agree", you agree to the storing of cookies on your device and tracking
-        to analyze site usage.
-        For more informations, please visit our <a href="../../privacy/privacy.html">Privacy Policy</a>.</p>
-      <div class="buttons-consent">
-        <button id="accept"><a onclick="consentGranted()" href="#0">Yes, I agree</a></button>
-        <button id="refuse"><a href="#0">No, let me visit this site without cookies / tracking</a></button>
-      </div>
-      </p>
-    </div>
-    <!-- / COOKIE CONSENT -->
   </div>
   <!-- /full-width -->
-  <script src="../../js/app.js"></script>
 </body>
 
 </html>

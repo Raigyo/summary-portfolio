@@ -3,6 +3,7 @@
 $mainBackgroundColor: rgba(230, 230, 230, 0.7);
 $headerFooterBackgroundColor: #000;
 $sectionsBackgroundColor: rgba(60, 72, 88, 0.14);
+$projectBackgroundColor: rgba(46, 47, 48, 0.65);
 
 /* PLACEHOLDERS */
 
@@ -379,7 +380,7 @@ p {
 /* CLASSES */
 
 .project {
-  background: rgba(12, 119, 241, 0.65);
+  background: $projectBackgroundColor;
   color: aliceblue;
   width: 300px;
   margin: 30px;
@@ -399,7 +400,7 @@ p {
     height: 266px;
     margin-left: -25%;
     transition: 0.5s all ease-in-out;
-    filter: grayscale(100%) blur(0.5px);
+    /* filter: grayscale(100%) blur(0.5px); */
     object-fit: cover;
   }
 
@@ -407,12 +408,13 @@ p {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     img {
       transform: scale(1.1);
-      filter: none;
+      /* filter: none; */
     }
   }
 
   span {
     line-height: 18px;
+    padding-bottom: 3px;
   }
 
   .date-project {
@@ -474,7 +476,7 @@ p {
 }
 
 /* COOKIE CONSENT */
-
+/*
 #consent-popup {
   position: fixed;
   color: white;
@@ -499,7 +501,7 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-
+  
   .buttons-consent {
     display: flex;
     justify-content: center;
@@ -536,7 +538,7 @@ p {
   &.hidden {
     display: none;
   }
-}
+}*/
 
 /* ACCESSIBILITY */
 
@@ -565,7 +567,7 @@ p {
     height: auto;
     margin-left: 0%;
     object-fit: cover;
-    filter: none;
+    /* filter: none; */
   }
   .project .picture {
     width: 100%;
@@ -609,6 +611,7 @@ p {
   header h2 {
     width: 90%;
   }
+  /*
   #consent-popup {
     position: fixed;
     bottom: 2rem;
@@ -634,7 +637,7 @@ p {
         margin-bottom: 10px;
       }
     }
-  }
+  }*/
 }
 
 /* Tablet */
@@ -659,7 +662,7 @@ p {
     min-width: auto;
     height: auto;
     margin-left: 0%;
-    filter: none;
+    /* filter: none; */
   }
   .project .picture {
     width: 100%;
@@ -706,6 +709,8 @@ p {
   header h2 {
     width: 90%;
   }
+
+  /*
   #consent-popup {
     position: fixed;
     bottom: 2rem;
@@ -731,11 +736,14 @@ p {
         margin-bottom: 10px;
       }
     }
-  }
+  }*/
 }
 
 /* Desktop */
 @media (min-width: 1025px) {
+  .project {
+    height: 340px;
+  }
   .project img {
     object-fit: fill;
   }

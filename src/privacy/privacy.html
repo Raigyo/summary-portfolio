@@ -2,61 +2,6 @@
 <html lang="en">
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178392896-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    // Default ad_storage / analytics_storageto 'denied'.
-    // False (refused) or doesn't exists (no opt-in): DENIED
-    let cond = window.sessionStorage.getItem('raigyo-dev_consent-policy-accepted');
-    // console.log('cond: ', cond);
-    if (!cond || cond === false || cond.toString() === 'false') {
-      // console.log('Onload: GA DENIED');
-      gtag('consent', 'default', {
-        ad_storage: 'denied',
-        analytics_storage: 'denied',
-        // wait_for_update: 500,
-      });
-    } else {
-      // console.log('Onload: GA ACCEPTED');
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-    gtag('js', new Date());
-    gtag(
-      'config',
-      'UA-178392896-1',
-      { anonymize_ip: true },
-      { siteSpeedSampleRate: 100 }
-    );
-    // Feature detects Navigation Timing API support.
-    if (window.performance) {
-      // Gets the number of milliseconds since page load
-      // (and rounds the result since the value must be an integer).
-      var timeSincePageLoad = Math.round(performance.now());
-
-      // Sends the timing event to Google Analytics.
-      gtag('event', 'timing_complete', {
-        name: 'load',
-        value: timeSincePageLoad,
-        event_category: 'JS Dependencies',
-      });
-    }
-  </script>
-  <script>
-    function consentGranted() {
-      // console.log("consentGranted()");
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-  </script>
   <meta charset="UTF-8">
   <meta name="language" content="english">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,177 +61,14 @@
       </section>
       <!-- / SECTION SUMMARY -->
 
-      <h2>We do not track by default</h2>
+      <h2>We don't use cookies!</h2>
       <!-- ARTICLE -->
       <article>
         <!-- SECTION POLICY-->
         <section>
           <div>
-            <p>By default, this website do not track your data. It uses the <strong>opt-in</strong> principle.</p>
-            <p>
-              If you choose "No, let me visit this site without cookies / tracking" or you don't
-              make a choice (meaning that you still see the cookie consent banner), the website won't
-              track anything.
+            <p>This website and end external websites and demos provided in this portfolio do not make use of cookies.
             </p>
-            <p>
-              But you won't have any restrictions when viewing the content.
-            </p>
-            <code>
-              gtag('consent', 'default', {
-                ad_storage: 'denied',
-                analytics_storage: 'denied',
-              });
-              </code>
-            <p>If you choose "Yes, I agree" on the cookie consent notice, tracking using <strong>Google
-                Analytics</strong> will be activated.</p>
-            <code>
-              gtag('consent', 'update', {
-                ad_storage: 'granted',
-                analytics_storage: 'granted',
-              });
-              </code>
-          </div>
-        </section>
-        <!-- / SECTION POLICY -->
-
-      </article>
-      <!-- / ARTICLE -->
-
-      <h2>Which data are tracked by Google Analytics?</h2>
-      <!-- ARTICLE -->
-      <article>
-        <!-- SECTION POLICY-->
-        <section>
-          <div>
-            <p>
-              This website use <strong>Google Analytics</strong> to collect some data including:
-              pages viewed, rebound rate, device used.
-            </p>
-            <p>This site doesn't send your IP adress to Google Analytics.</p>
-            <p>Because it doesn't comply with the
-              <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj" target="_blank" rel="noreferrer"
-                title="External link to the regulation">
-                General Data Protection Regulation (GDPR) (EU) 2016/679
-              </a>
-              , the collect of data is anonymized.
-            </p>
-            <p>So we use the following tag on each page:</p>
-            <code>
-              gtag('config', '&lt;GA_MEASUREMENT_ID&gt;', { 'anonymize_ip': true });
-              </code>
-          </div>
-        </section>
-        <!-- / SECTION POLICY -->
-
-      </article>
-      <!-- / ARTICLE -->
-
-      <h2>Cookies policy / Cookie consent</h2>
-      <!-- ARTICLE -->
-      <article>
-        <!-- SECTION POLICY-->
-        <section>
-          <div>
-            <p>
-              Cookies are usually small text files, given ID tags that are stored on your
-              computer's browser directory or program data subfolders.
-            </p>
-            <p>Cookies are created when you use your browser to visit a website that uses
-              cookies to keep track of your movements within the site, help you resume where
-              you left off, remember your registered login, theme selection, preferences,
-              and other customization functions.
-            </p>
-            <p>Use of cookies is regulated by the
-              <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=celex%3A32009L0136" target="_blank"
-                rel="noreferrer" title="External link to the directive">E-privacy Directive 2009/136/EC
-              </a>. That's the reason of cookie consent notice.
-            </p>
-            <p>The cookie consent is displayed on each static page of this website including
-              homepage and landing pages, even if you don't reach this website with the homepage.
-              It will be removed only after approval or rejection.
-            </p>
-            <p>This website doesn't use cookies. But Google Analytics could use some - if cookie
-              consent has been accepted.
-            </p>
-            <table class="blueTable">
-              <thead>
-                <tr>
-                  <th>Cookie Name</th>
-                  <th>Expiration Time</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>_ga</td>
-                  <td>2 years</td>
-                  <td>Used to distinguish users.</td>
-                </tr>
-                <tr>
-                  <td>_gid</td>
-                  <td>24 hours</td>
-                  <td>Used to distinguish users.</td>
-                </tr>
-                <tr>
-                  <td>_gat</td>
-                  <td>1 minute</td>
-                  <td>Used to throttle request rate. If Google Analytics is deployed via Google Tag Manager, this cookie
-                    will be named _dc_gtm_&lt;property-id&gt;.</td>
-                </tr>
-              </tbody>
-            </table>
-            <div>Source: <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
-                target="_blank" rel="noreferrer" title="External link to the Google cookie policy">Google Analytics
-                Cookie Usage on Websites</a></div>
-            <p>
-              We do not have any access to the cookies delivered by Google Analytics
-              on your computer.
-            </p>
-          </div>
-        </section>
-        <!-- / SECTION POLICY -->
-
-      </article>
-      <!-- / ARTICLE -->
-
-      <h2>Data storage</h2>
-      <!-- ARTICLE -->
-      <article>
-        <!-- SECTION POLICY-->
-        <section>
-          <div>
-            <p>This website uses session storage data hosted on your browser cache.</p>
-            <p>These data are deleted each time you close your browser.</p>
-            <p>
-              It means that your consent is available for one session only.
-              Each time you will connect to this website, your consent will be asked
-            </p>
-            <code>raigyo-dev_consent-policy-popup-read</code>
-            <p>Is used to know if cookie consent has been validated (meaning "accepted" or "declined").</p>
-            <p>The aim is to avoid to see the banner all the time</p>
-            <p> true = Banner read and closed</p>
-            <p> false = Banner not read and still visible on each pages</p>
-            <code>raigyo-dev_consent-policy-accepted</code>
-            <p>
-              They aim of this data is to remember the your choice and send data
-              to Google Analytics or not:
-            </p>
-            <p>true = accepted</p>
-            <p>false = declined</p>
-          </div>
-        </section>
-        <!-- / SECTION POLICY -->
-
-      </article>
-      <!-- / ARTICLE -->
-
-      <h2>External links</h2>
-      <!-- ARTICLE -->
-      <article>
-        <!-- SECTION POLICY-->
-        <section>
-          <div>
-            <p>Websites and demos provided in this portfolio do not make use of cookies.</p>
             <p>
               But, we can't provide any policy security about the external providers
               from this website including:
@@ -360,8 +142,6 @@
     <!-- / COOKIE CONSENT -->
   </div>
   <!-- /full-width -->
-
-  <script src="../js/app.js"></script>
 </body>
 
 </html>
