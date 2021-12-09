@@ -152,6 +152,12 @@ nav {
   }
 }
 
+.main-menu {
+  position: relative;
+  background-color: white;
+  z-index: 5000;
+}
+
 nav.main {
   background: #000;
   box-shadow: 0px 3px 1px -1px (rgba(0, 0, 0, 0.5));
@@ -187,6 +193,166 @@ footer {
       text-decoration: underline;
     }
   }
+}
+
+/* Menu for mobile */
+.project-nav-mobile {
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 10000;
+
+  li {
+    float: left;
+    display: block;
+
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    img {
+      width: 150px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Burger menu */
+
+.navigationCheckbox {
+  display: none;
+}
+
+// red circle
+.navigationBg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  background-image: radial-gradient(#000000, #855769);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigationBtn {
+  background-color: #fff;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  z-index: 11000;
+}
+
+/* Burger menu */
+/* middle stroke */
+.navigationIcon {
+  position: relative;
+  margin-top: 25px;
+  width: 36px;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
+/* two other strokes */
+
+.navigationIcon::before,
+.navigationIcon::after {
+  width: 36px;
+  height: 2px;
+  background: #333;
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+/* place the 2 strokes (top and bottom) */
+.navigationIcon::before {
+  top: -12.8px;
+}
+.navigationIcon::after {
+  top: 12.8px;
+}
+
+/* navigation and list */
+
+.nav {
+  height: 20vh;
+  position: fixed;
+  width: 0;
+  opacity: 0;
+  z-index: 1500;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); // spring effect
+}
+
+.navigationList {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+
+.links {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 28px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.title {
+  font-size: 32px;
+}
+/* animations */
+
+// The general sibling combinator (~) separates two selectors and matches all iterations
+// of the second element, that are following the first element
+// (though not necessarily immediately), and are children of the same parent element.
+
+.navigationCheckbox:checked ~ .navigationBg {
+  //transform: scale(80); // red button extends on the screen
+  transform: scale(80);
+}
+
+.navigationCheckbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+}
+
+/* + : element after */
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon {
+  background-color: transparent;
+}
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 /* ELEMENTS */
@@ -501,10 +667,20 @@ p {
 
 /* Mobile */
 @media (max-width: 480px) {
+  header {
+    margin-top: 75px;
+    padding-top: 20px;
+  }
+  #main-nav {
+    display: none;
+  }
   #summary {
     div {
       padding: 25px 5%;
     }
+  }
+  .header-logo {
+    display: none;
   }
   .project {
     width: 100%;
@@ -524,6 +700,12 @@ p {
   }
   #logo {
     max-width: 80%;
+  }
+  #project-nav {
+    display: none;
+  }
+  #project-nav-mobile {
+    display: block;
   }
   #contact-section {
     display: none;
@@ -564,6 +746,13 @@ p {
 
 /* Tablet */
 @media (min-width: 481px) and (max-width: 1024px) {
+  header {
+    margin-top: 75px;
+    padding-top: 20px;
+  }
+  #main-nav {
+    display: none;
+  }
   #summary {
     div {
       padding: 25px 5%;
@@ -573,6 +762,9 @@ p {
     max-width: fit-content;
     margin-left: 5px;
     margin-right: 5px;
+  }
+  .header-logo {
+    display: none;
   }
   .project {
     display: block;
@@ -595,6 +787,12 @@ p {
   }
   #contact-section {
     display: none;
+  }
+  #project-nav {
+    display: none;
+  }
+  #project-nav-mobile {
+    display: block;
   }
   #contact-section-mobile {
     display: block;
@@ -642,6 +840,15 @@ p {
     object-fit: fill;
   }
   #contact-section-mobile {
+    display: none;
+  }
+  #project-nav {
+    display: block;
+  }
+  #project-nav-mobile {
+    display: none;
+  }
+  #project-nav-projects-mobile {
     display: none;
   }
 }

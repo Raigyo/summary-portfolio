@@ -27,7 +27,10 @@
   <link href="./src/css/reset.scss" rel="stylesheet">
   <link href="./src/css/style.scss" rel="stylesheet">
   <link href="./src/manifest.webmanifest" rel="manifest">
+  <script defer>
+    /* Sélection des éléments HTML */
 
+  </script>
 </head>
 
 <body>
@@ -37,23 +40,68 @@
 
     <!-- HEADER -->
     <header>
-      <div>
+      <div class="header-logo">
         <img src="./src/img/logos/logo-site.png" alt="Website logo" title="Website logo" id="logo" />
+        <span class="separator"></span>
       </div>
-      <span class="separator"></span>
+
       <h1>Vincent Chilot</h1>
       <h2>Web Developer</h2>
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN NAVIGATION -->
-    <nav class="main">
+    <nav id="main-nav" class="main">
       <ul>
         <!-- <li class="selected">Home</li> -->
         <li><a href="#projects-header" title="Link to projects section">Projects</a></li>
         <li><a href="#contact-header" title="Link to contact section">Contact</a></li>
       </ul>
     </nav>
+
+    <nav id="project-nav-mobile" class="project-nav-mobile main">
+      <ul>
+        <li>
+          <img src="./src/img/logos/logo-site.png" alt="Website logo" title="Website logo" />
+        </li>
+
+      </ul>
+    </nav>
+    <div class="navigation" id="project-nav-projects-mobile">
+
+      <input type="checkbox" class="navigationCheckbox" id="navi">
+      <label for="navi" class="navigationBtn">
+        <span class="navigationIcon"></span>
+      </label>
+
+      <div class="navigationBg"></div>
+
+      <div class="nav">
+        <ul class="navigationList">
+          <li class="navigationItem">
+            <a href="#" class="links title">Projects</a>
+          </li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#projects-html" class="links" title="Link to HTML - CSS">HTML - CSS</a>
+          </li>
+          <li class="navigationItem"><a href="#projects-js" class="links" title="Link to Javascript - NodeJS">Javascript
+              - NodeJS</a></li>
+          <li class="navigationItem"><a href="#projects-react" class="links" title="Link to React - React Native">React
+              - React Native</a></li>
+          <li class="navigationItem"><a href="#projects-vue" class="links" title="Link to Vue">Vue</a></li>
+          <li class="navigationItem"><a href="#projects-angular" class="links" title="Link to Angular">Angular</a></li>
+          <li class="navigationItem"><a href="#projects-svelte" class="links" title="Link to Svelte">Svelte</a></li>
+          <li class="navigationItem"><a href="#projects-cms-php" class="links" title="Link to CMS - PHP">CMS - PH</a>
+          </li>
+          <li class="navigationItem"><a href="#projects-3d" class="links" title="Link to 3D / Unity - C# / WebGL">3D /
+              Unity - C# / WebGL</a></li>
+          <span class="separator"></span>
+          <li class="navigationItem"><a href="#contact-header" class="links title" title="Link to Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- /MAIN NAVIGATION -->
 
     <!-- useful-width -->
@@ -83,15 +131,20 @@
 
       <!-- SECTION PROJECTS -->
       <h3 id="projects-header">Projects</h3>
-      <!-- MAIN NAVIGATION -->
-      <nav class="project-nav">
+      <!-- PROJECT NAVIGATION DESKTOP-->
+      <nav class="project-nav" id="project-nav">
         <ul>
-          <!-- <li class="selected">Home</li> -->
           <li><a href="#projects-html" title="Link to HTML - CSS">HTML - CSS</a></li>
           <li><a href="#projects-js" title="Link to Javascript - NodeJS">Javascript - NodeJS</a></li>
+          <li><a href="#projects-react" title="Link to React - React Native">React - React Native</a></li>
+          <li><a href="#projects-vue" title="Link to Vue">Vue</a></li>
+          <li><a href="#projects-angular" title="Link to Angular">Angular</a></li>
+          <li><a href="#projects-svelte" title="Link to Svelte">Svelte</a></li>
+          <li><a href="#projects-cms-php" title="Link to CMS - PHP">CMS - PH</a></li>
+          <li><a href="#projects-3d" title="Link to 3D / Unity - C# / WebGL">3D / Unity - C# / WebGL</a></li>
         </ul>
       </nav>
-      <!-- /MAIN NAVIGATION -->
+      <!-- /PROJECT NAVIGATION DESKTOP-->
       <section id="projects-section">
         <!-- FlexBox Container -->
         <div id="projects">
