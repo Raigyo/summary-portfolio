@@ -746,6 +746,12 @@ p {
   #top-link img {
     margin-top: 15px;
   }
+
+  .project-nav-mobile li img {
+    width: 150px;
+    margin: 10px;
+    padding: 0;
+  }
   #contact-section-mobile {
     visibility: visible;
     display: block;
@@ -935,7 +941,9 @@ p {
     height: 340px;
   }
   .project img {
-    object-fit: fill;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
   }
   #contact-section-mobile {
     display: none;
