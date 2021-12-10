@@ -27,10 +27,7 @@
   <link href="./src/css/reset.scss" rel="stylesheet">
   <link href="./src/css/style.scss" rel="stylesheet">
   <link href="./src/manifest.webmanifest" rel="manifest">
-  <script defer>
-    /* Sélection des éléments HTML */
-
-  </script>
+  <script src="./src/js/burger-menu.js" defer></script>
 </head>
 
 <body>
@@ -44,14 +41,13 @@
         <img src="./src/img/logos/logo-site.png" alt="Website logo" title="Website logo" id="logo" />
         <span class="separator"></span>
       </div>
-
       <h1>Vincent Chilot</h1>
       <h2>Web Developer</h2>
     </header>
     <!-- /HEADER -->
 
     <!-- MAIN NAVIGATION -->
-    <nav id="main-nav" class="main">
+    <nav id="main-nav" class="main-nav">
       <ul>
         <!-- <li class="selected">Home</li> -->
         <li><a href="#projects-header" title="Link to projects section">Projects</a></li>
@@ -67,15 +63,13 @@
 
       </ul>
     </nav>
-    <div class="navigation" id="project-nav-projects-mobile">
 
-      <input type="checkbox" class="navigationCheckbox" id="navi">
-      <label for="navi" class="navigationBtn">
+    <nav class="navigation" id="project-nav-projects-mobile">
+      <input type="checkbox" class="navigationCheckbox" id="navi" aria-label="Main menu" role="button">
+      <label for="navi" id="menu-toggle" class="navigationBtn" tabindex="0">
         <span class="navigationIcon"></span>
       </label>
-
       <div class="navigationBg"></div>
-
       <div class="nav">
         <ul class="navigationList">
           <li class="navigationItem">
@@ -100,7 +94,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
 
     <!-- /MAIN NAVIGATION -->
 
@@ -109,7 +103,9 @@
 
       <!-- SECTION INTRO -->
       <h3>Welcome</h3>
+
       <section id="summary">
+
         <div>
           <p>
             Hi, I'm Vincent aka Raigyo. I'm a web developer.
@@ -125,6 +121,7 @@
             Here is my portfolio including a part of my recent projects.
           </p>
         </div>
+
       </section>
       <!-- /SECTION INTRO -->
 
@@ -132,23 +129,23 @@
       <!-- SECTION PROJECTS -->
       <h3 id="projects-header">Projects</h3>
       <!-- PROJECT NAVIGATION DESKTOP-->
-      <nav class="project-nav" id="project-nav">
-        <ul>
-          <li><a href="#projects-html" title="Link to HTML - CSS">HTML - CSS</a></li>
-          <li><a href="#projects-js" title="Link to Javascript - NodeJS">Javascript - NodeJS</a></li>
-          <li><a href="#projects-react" title="Link to React - React Native">React - React Native</a></li>
-          <li><a href="#projects-vue" title="Link to Vue">Vue</a></li>
-          <li><a href="#projects-angular" title="Link to Angular">Angular</a></li>
-          <li><a href="#projects-svelte" title="Link to Svelte">Svelte</a></li>
-          <li><a href="#projects-cms-php" title="Link to CMS - PHP">CMS - PH</a></li>
-          <li><a href="#projects-3d" title="Link to 3D / Unity - C# / WebGL">3D / Unity - C# / WebGL</a></li>
-        </ul>
-      </nav>
-      <!-- /PROJECT NAVIGATION DESKTOP-->
+
       <section id="projects-section">
         <!-- FlexBox Container -->
         <div id="projects">
-
+          <nav class="project-nav" id="project-nav">
+            <ul>
+              <li><a href="#projects-html" title="Link to HTML - CSS">HTML - CSS</a></li>
+              <li><a href="#projects-js" title="Link to Javascript - NodeJS">Javascript - NodeJS</a></li>
+              <li><a href="#projects-react" title="Link to React - React Native">React - React Native</a></li>
+              <li><a href="#projects-vue" title="Link to Vue">Vue</a></li>
+              <li><a href="#projects-angular" title="Link to Angular">Angular</a></li>
+              <li><a href="#projects-svelte" title="Link to Svelte">Svelte</a></li>
+              <li><a href="#projects-cms-php" title="Link to CMS - PHP">CMS - PHP</a></li>
+              <li><a href="#projects-3d" title="Link to 3D / Unity - C# / WebGL">3D / Unity - C# / WebGL</a></li>
+            </ul>
+          </nav>
+          <!-- /PROJECT NAVIGATION DESKTOP-->
           <!-- ARTICLE: HTML-CSS -->
 
           <article>
