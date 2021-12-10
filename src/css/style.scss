@@ -324,17 +324,20 @@ footer {
 
 .navigationList {
   position: absolute;
-  top: 65%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style-type: none;
   text-align: center;
   width: 100%;
+  a:hover {
+    font-weight: bold;
+  }
 }
 
 .links {
   display: inline-block;
-  margin-top: 16px;
+  margin-top: 18px;
   font-size: 28px;
   font-weight: 300;
   color: #fff;
@@ -888,7 +891,7 @@ p {
       a {
         text-decoration: none;
         &:hover {
-          text-decoration: underline;
+          font-weight: bold;
         }
       }
     }

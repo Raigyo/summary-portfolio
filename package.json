@@ -38,17 +38,17 @@
   },
   "customDistStructure": {
     "config": {
-      ".js": "assets/js",
-      ".map": "assets/maps",
-      ".css": "assets/css",
-      "assets/images": [
+      ".js": "src/assets/js",
+      ".map": "src/assets/maps",
+      ".css": "src/assets/css",
+      "src/assets/img": [
         ".jpg",
         ".jpeg",
         ".png",
         ".webp",
         ".gif"
       ],
-      "assets/medias": [
+      "src/assets/medias": [
         ".ogg",
         ".webm",
         ".mp4",
@@ -57,7 +57,7 @@
       ]
     },
     "options": {
-      "development": true
+      "development": false
     }
   }
 }
