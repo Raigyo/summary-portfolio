@@ -938,12 +938,14 @@ p {
 /* Desktop */
 @media (min-width: 1025px) {
   .project {
+    text-align: center;
     height: 340px;
   }
   .project img {
-    object-fit: cover;
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: fill;
+    vertical-align: middle;
   }
   #contact-section-mobile {
     display: none;

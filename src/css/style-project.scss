@@ -312,7 +312,8 @@ button {
   @extend %shadow-boxes;
   background: $articlesBackground;
   display: flex;
-  flex-wrap: nowrap;
+  width: 100%;
+  flex-wrap: wrap;
   padding: 30px;
   margin-bottom: 50px;
   align-items: center;
@@ -675,6 +676,7 @@ table.blueTable {
   }
 
   #contact-section .logo-contact {
+    width: 25%;
     height: auto;
   }
   #contact-section .logo-contact p {
