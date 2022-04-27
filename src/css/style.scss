@@ -83,6 +83,7 @@ header {
   background-color: $headerFooterBackgroundColor;
   color: white;
   padding-bottom: 15px;
+  overflow-x: hidden;
 
   img {
     opacity: 0;
@@ -92,10 +93,12 @@ header {
   h1 {
     opacity: 0;
     transform: translateX(-30px);
+
     animation: appearance 0.2s 2s ease-out forwards;
   }
   h2 {
     opacity: 0;
+    overflow-x: hidden;
     transform: translateX(30px);
     animation: appearance 0.2s 2.5s ease-out forwards;
   }
@@ -748,7 +751,7 @@ p {
   }
 
   .project-nav-mobile li img {
-    width: 150px;
+    width: 180px;
     margin: 10px;
     padding: 0;
   }
