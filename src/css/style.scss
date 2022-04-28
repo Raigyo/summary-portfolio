@@ -194,6 +194,9 @@ footer {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   padding: 15px;
+  span {
+    display: inline;
+  }
   a {
     color: white;
     text-decoration: none;

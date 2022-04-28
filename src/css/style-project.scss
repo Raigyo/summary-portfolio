@@ -152,6 +152,10 @@ footer {
   text-align: center;
   padding: 15px;
   letter-spacing: 0.15em;
+  text-transform: uppercase;
+  span {
+    display: inline;
+  }
   a {
     color: white;
 
@@ -159,9 +163,6 @@ footer {
     &:hover {
       text-decoration: underline;
     }
-  }
-  span {
-    text-transform: uppercase;
   }
 }
 
