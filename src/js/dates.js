@@ -16,8 +16,11 @@ const months = [
 
 let currentYear = currentDate.getFullYear();
 let currentMonth = months[currentDate.getMonth()];
-document.querySelector('#year').textContent = currentYear;
 
-document.querySelector(
-  '#last-update'
-).textContent = `${currentMonth}  ${currentYear}`;
+document.querySelector('#year').innerHTML = currentYear;
+
+if (document.querySelector('#last-update')) {
+  document.querySelector(
+    '#last-update'
+  ).innerHTML = `${currentMonth}  ${currentYear}`;
+}
